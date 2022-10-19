@@ -7,4 +7,10 @@ These are projects i have practiced
   <li><a href = "https://github.com/SeoulPolarBear/Java_practices/tree/main/JAVA/Jul28_1_Variable">Java Variable</a></li>
   <li><a href = "https://github.com/SeoulPolarBear/Java_practices/tree/main/JAVA/Jul28_2_KeyboardInput">Java KeyboardInput</a></li>
   <li><a href = "https://github.com/SeoulPolarBear/Java_practices/tree/main/JAVA/Jul29_1_Operator">Java Operator</a></li>
+  
+  <li><a href = "https://github.com/SeoulPolarBear/Java_practices/tree/main/JAVA/Aug01_1_Function">Java Function1</a></li>
+  <li><a href = "https://github.com/SeoulPolarBear/Java_practices/tree/main/JAVA/Aug02_2_Function">Java Function2</a></li>
+  <li><a href = "https://github.com/SeoulPolarBear/Java_practices/tree/main/JAVA/Aug03_1_ConditionalStmt">Java Conditional Statement</a></li>
+  <li><a href = "https://github.com/SeoulPolarBear/Java_practices/tree/main/JAVA/Aug04_1_RepeatStmt">Java Repeat Statment1</a></li>
+  <li><a href = "https://github.com/SeoulPolarBear/Java_practices/tree/main/JAVA/Aug05_1RepeatStmt">Java Repeat Statment2</a></li>
 </ol>
