@@ -13,4 +13,9 @@ These are projects i have practiced
   <li><a href = "https://github.com/SeoulPolarBear/Java_practices/tree/main/JAVA/Aug03_1_ConditionalStmt">Java Conditional Statement</a></li>
   <li><a href = "https://github.com/SeoulPolarBear/Java_practices/tree/main/JAVA/Aug04_1_RepeatStmt">Java Repeat Statment1</a></li>
   <li><a href = "https://github.com/SeoulPolarBear/Java_practices/tree/main/JAVA/Aug05_1RepeatStmt">Java Repeat Statment2</a></li>
+  
+  <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/JAVA/Aug08_1_Array">Java Array</a></li>
+  <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/JAVA/Aug08_2_PP_End">Java Procedure Programming1</a></li>
+  <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/JAVA/Aug09_1_PP_End">Java Procedure Programming2</a></li>
+  <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/JAVA/Aug12_1_OOP">Java Object-oriented programming</a></li>
 </ol>
