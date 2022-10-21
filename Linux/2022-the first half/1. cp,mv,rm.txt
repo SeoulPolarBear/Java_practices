@@ -1,0 +1,66 @@
+파일 생성
+1. nano, vim, gedit 문서 편집기 
+실행시에 파일 이름을 붙여서 실행하고 저장하게 되면
+파일 생성
+2. 리다이렉션 특정 명렬어의 출력값을 파일로서 저장
+
+3. touch 명렬어를 통해서 비어있는 파일을 생성
+특징 : touch 명렬어를 통해서 존재하는 파일의 마지막 
+수정 시간을 현재 시간으로 업데이트를 하기 위한 명령어
+
+touch filea
+
+touch filea fileb filec filed(복수의 파일을 만들 때 사용)
+
+디렉토리 생성
+
+1. mkdir 디렉토리 경로
+
+mkdir [./ # 항상 생략되어 있는 부분]dira
+mkdir dira/a/aa/aaa/aaaa# aaaa라는 dir 위의 상위 dir이 존재하지 않기 때문에 오류가 나온다.
+mkdir -p dira/a/aa/aaa/aaaa #상위 dir 없으면 만들고 있으면 들어간다.
+
+복사
+cp(copy)
+
+이동
+mv(move)
+
+삭제
+rm(remove)
+
+-i : interactive(사용자의 반응에 따라 사용하겠다.)
+-f : force(강제로 사용하겠다. 즉, 바로 시작)
+
+-i : cp,mv 경우에는 덮어쓰기(override) 여부를 질문(즉, cp,mv,rm 같은 경우에는 기본적으로 -i라는게 붙어 있다.)
+rm 경우에는 삭제 여부를 물어보도록 함.
+-f : 
+-i 옵션을 적용했을 경우 질문 하지 않도록 하는 강제 옵션
+
+
+cp 문법
+=> cp (원본파일 경로) (생성하고자 하는 파일명의 경로)
+     cp source destination
+dest => 파일명으로 끝나는 경우 (파일명 : 마지막에 입력한 것을 이름으로 해서 복사한다.)
+dest => 존재하는 디렉토리로 오는 경우(기존 경로에 복사한 원본의 파일명으로 copy본을 만들겠다.)
+
+mv문법
+mv src dest
+mv : 장점 이름 바꾸기 할 때 사용된다.
+
+rm문법
+
+rm -r dirc # dirc안에 있는 것을 지울건지 하나하나 다 물어본다.(root에서는 자동으로 -i이므로)
+    -f
+    -rf dirc#한번에 지우기(root에서도 한번에 지운다.)
+
+
+
+
+
+alias
+
+
+
+
+
