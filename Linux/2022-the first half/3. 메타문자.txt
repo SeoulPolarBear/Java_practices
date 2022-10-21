@@ -1,0 +1,141 @@
+쉘 메타문자
+경로이름 메타문자
+특정 경로들을 표시하는 메타문자
+:특정 절대경로의 값을 가지고 있는 메타문자
+1)~(틸드): 현 사용자 홈디렉토리의 절대경로
+2)-:(핵심 : cd 명령어를 사용할 때)이전 디렉토리의 경로(왔다갔다 할 수 있다.)
+3)~- : 이전 디렉토리의 절대경로(모든 명령어 사용가능)
+ex)ls -ld ~-
+4)~+ : 현 디렉토리의 절대경로
+ex)ls -ld ~+ : 절대경로
+    ls -ld . : 상대경로
+5)~사용자 : root 사용자만 사용할 수 있는 특수문자로 해당 사용자의 홈디렉토리 경로
+:해당 사용자의 홈디덱토리
+ex)ls -ld ~centos/ (결과 : /home/centos)
+=============================================================
+브레이스 확장(오직 bash shell에서만 사용가능)
+: 임의읭 문자열을 생성할 때 사용
+{}를 사용
+{} 안에 있는 요소들을 하나씩 대입
+{} 안에 있는 요소들을 하나씩 대입
+{sun, mon, tue, wen, thu, fri, sat}_file
+touch b{0..9} 
+touch c{0..100}
+touch e{001..100}
+{a...z}
+{A...Z}
+{{a...z},{A...Z}}
+touch file{a[0-9],b?,c*}
+touch file{a{001..100},b{a..z},c{1..100}}
+touch a{01,03,05,07}
+ls a?? =>a로 시작하는 3자리 문자 모두 출력
+
+ls ? : 한문자로 되어 있는 파일들을 전부 보겠다
+
+파일이름 메타문자
+:파일 이름을 대체할 수 있는 메타문자
+* (아스타리카) : zero or more =>아무것도 없는 것부터 무제한까지(무엇이든 올 수 있다.)
+? : 모든 한문자 (띄어쓰기 포함) => 스페이스바 또는 탭키도 포함
+[abc] : a,b,c 순서대로 하나씩 사용 즉, [] 안에 들어가는 문자를 하나씩 대입
+[[:alpha:]] => [a-zA-Z]
+[[:upper:]] =>[A-Z]
+[[:lower:]] =>[a-z]
+[[:digit:]] =>[0-9]
+[!...]: ...을 제외한 모든 문자를 하나씩 대입
+ex)[!1] => 1만 제외한 모든 문자=>[02-9a-zA-Z]
+[!a-z] => 알파벳 소문자를 제외한 모든 문자
+=============================================================
+인용분호 메타문자
+:메타문자의 의미를 무시하거나 변경할 수 있는 메타문자
+어떤 값을 불러올때 사용한다.
+" " : ` `, $, \가 안에 있을 때 특수문자로 사용가능 (touch "this is life" == touch this\ is\ file)
+' ' : 일반문자로 사용한다.
+''
+``
+touch ""this" is "file"" => 결과 : this/ is /file이 생성 된다.
+touch "\"this\" is \"file\""
+touch "'this' is 'file'"
+$ : ex) echo date command results `date` == "echo date command results `date`"
+    ex) echo date command results $(date)
+
+\ : escape 문자 => 뒤에 나오는 문자의 특수효과를 무효화 
+echo : print 처럼 사용할 수 있다.
+=============================================================
+방향재지정 메타문자
+:표준 출력과 표주 에러에 대해서 변경할 수 있는 메타문자
+리디렉션 => 화면출력을 하지 않고 파일로 저장하는 것
+ex) ls -l 1> ls_file1 =>ls -l의 결과 값을 ls_file1에 저장하겠다.
+== ex) ls -l > ls_file1
+ex) ls -l 1>> ls_file1
+
+ex)lt 2> error_file2 : lt라는 파일이 없다는 error를 error_file2 파일에 저장하겠다.
+ls -R / 1> r01 2> r02
+
+이어쓰기
+ex) date >> r01
+
+표준 출력 값 & 표준에러를 동시 저장 하는 방법
+
+덮어쓰기
+ > file명 2>&1
+&> file명 => bash만 사용 가능
+
+이어쓰기
+>> file명 2>&1
+&>> file명 => bash만 사용 가능
+=============================================================
+파이프라인 ( | )
+해당 출력값을 "|" 뒤에 나오는 command 파일로 제공
+ls -R / &>1 r102
+ls -R / 2> /dev/null | tail(오류값을 보여주지 않고 출력해주겠다.)
+(2> /dev/null 즉, 블랙홀 같이 작용한다.)
+ls -R / 2> /dev/null | head >01 : 출력이 되지 않고 저장만 된다.(즉, 출력과 저장이 충돌한다.)
+ls -R / 2> /dev/null | head | tee01 : 출력도 되고 저장도 된다
+
+ls -R / | less
+ls -R / | head -5
+ls -R / 2> /dev/null | wc -l (/dev/null : (2>: 오류)를 보여주지 않고 출력하겠다.)
+
+ls -l | tail -3 | head -1(파이프 중첩 가능)
+
+ls -l | tail -3 1> r01 : 저장은 되는데 출력이 되지 않는다(충돌 발생)
+ls -l |head -3 | tee r01 : head -3 편집 후 tee r01 저장 및 출력도 된다.
+ls -l |tee r01 | head -3 :  r01에 저장 후 head -3으로 출력
+
+
+	읽기 권한 			쓰기 권한 	   실행권한
+파일  cat,more,less,head,tail,nanovim             nano		 명령어(코딩)가 아닌이상 아무 산관 없다
+							참고 : bin : interpreter 언어, scripts : script언어의 내용들이 들어있다.
+dir    ls, cp                                               cp,mv,rm                cd가능 불가능 접근권한!(제일 중요)
+							실행 권한이 없으면 r,w의 권한을 사용할 수 없게 된다.
+
+ex) 게임 실행 시 필요 권한 : 실행 권한 / 생각할 부분 읽기 속도
+     mv 시 필요 권한 : 원본, 사본의 쓰기 권한 / 생각할 속도 : 쓰기 속도
+	왜냐하면 쓰기 속도가 더 느리기 때문이다.
+
+
+
+
+
+
+ls -1
+문제
+
+4. /media 디렉토리 안에 superman-season(1~3) 디렉토리를 각각 만들고 superman-season(1~3)-drama(01~10).avi 파일 생성 후에 이름에 맞추어서 각각 넣으시오. 파일 이동시 최대한 간단하게 작성해보시오.
+ex)
+directory명 : superman-season1 
+file명 : superman-season1-drama01.avi
+
+mkdir /media/superman-season{1..3}
+touch /media/superman-season{1..3}-drama{01..10}.avi
+mv /media/*n1*i /media/*n1 => 여기서 n1은 seaso(n1)이걸 말한다. i는 drama{01..10}.av(i)를 뜻한다.
+mv /media/*n2*i /media/*n2
+mv /media/*n3*i /media/*n3
+
+
+
+rpm -qa | grep sh : rpm -qa => 현 시스템의 설치되어 있는 모든 프로그램 리스트 확인
+grep sh => 파일의 내용에서 특정 패턴을 검색할 때 사용하는 명령어
+
+
+
