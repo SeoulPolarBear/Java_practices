@@ -24,6 +24,12 @@ These are projects i have practiced
     <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/JAVA/Aug11_2_OOP">Java Object-oriented programming3</a></li>
      <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/JAVA/Aug11_3_OOP">Java Object-oriented programming4</a></li>
      <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/JAVA/Aug12_1_OOP">Java Object-oriented programming5</a></li>
+     
+     <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/JAVA/Aug17_1_Package_Import">Java Package1</a></li>
+    <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/JAVA/Aug17_2_Package_Import">Java Package2</a></li>
+    <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/JAVA/Aug17_3_AccessModifier">Java AccessModifier</a></li>
+     <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/JAVA/Aug17_4_OOP_Encapsulation">Java Encapsulation</a></li>
+     <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/JAVA/Aug17_5_Abstract">Java Abstract,Interface</a></li>
 </ol>
 
 # Linux -2022-the first half
