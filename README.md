@@ -33,7 +33,7 @@ These are projects i have practiced
 ### Creational Pattern
 <ol>
   <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/JAVA/Java%20Design%20Pattern/Creational%20Pattern/Aug17_6_SingletonPattern"> Java SingletonPattern1</a></li>
-  <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/JAVA/Java%20Design%20Pattern/Creational%20Pattern/Aug17_7_FactoryPattern">Java FactoryPattern</a></li>
+  <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/JAVA/Java%20Design%20Pattern/Creational%20Pattern/Aug17_7_FactoryPattern">Java FactoryPattern1</a></li>
  </ol>
 
 ### Structural Pattern
