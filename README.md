@@ -20,6 +20,18 @@ These are projects i have practiced
     <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/JAVA/Aug11_2_OOP">Java Object-oriented programming3</a></li>
      <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/JAVA/Aug11_3_OOP">Java Object-oriented programming4</a></li>
      <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/JAVA/Aug12_1_OOP">Java Object-oriented programming5</a></li>
+     
+      <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/JAVA/Aug12_2_OOP_Static">Java Object-oriented programming Static</a></li>
+       <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/JAVA/Aug12_3_Constructor">
+Java Object-oriented programming Constructor</a></li>
+        <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/JAVA/Aug16_1_Constructor">
+Java Object-oriented programming Constructor2</a></li>
+         <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/JAVA/Aug16_2_HasA">Java Has A structure1(Object in Object)</a></li>
+          <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/JAVA/Aug16_3_HasA">Java Has A structure2(Object in Object)</a></li>
+           <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/JAVA/Aug16_4_IsA">Java Is A structure(extends)</a></li>
+
+
+
      <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/JAVA/Aug17_1_Package_Import">Java Package1</a></li>
     <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/JAVA/Aug17_2_Package_Import">Java Package2</a></li>
     <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/JAVA/Aug17_3_AccessModifier">Java AccessModifier</a></li>
