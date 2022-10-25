@@ -59,22 +59,22 @@ Java Object-oriented programming Constructor2</a></li>
 </ol>
 
 # Data Structure
-## C Language
-### Deque
+### C Language
+##### Deque
 
 
-### LinkedList
+##### LinkedList
 
-### Queue
+##### Queue
 
-### Sort
+##### Sort
 
-### Stack
+##### Stack
 <ol>
   <li><a href = "https://github.com/SeoulPolarBear/Practices/blob/main/data%20structure/C%20language/Stack/1.Backjoon_Stack">Backjoon_Stack</a></li>
   <li><a href = "https://github.com/SeoulPolarBear/Practices/blob/main/data%20structure/C%20language/Stack/2.Backjoon_Stack2">Backjoon_Stack2</a></li>
 </ol>
 
-### malloc
+##### malloc
 
 
