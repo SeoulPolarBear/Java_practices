@@ -20,6 +20,7 @@ These are projects i have practiced
   <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/JAVA/Aug11_2_OOP">Java Object-oriented programming3</a></li>
   <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/JAVA/Aug11_3_OOP">Java Object-oriented programming4</a></li>
   <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/JAVA/Aug12_1_OOP">Java Object-oriented programming5</a></li>
+   <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/JAVA/Aug18_1_OOP">Java Object-oriented programming6</a></li>
   <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/JAVA/Aug12_2_OOP_Static">Java Object-oriented programming Static</a></li>
   <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/JAVA/Aug12_3_Constructor">
 Java Object-oriented programming Constructor</a></li>
@@ -33,6 +34,8 @@ Java Object-oriented programming Constructor2</a></li>
   <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/JAVA/Aug17_3_AccessModifier">Java AccessModifier</a></li>
   <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/JAVA/Aug17_4_OOP_Encapsulation">Java Encapsulation</a></li>
   <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/JAVA/Aug17_5_Abstract">Java Abstract,Interface</a></li>
+  <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/JAVA/Aug18_2_GUIProgramming">Java GUIProgramming</a></li>
+  <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/JAVA/Aug25_1_Collection">Java Collection</a></li>
 </ol>
 
 # Design Pattern
