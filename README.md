@@ -57,3 +57,22 @@ Java Object-oriented programming Constructor2</a></li>
   <li><a href = "https://github.com/SeoulPolarBear/Practices/blob/main/Linux/2022-the%20first%20half/3.%20%EB%A9%94%ED%83%80%EB%AC%B8%EC%9E%90.txt">meta character</a></li>
   <li><a href = "https://github.com/SeoulPolarBear/Practices/blob/main/Linux/2022-the%20first%20half/4.%20%EA%B2%80%EC%83%89.txt">grep, egrep,fgrep,find</a></li>
 </ol>
+
+# Data Structure
+## C Language
+### Deque
+<ol>
+  <li><a href = "https://github.com/SeoulPolarBear/Practices/blob/main/data%20structure/C%20language/Stack/1.Backjoon_Stack">1.Backjoon_Stack</a></li>
+  <li><a href = "https://github.com/SeoulPolarBear/Practices/blob/main/data%20structure/C%20language/Stack/2.Backjoon_Stack2">2.Backjoon_Stack2</a></li>
+</ol>
+### LinkedList
+
+### Queue
+
+### Sort
+
+### Stack
+
+### malloc
+
+
