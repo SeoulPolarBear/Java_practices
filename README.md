@@ -1,4 +1,4 @@
-# Java_practices
+# Practices
 These are projects i have practiced
 # JAVA
 <ol>
