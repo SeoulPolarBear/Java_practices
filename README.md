@@ -49,6 +49,13 @@ Java Object-oriented programming Constructor2</a></li>
 
 ### Structural Pattern
 
+# DB
+### ORACLE
+<ol>
+  <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/DB/ORACLE/Aug26_1_DB">Oracle Terms1</a></li>
+  <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/DB/ORACLE/Aug29_1_DB">Oracle Terms2, Syntax(DDL)</a></li>
+</ol>
+
 
 # Linux -2022-the first half
 <ol>
