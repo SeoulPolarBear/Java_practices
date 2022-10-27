@@ -54,6 +54,10 @@ Java Object-oriented programming Constructor2</a></li>
 <ol>
   <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/DB/ORACLE/Aug26_1_DB">Oracle Terms1</a></li>
   <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/DB/ORACLE/Aug29_1_DB">Oracle Terms2, Syntax(DDL)</a></li>
+  <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/DB/ORACLE/Aug30_1_DB">Syntax(DML)</a></li>
+  <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/DB/ORACLE/Aug31_1_DB">DML operator</a></li>
+  <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/DB/ORACLE/Sep01_1_DB">DML SubQuery</a></li>
+   <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/DB/ORACLE/Sep02_1_DB">DML SubQuery2</a></li>
 </ol>
 
 
