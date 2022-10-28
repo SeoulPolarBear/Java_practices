@@ -58,6 +58,11 @@ Java Object-oriented programming Constructor2</a></li>
   <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/DB/ORACLE/Aug31_1_DB">DML operator</a></li>
   <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/DB/ORACLE/Sep01_1_DB">DML SubQuery</a></li>
    <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/DB/ORACLE/Sep02_1_DB">DML SubQuery2</a></li>
+   <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/DB/ORACLE/Sep05_1_DB">DB CRUD</a></li>
+   <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/DB/ORACLE/Sep05_2_DB">DB Connection</a></li>
+   <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/DB/ORACLE/Sep06_1_DB_Java">DB Java Connection CRUD</a></li>
+   <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/DB/ORACLE/Sep06_2_DB_Last">DB JAVA MVC</a></li>
+   <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/DB/ORACLE/Sep07_DB_DesignPattern">DB JAVA MVC2</a></li>
 </ol>
 
 
