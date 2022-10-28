@@ -65,6 +65,16 @@ Java Object-oriented programming Constructor2</a></li>
    <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/DB/ORACLE/Sep07_DB_DesignPattern">DB JAVA MVC2</a></li>
 </ol>
 
+# WEB
+### HTML
+<ol>
+ <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/WEB/HTML/Sep08_1_HTML/src/main/webapp">HTML tag1</a></li>
+</ol>
+
+### CSS
+<ol>
+ <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/WEB/CSS/Sep13_1_CSS/src/main/webapp">CSS practice1</a></li>
+</ol>
 
 # Linux -2022-the first half
 <ol>
