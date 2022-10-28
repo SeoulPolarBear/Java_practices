@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+<!-- 
+	사이즈 조절
+		가로나 세로 중에 하나만 조절하면 -> 원본 비율에 따라 알아서 크기 조절
+		단위 안 쓰면 px(픽셀) 단위
+		%단위 사용 가능 O
+		사이즈 조절은 안 하는게 베스트! -> 그림이 깨져서 나와요!
+ -->
+
+<!-- 그림, 동영상, 노래파일, pdf파일, 알집 파일, ... -->
+<!-- 
+파일 경로
+	절대경로 : 처음부터 다 명시!
+	실전에서는 사용 불가능
+
+상대경로 : 현재 작업중인 html기준으로
+	.. - 한 단계 위의 경로로 
+	*** 한글파일명 가급적 사용 X!
+			
+ -->
+<img alt="지뢰찾기1" src="C:\Users\user\Desktop\WebWorkspace\Sep08_1_HTML\src\main\webapp\지뢰 실화냐.PNG" 
+width = "500px" height = "620px"/>
+<img alt="지뢰찾기2" src="../지뢰 실화냐.PNG" 
+width = "80%" height = "70%"/>
+
+<img alt="지뢰찾기2" src="./뚤었따.PNG" 
+width = "80%" height = "70%"/>
+
+<video src="../고양이가 진짜 악하다 악해.mp4" controls="controls" width = "500px" height ="600px" autoplay="autoplay" loop="loop"></video>
+<br>
+<embed src="../2022년 제3회 K-디지털 트레이닝 해커톤 안내문.pdf"  width = "1500px" height ="700px"/>
+<br>
+<audio src="../Ed Sheeran  Take Me Back To London Sir Spyro Remix feat Stormzy Jaykae  Aitch.mp3" controls="controls" autoplay="autoplay" loop="loop"></audio>
+</body>
+</html>
