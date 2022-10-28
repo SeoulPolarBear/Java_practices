@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>cssTEST</title>
+
+<style type="text/css">
+div {
+	color: #0000FF;
+}
+
+#holiday {
+	background-color: yellow;
+}
+
+.c {
+	font-weight: 900
+}
+/* 강조 표시 */
+h1, h2 {
+	text-decoration: overline;
+	/* 윗쪽에 라인 그리기 */
+}
+
+div h3 {
+	/* 그림자처리 : 색깔 x축, y축 blur(번짐)  */
+	text-shadow: black 3px 3px 5px;
+}
+
+h3.c {
+	/* 테두리 : 색깔 선종류 두께  */
+	/* 선 종류 : solid dashed dotted double inset outset groove...  */
+	border: dotted orange 10px;
+}
+
+#btn {
+	font-size: 20pt;
+	background-color: #33AAEE;
+	border: #FF6666 outset 5px;
+}
+
+/* active 마우스 클릭 부터 뗄 때까지를 처리*/
+#btn:active {
+	border: #FF6666 inset 5px;
+}
+</style>
+
+</head>
+<body>
+
+
+	<!-- 
+		CSS (Cascading Style Sheet)
+			HTML DOM 객체에 디자인 부여
+			(ex) <h1>, <span>, <div>, ...)
+			
+		위치
+			1) .html파일 내부 <head> </head> 부분에
+			2)	DOM 객체의 속성형태로 (비추 !)
+			3)	.css파일을 따로 만들어서 사용(주력!!)
+		
+		문법
+			선택자 {
+				속성명 : 값;
+				속성명 : 값;
+				속성명 : 값;
+				...
+			}
+			
+		선택자(selector)
+			기본형
+				태그명 - 태그명에 속하는거 전부 다!
+				#id - id가 지정한 값인거 (중복 사용 X !)
+				.class - class가 지정한 값인거 (중복 사용 O !)
+			
+			
+			조합형
+				선택자, 선택자, ... - 여러개 선택
+				선택자 선택자 ... - 내부 선택
+				(div h3 - div 안에 있는 h3만 적용)
+				선택자.class명 - 선택자중 class인 것만 적용
+				
+			
+			상태형
+				선택자: 상태
+	 -->
+	<span id="btn">이번주 시작!</span>
+	<h1>으아아아아아</h1>
+	<h2>휴일 끝!</h2>
+	<div>
+		<h3>이거 참 슬픈일이네요ㅠㅠ</h3>
+	</div>
+	<h3 class="c">진짜루요...</h3>
+
+
+	<div class="c">div는 이 한줄을 다 차지하구</div>
+	<span class="c">span은 이 영역만을 사용한다.</span>
+	<div id="holiday">연휴 또 언제 오나요?</div>
+
+
+</body>
+</html>
