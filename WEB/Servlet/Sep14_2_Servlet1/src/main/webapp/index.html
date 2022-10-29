@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Index</title>
+</head>
+<body>
+	<a href ="Calculator?num1=3.14&num2=2.87"></a>
+	<hr>
+	<!-- 
+		form : form내부에 있는 button을 누르면
+		action자리에 쓴 쪽으로 요청을 해줌
+		
+		form내부에 있는 input들의 속성 값으로 name을 줘서 -> 요청 parameter 값이 된다.
+		input들 안에 쓴 내용을 값으로 보내줌
+		
+		input 입력시
+			tab키 : 다음 input으로 넘어가기
+			enter키 : 버튼을 누른셈 쳐줌
+	 -->
+	 <form action="Calculator">
+	 x : <input type = "text" name = "num1"> <br>
+	 y : <input type = "text" name = "num2"> <p>
+	 <input type = "submit">
+	 </form>
+</body>
+</html>

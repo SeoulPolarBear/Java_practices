@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>input</title>
+</head>
+<body>
+		<!-- method = default : get -->
+		<!-- 이렇게 하면 주소창에 안 뜬다. -->
+	<form action="Output" method = "POST">
+		입력 : <input type = "text" name = "a">
+		<hr>
+		<!-- form tag 안에 있으면 button이 submit 기능을 대신 해준다. -->
+		<button>Output으로 가기</button><br><br>
+		
+		<input type = "submit" value ="이게 기본임"><br><br>
+		<input type = "reset" value = "초기화"> <br><br>
+		<!--  
+			form속에 있는
+			원래 : <input type = "submit">누르면
+			바뀜 : 버튼 모양인거 아무거나 누르면 
+					button, image,.. 가능
+					cf) type = "reset"만 빼고 가능하다.
+			action 속성에 쓴 쪽으로 요청
+		-->
+		
+		
+	</form>
+</body>
+</html>
