@@ -74,6 +74,17 @@ Java Object-oriented programming Constructor2</a></li>
 ### CSS
 <ol>
  <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/WEB/CSS/Sep13_1_CSS/src/main/webapp">CSS practice1</a></li>
+  <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/WEB/CSS/Sep13_2_WebSite/src/main/webapp/css">WebSite</a></li>
+</ol>
+
+### Servlet
+<ol>
+ <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/WEB/Servlet/Sep13_3_Servlet/src/main/webapp">Servlet intro</a></li>
+ <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/WEB/Servlet/Sep14_1_Servlet">Servlet Writer</a></li>
+  <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/WEB/Servlet/Sep14_1_Servlet1">Servlet Writer2</a></li>
+<li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/WEB/Servlet/Sep14_2_Servlet1">Servlet Writer3</a></li>
+<li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/WEB/Servlet/Sep14_3_Servlet">Servlet Writer4 print</a></li>
+<li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/WEB/Servlet/Sep15_1_Servlet">Servlet Multipart</a></li>
 </ol>
 
 # Linux -2022-the first half
