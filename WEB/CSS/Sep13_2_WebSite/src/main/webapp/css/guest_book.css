@@ -1,0 +1,39 @@
+@charset "EUC-KR";
+
+.guestbook{
+	width: 1000px;
+	margin:auto;
+}
+
+.aguestbook{
+	color: white;
+	background-color: maroon;
+	width: 1000px;
+	border: solid pink 2px;
+	border-radius: 15px;
+}
+img{
+	max-width: 300px;
+}
+.item-image{
+	max-width: 300px;
+	width: 300px;
+	border-right: solid pink 2px;
+}
+.item1{
+	text-align: center;
+	font-size: 16px;
+	height: 16px;
+	border-bottom: solid pink 2px;
+}
+
+.item2{
+	/* max-width를 벗어 나는 내용을 숨길 때*/
+	/* 벗어나는 내용들 범위와 상관없이 한 줄로 표시(가로 스크롤) */
+	/* 이것을 추가하면 끝에 잘리는 부분ㅇ르 ...으로 처리 */
+	overflow:hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	font-size: 16px;
+	max-width: 680px;
+}

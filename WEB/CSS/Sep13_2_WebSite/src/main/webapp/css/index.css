@@ -1,0 +1,115 @@
+@charset "EUC-KR";
+@font-face{
+	/*
+	웹폰트 등록 : 
+		CSS에 추가 (IE에서는 안먹힘)
+		폰트파일에 있는 글자들 모양이 다 등록
+			=>용량이 커집니다.
+			=> 느림...
+	*/
+	font-family: "OK CHAN";
+	src: url("OK CHAN.ttf");
+}
+/* 스크롤바 사용 않기 */
+::-webkit-scrollbar{
+	display:none;
+}
+
+body{
+	margin: 0px;
+	padding: 0px;
+}
+
+#btn-set {
+	border : solid black 5px;
+	background-color : gray;
+	border-spacing: 0px;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	text-align:center;
+	z-index: 1;
+}
+
+.btn-set{
+	width: 50%;
+}
+
+.btn {
+	margin: 2px;
+	border : solid blue 1px;
+	background-color: #00FFFF50;
+	font-size: 30pt;
+	text-decoration: none;
+	font-weight: 500;
+	font-family: "OK CHAN";
+	/* 애니메이션 효과 */
+	/* 속성명 시간(ease-in / ease-out) */
+	transition: all 0.5s ease-in;
+}
+
+.btn:hover{
+	
+	font-size: 40pt;
+	text-shadow: yellow 0px 0px 10px;
+	text-decoration: underline;
+}
+
+.btn:active{
+	color:blue;
+}
+
+nav{
+	text-align: center;
+	margin-top:100px;
+	background-color: #3399FF55;
+	font-size: 30pt;
+	color: black;
+	margin-left: auto;
+	margin-right: auto;
+	text-shadow: teal 3px 5px 5px;
+	width: 1000px;
+	font-family: "OK CHAN";
+}
+
+#siteContentArea {
+	background-color: green;
+	width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	/* 가운데 정렬 */
+	margin-top: 50px;
+}
+
+#Video1 {
+	/*객체 자체에 그림자*/
+	box-shadow : black 5px 5px 10px;
+	
+	/*
+	사이즈를 조절하면 그림이 깨져서 안하는게 베스트!
+	
+	어쩔 수 없다면
+	큰 그림 -> 줄이기 : ok!
+	작은 그림 -> 늘리기 : 깨져서 나올 수도 있음
+	*/
+	max-width: 30%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,28 @@
+@charset "EUC-KR";
+@font-face{
+	font-family: "OK CHAN";
+	src: url("OK CHAN.ttf");
+}
+#Board_text{
+	margin: auto;
+	width: 1000px;
+	order: inherit;
+	font-family: OK CHAN;
+}
+.dataTr-th{
+	background-color: yellow;
+	
+}
+
+.dataTr td{
+	margin: 2px;
+	border-bottom : solid black 2px;
+	text-align: center;
+	color: #FDBCB4;
+}
+
+.dataTr:hover{
+	color: white;
+	background-color: #722f37;
+	cursor: pointer;
+}
