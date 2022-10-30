@@ -93,6 +93,11 @@ Java Object-oriented programming Constructor2</a></li>
   <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/Linux/2022-the%20first%20half/2.%20ls%2Cwc%2Ccp%2Crm%2Cmv">ls,wc,cp,rm,mv</a></li>
   <li><a href = "https://github.com/SeoulPolarBear/Practices/blob/main/Linux/2022-the%20first%20half/3.%20%EB%A9%94%ED%83%80%EB%AC%B8%EC%9E%90.txt">meta character</a></li>
   <li><a href = "https://github.com/SeoulPolarBear/Practices/blob/main/Linux/2022-the%20first%20half/4.%20%EA%B2%80%EC%83%89.txt">grep, egrep,fgrep,find</a></li>
+  <li><a href = "https://github.com/SeoulPolarBear/Practices/blob/main/Linux/2022-the%20first%20half/5.%20%EA%B6%8C%ED%95%9C.txt">permission</a></li>
+  <li><a href = "https://github.com/SeoulPolarBear/Practices/blob/main/Linux/2022-the%20first%20half/6.%20%EB%A6%AC%EB%88%85%EC%8A%A4%20%EA%B8%B0%EC%B4%88%200523.txt">
+permission2, grep, find, vim, tar(archive)</a></li>
+  <li><a href = "https://github.com/SeoulPolarBear/Practices/blob/main/Linux/2022-the%20first%20half/7.%20%EB%A6%AC%EB%88%85%EC%8A%A4%20%EA%B8%B0%EC%B4%88%200525.txt">vim,archive,hash algorithm,sudo,systemctl,nmcli</a></li>
+  <li><a href = "https://github.com/SeoulPolarBear/Practices/blob/main/Linux/2022-the%20first%20half/8.%20%EB%A6%AC%EB%88%85%EC%8A%A4%20%ED%8E%80%EB%93%9C%EB%A9%98%ED%83%88%20%EB%AC%B8%EC%A0%9Ctxt.txt">Linux practice</a></li>
 </ol>
 
 # Data Structure
