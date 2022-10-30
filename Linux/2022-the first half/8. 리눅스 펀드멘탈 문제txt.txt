@@ -1,0 +1,206 @@
+﻿현재 내 위치를 확인 할 수 있는 명령어는?​
+
+pwd
+
+​
+자신이 사용한 명령어들의 리스트를 볼 수 있는 명령어는?​
+
+history
+
+
+Man 명령어를 사용하여 ls(1P)의 매뉴얼을 볼 수 있도록 명령어를 작성하시오. ​
+
+man -s 1p ls
+
+or
+
+man 1p ls
+
+/tmp/로 이동 후에 /root/ 디렉토리로 다시 이동 /tmp/mtest 디렉토리 생성​
+
+cd /tmp
+
+cd ~
+
+mkdir ~-/mtest
+
+
+/tmp/mtest 디렉토리 안에 za1~za10 파일과 zb01~zb10 파일과 zc001~zc100 파일을 만드시오.​
+
+touch ~-/mtest/z{a{1..10},b{01..10},c{001..100}}
+
+
+모든 파일을 삭제 하는데 za 파일은 [ ], zb 파일은 ?, zc 파일은 *을 사용하시오.​
+
+rm -f ~-/mtest/z{a[0-9],a10,b??,c*}
+
+/media 디렉토리 안에 document 디렉토리를 만들고 그 안에 Music, Movie, Picture​ 디렉토리를 각각 만드시오. 그리고  music(00-20).mp3, movie(00-10).avi, picture(0-9).jpg ​파일을 생성 후에 이름에 맞추어서 각각 넣으시오. (document 디렉토리는 하위 디렉토리가​  만들어질 때 같이 만들어지도록 하시오.)​
+
+
+mkdir -p /media/document/{Music,Movie,Picture}
+touch /media/document/{music{00..20}.mp3,movie{00..10}.avi,picture{0..9}.jpg}
+mv /media/document/mu* /media/document/Mu*
+mv /media/document/mo* /media/document/Mo*
+mv /media/document/p* /media/document/P*
+
+
+ps -ef의 결과 값을 pfile01 에 저장하시오.​
+
+ps -ef > pfile01
+
+
+ls -R / 의 결과 값에서 error 값은 출력되지 않도록 하시오.​
+
+ls -R / 2> /dev/null
+
+
+rpm -qa 결과값에서 sh 라는 패턴만 출력하시오.​
+
+rpm -qa | grep sh
+
+
+document 디렉토리 와 하위 디렉토리의 파일들을 볼 수 있도록 명령어를 작성하시오 (절대 경로)​
+
+ls -R /media/document
+
+
+music 디렉토리를 이용해 /link_music 이라는 링크파일 ​생성​
+
+ln -s /media/document/Music /link_music
+
+
+memo 디렉토리는 /tmp/memo 로 이동​
+
+mkdir /tmp/memo
+mv /media/document/Memo /tmp/memo
+
+
+movie 디렉토리는 /tmp/movie 로 복사​
+
+mkdir /tmp/movie
+cp -r /media/document/Movie /tmp/movie
+
+
+사용자 홈 디렉토리에 있는 document 디렉토리는 제거 (document 디렉토리 제거 시 물어보지 않도록 한다.)​ => 잘못된 문제 /root/ document 존재하지 않음
+
+mkdir document 
+rm -rf /root/document
+
+​
+​전체 파일 시스템에서 소유주가 centos 사용자의 파일만 검색​
+
+find / -user centos 
+
+
+현재 사용자의 홈디렉토리에서 권한이 777인 파일을 찾아서 755 권한으로 변경하기​
+
+find ~/ -perm 777 -exec chmod 755 {} \;
+
+
+/etc 디렉토리에서 심볼릭 링크 파일만 찾아서 삭제하기​
+( -i 옵션 없이 삭제 시 확인하고 삭제하게 만들기 )​ 
+
+find /etc/ -type l -ok rm -r {} \;
+​
+
+/tmp 디렉토리에 /var/log 디렉토리를 복사하시오.
+
+cp -r /var/log /tmp/
+
+
+/tmp 디렉토리에서 이름이 log으로 끝나는 파일을 찾아 ​상세 정보 출력하기​
+
+find /tmp -name "*log" -ls
+
+or
+
+find /tmp -name "*log" -exec ls -ild {} \;
+​
+
+/etc/login.defs 파일에서 주석을 제외한 내용을​ new 라는 이름의 파일로 저장하기 (주석은 #문자로 시작)​
+
+grep -v '^#' /etc/login.defs > new
+
+​
+/root/ 디렉토리에서 fileA fileB fileC 를 만들고 세로로 출력하시오​
+
+touch /root/file{A..C}
+
+ls -1 /root/file[A-C]
+
+
+/etc/ 디렉토리에 있는 파일 중에 'root' 라는 단어가 있는 파일 검색하기​
+
+grep -r 'root' /etc/
+
+
+grep '5..$' datafile 입력 시 어떻게 동작하는가​
+
+5로 시작하는 3글자 패턴이 라인의 뒤에 오는 것만 출력
+
+
+grep '5..' datafile 입력 시 어떻게 동작하는가​
+
+5로 시작하는 3글자 패턴이 존재하면 출력
+
+
+grep 사용시 대소문자 구분 없이 검색하는 옵션은?​
+
+'-i'
+
+
+hello 혹은 hi 라는 단어가 있는 줄을 찾는 방법​
+
+grep -e 'hello' -e 'hi' file
+
+egrep '(hello|hi)' file
+
+
+/etc/sudoers 파일을 /root/ 로 복사하시오.
+
+cp /etc/sudoers /root/
+
+/root/sudoers 파일을 vi 편집기에서 오픈
+
+vim /root/sudoers
+
+파일의 마지막 줄로 이동​
+
+G
+
+그 줄을 복사해서​
+
+yy
+
+
+파일의 처음으로 이동​
+
+1G or gg
+
+첫줄의 위에 복사한 내용을 붙여 넣으시오.​
+
+P
+
+파일의 라인넘버를 보여주는 명령어는?​
+
+:set number or :se nu
+
+
+파일에서 root 라는 단어를 검색하시오​
+
+/root
+
+
+centos 홈 디렉토리의 모든 파일을 아카이브해서 gzip 방식으로 압축하기​
+
+tar czf centos.tar.gz ~centos/
+
+/tmp/dirA 디렉토리에 해제하기​
+
+mkdir /tmp/dirA
+
+tar xf centos.tar.gz -C /tmp/dirA
+
+아카이브가 된 파일의 내용을 보고 싶을 때 사용하는 명령어와 옵션​
+
+tar tvf centos.tar
