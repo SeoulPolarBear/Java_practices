@@ -1,0 +1,630 @@
+﻿vimtutor 실행
+
+vimtutor en
+
+/root/vimtutor로 다른 저장하시오.
+
+:w /root/vimtutor
+
+vimtutor 종료 후
+
+:q
+
+/root/vimtutor 파일 vim 편집기로 실행
+
+vim /root/vimtutor
+
+1번 라인을 복사해서 3번 라인 아래에 붙여넣으시오.
+
+1G or gg
+yy
+3G
+p
+
+or
+
+: 1 co 3
+
+vim 이라는 단어를 123 로 문서 전체를 변경하시오.
+
+:% s/vim/123/g
+
+1번부터 20번 사이에 123을 다시 vim으로 변경하시오.
+
+:1,20 s/123/vim/g
+
+2번라인부터 5번라인까지 복사해서 10번 라인에 붙여넣으시오.
+
+2G
+4 yy
+10G
+P
+
+or
+
+:2,5 co 9
+
+1라인부터 10번라인을 잘라내서 마지막 라인 위로 붙여넣으시오.
+
+1G or gg
+10dd
+G
+P
+
+or
+
+:1,10 m 마지막라인 번호 윗 번호
+
+30번 라인부터 40번 라인까지 삭제하시오.
+
+30G
+11dd
+
+or
+
+:30,40 d
+
+1번 라인의 내용만 삭제하면서 123 이라는 단어를 쓰시오.
+
+1G or gg
+cc
+123
+esc
+
+==================================================================
+
+아카이브 실습
+
+/usr/sbin 디렉토리를 일반 아카이브, gzip, bzip2, xz 로 아카이브 해보시오.
+아카이브 파일명 sbin.tar
+
+sbin.tar에 어떠한 파일들이 있는지 확인하시오.
+
+sbin.tar를 /tmp에 해제 하시오.
+
+===================================================================
+사용자 관리
+/etc/passwd : 리눅스를 사용하는 모든 사용자의 정보가 들어있다.
+
+슈퍼유저, 일반사용자
+시스템에 대해서 상호작용(인터렉티브)을 하기 위해서는 shell
+/bin/bash
+/bin/csh
+/bin/ksh
+/bin/sh
+
+시스템 사용자, 서버의 로그인이 필요없는 사용자
+로그인 X
+/sbin/nologin
+
+계정명 : password(X) : UID : GID : 코멘트 : 홈디렉토리 : 로그인쉘
+password : 활성화되지 않으면 !!, 활성화 되면 X
+                     |
+/etc/shadow  <-| (passwd가 여기로 빠졌다.)
+ls -l /etc/shadow => ---------- 이유 : /만이 접근할 수 있게 하기 위해서
+                                             
+계정명 : 암호화된 패스워드 : lastchd : min : Max : warning : inactive : expire : blank
+
+계정명 : 지정된 계정명                                   
+암호화된 패스워드 
+
+$해쉬알고리즘 종류(6-sha512) $salt값(패스워드를 변경할때 임의적으로 생성) $ 입력한 패스워드와 salt 값을 해쉬알고리즘으로 암호화한 값
+256:$5
+
+lastchd : (1970년 이후로 지금까지의 경과일이 들어있다.)(즉, 유닉스 시간을 기준으로 작성되어있다.)
+min : (최소로 pw변경가능전에 사용해야하는 기간)
+Max : (계정의 최대 사용 기일)
+warning : (Max 기일 까지 몇일 전부터 경고문을 줄것인가)
+inactive : (유효기간)
+expire : (개정에 대한 만료기간)
+blank :
+
+참고 : passwd 명령어를 통해서 사용자의 비밀번호를 변경할 수 있다.
+ change -m 1 centos(min 변경 명령어)
+change -M 6 centos(Max 변경 명령어)
+tail -1 /etc/shadow(centos가 마지막 줄에 있으므로)
+/etc/group
+
+그룹 : 그룹권한으로 권한을 행사하기 위해서 사용하는 요소
+	종류 2가지 : 기본 그룹 : 어떤 사용자든지 무조건 하나의 그룹을 생성한다
+			(기존에 있던 것을 사용할 수도 있고 새로운 그룹은 소유자이름으로 그룹이 만들어 진다.)
+		    보조 그룹 : 필요에 따라서 생성된다.(사용 이유 : 그룹의 존재 의의이다.) 주로 소유 그룹을 제외한 다른 그룹을 사용할 때 쓰인다.
+		      
+
+그룹명 : 패스워드(X) : GID : 보조그룹 구성원
+
+기본그룹                        보조그룹
+1인1그룹                        0개 이상 가입 가능
+계정생성시에 자동으로 설정      수동으로 설정
+
+보조그룹 생성 방법 : 
+
+파일이나 디렉토리에 소유그룹의 권한을 행사하기 위해서 사용
+
+사용자 전환(switch user)
+su       : 사용자로만 전환(위치나 일부 환경변수 기존 사용자 정보로 유지)
+su -     : 전환되는 사용자의 모든 환경까지 가져옴.
+
+
+
+ex)sudo touch fileb => 소유자 : root 소유그룹 : root 대신 위치는 현재 사용자의 위치  
+
+sudo -i  : su - root 처럼 root로 전환 시 사용(영구적으로 root사용가능)
+
+sudo => root password가 아닌 자신의 password 필요
+sudo를 사용하기 위해서는 wheel 그룹에 속해있어야 함.
+기본 그룹이든 보조 그룹이든 
+wheel 그룹이 /etc/sudoers에 sudo를 사용할 수 있는 그룹으로 설정이 되어 있기 때문에 
+=> sudo를 사용하려면 wheel에 들어있어야 한다.
+
+sudoer.d에 해당 개정명을 넣으면 sudo 명령어 사용가능
+
+sudo     : 일회성으로 root 권한을 가져올때 사용(즉, 나의 권한에서 root를 가져온다. 즉, root의 비밀번호를 알필요가 없다. 사용자 비번만 필요)
+	=>이 명령어는 centos만 사용 가능하다 왜? 10(wheel)에 속해있기 때문이다.(wheel에 속해있어야 sudo 명령어 사용 가능)
+
+echo $PATH : 모든 사용자의 디렉토리의 경로를 보여준다.
+
+su => 전환시에 해당 사용자의 password 필요 
+root로 전환시에 해당 password가 알려질 가능성이 있음.
+
+useradd user02
+useradd user03
+
+vi /etc/sudoers.d/user02 => nopasswd : all => passwd 없이 접근가능
+vi /etc/sudoers.d/user03 => all => passwd가 필요하다.
+
+사용자관리
+
+사용자 생성에 따른 설정 파일 2가지
+(사용자 생성 : useradd 사용자명
+passwd 부여 : passwd user03 => passwd 부여)
+
+
+/etc/default/useradd
+GROUP=100(사용자의 명과 
+HOME= /home(홈 디렉토리를 
+INACTIVE=-1(-1 : 비활성화 : passwd를 설정을 안해줬을 경우, 1 : 활성화 
+SHELL = bin/bash => bash shell 사용, sh로 바꾸면 sh shell을 사용하겠다.
+SKEL : etc/skel에 존재하며 template처럼 사용해서 기본적으로 들어가야하는 파일을 파일을 생성할 때 넣어준다.
+
+/etc/login.defs
+
+사용자 종류
+슈퍼유저 : root
+시스템 유저 : 시스템이 특정 프로그램을 운영시에 필요에 따라 생성 되는 유저(로그인 x)
+일반유저 : 서버에 로그인해서 시스템을 사용하는 유저
+
+UID의 값
+
+슈퍼유저(root) : 0
+시스템 사용자 : 1-200 => 정적인 UID(고정되어 있어서 지정되어 있다.)
+		201-999 => 동적인 UID(시스템에 필요기능이 추가될 때 사용된다.)
+일반유저 : 1000-6000
+
+사용자 삭제
+userdel user03
+=> /home 에 user03이 남아 있다.
+따라서 똑같은 id(ex1007)을 사용하는 사용자를 만들면 기존에 user03에 있는 내용을 새로만든
+사용자가 볼 수 있기 때문에 다음과 같이 삭제 해야한다.
+userdel -r testuser를 해야만 Mail과 home에서 삭제된다.
+
+
+============================================================
+systemd 프로세스(시스템 부팅이 될 경우에 가장먼저 실행되는 프로세스 (최상위에 있는 모든 관리를 하는 프로세스))
+=>이런 시스템을 동작하는 기본 단위는 유닛이 된다.
+linux 6버전 : init
+linux 7버전 : systemd
+
+시스템의 유닛 확인
+
+systemctl or systemctl list-units (기본적으로는 실행되고 있는 units만 보여준다.)
+
+-a or --all : 모든 유닛(active와 inactive 모두 볼 수 있게 해준다.)
+
+-t or --type : 특정 유닛 지정(ex) service, target, mount,...)
+
+시스템 유닛의 활성화 상태 확인
+
+systemctl list-unit-fils
+
+활성화(enabled) => 부팅시에 자동으로 실행 되는지에 대한 여부
+
+유닛들을 관리하는 dir 3군데 있음.
+/usr/lib/systemd/system => 유닛 원본
+/etc/systemd/system => 활성화에 관련된(필요한) 디렉토리(원본의 심볼링크이다.)
+/run/systemd/system => 실시간 유닛들의 작동 디렉토리
+
+필요에 의해서 특정 소프트웨어를 설치하게 되면 실행해야될 2가지
+systemctl start xxxxxxxxx
+systemctl enable xxxxxxxx
+
+systemctl enable xxxxxxxx -now : 활성화 동시에 시작하겠다.
+
+state
+
+enabled - 부팅시에 실행됨(active : 부팅시 자동으로 실행)
+disabled - 부팅시에 실행 안됨
+static - 부팅시 실행하지 않고 다른 유닛에 대해서 실행될 수 있도록 준비상태
+masked - 실행되지 않도록 프리징시킴(실수라도 해당 유닛이 실행되지 않도록 막아 놓은 것)
+	(예를 들어서 구버전의 방화벽과 신버전의 방화벽을 같이 실행 시키면 충돌시켜서 작동 오류가 발생할 수 있다.)
+
+유닛 제어 서브 커맨드
+
+systemctl sub-command unit
+
+status : 상태확인
+start : 시작
+stop : 종료
+restart : 재시작(권장)
+reload : 재설정
+enable : 활성화
+disable : 비활성화
+mask : 마스크 설정  
+unmansk : 마스크 해제
+list-dependencies : 종속성(의존성) 확인
+
+특정 서비스를 설치하고 앞으로도 계속해서 해당 서비스를 실행 설정할 때
+재시작 : restart(프로세스를 새로 시작시킨다. 즉, PID 값이 변경된다.)
+재설정 : reload(프로세스를 돌리고 있는 상태에서 변경 PID값이 그대로 이다.)
+systemctl start httpd.service => Main PID : 1936(실행시마다 바뀐다.)(process number)
+systemctl status httpd.service
+systemctl status bind.service
+
+systemctl start xxxx.service
+systemctl enable xxxx.service
+
+or
+
+systemctl enable xxxx.service --now
+
+
+systemctl 실습
+
+httpd 서비스 상태 확인
+
+systemctl status httpd.service
+
+httpd 서비스 시작
+
+systemctl start httpd.service
+systemctl status httpd.service
+
+httpd 서비스 활성화
+systemctl enable httpd.service
+=> enable을 하면 /usr/lib/systemd/system의 심볼 링크를 /etc/systemd/system/ 아래
+에 create 해서 활성화 시킨다.
+Create symlink /etc/systemd/system/multi-user.target.wants/httpd.service.
+
+systemctl status httpd.service
+
+httpd 서비스 중지
+
+systemctl stop httpd.service
+systemctl status httpd.service
+
+httpd 서비스 비활성화
+
+systemctl disable httpd.service
+systemctl status httpd.service
+
+=> disable을 하면 /usr/lib/systemd/system/httpd.service의 심볼 링크를 /etc/systemd/system/httpd.service 아래
+에 create 해서 활성화 시킨다.
+Removed symlink /etc/systemd/system/multi-user.target.wants/httpd.service.
+
+
+httpd 서비스 잠금
+
+systemctl mask httpd.service
+systemctl status httpd.service
+systemctl start httpd.service
+에러 : 마스크 상태 => 아에 start가 fail 이 된다.
+=> disable을 하면 /usr/lib/systemd/system/httpd.service의 심볼 링크를 /etc/systemd/system/httpd.service 아래
+에 create 해서 막아 놓는다.
+
+
+httpd 서비스 잠금해제
+
+systemctl unmask httpd.service
+systemctl status httpd.service
+systemctl start httpd.service
+실행
+
+httpd 서비스 시작 후에 pid 확인
+
+systemctl status httpd.service
+pid 확인
+
+httpd 서비스 리로드 후 pid 확인
+
+systemctl reload httpd.service
+systemctl status httpd.service
+pid 그대로임
+
+httpd 서비스 재시작 후 pid 확인
+
+systemctl restart httpd.service
+systemctl status httpd.service
+pid 바뀜
+
+---------------------------------------------------------------------------------------------------------
+telnet 프로그램 설치
+yum -y install telnet* 
+telnet에 대한 실행 및 활성화
+systemctl status telnet.socket
+systemctl start telnet.socket
+systemctl enable telnet.socket
+systemctl status telnet.socket
+
+telnet.socket 정지
+systemctl stop telnet.socket
+
+telnet.socket 비활성화
+systemctl disable telnet.socket
+
+telnet.socket masked
+systemctl mask telnet.socket
+systemctl status telnet.socket
+
+telnet.socket masked 해제
+systemctl unmask telnet.socket
+systemctl status telnet.socket
+systemctl start telnet.socket
+systemctl status telnet.socket => PID 확인 => disable이여서 PID가 없는 것을 알 수 있다.
+
+telnet.socket 재시작
+systemctl restart telnet.socket
+systemctl status telnet.socket
+=>PID 확인
+
+telnet.socket 재설정
+systemctl reload telnet.socket
+systemctl status telnet.socket
+=>PID 확인
+
+
+============================================================
+네트워크 랜카드 확인하는 방법 : 
+랜카드 <UP, BROADCAST, RUNNING, MULTICAST>
+
+packet 확인
+RX:RECEIVE
+TX:TRANSFER
+
+랜카드 검색 방법
+if addr (show 랜카드명)
+ifconfig 랜카드명
+lo(루프백)
+
+
+linux 6			linux 7
+init 			systemd
+iptables			firewalld
+network			NetworkManager
+
+network.service
+=>interface(랜카드를 지정하는 파일에 직접 설정)
+NetworkManager
+=> connect (연결)을 생성하고 인터페이스를 해당 연결을 부여해서 설정)
+
+NetworkManager를 통해서 연결에 대한 설정하는 명령어(도구)
+-nmcli(NetworkManager Command Line Interface)
+-nmtui(NetworkManager terminal user interface)
+-그래픽 모드를 통해서 설정하는 방법
+
+네트워크 관리 명령어 정리
+
+앞으로는 enp0s9를 사용한다.
+
+ nmcli dev
+ nmcli dev connect enp0s9
+ nmcli dev
+ ifconfig
+ nmcli dev disconnect enp0s9
+ nmcli addr show enp0s9
+---------------------------------------------------------------------------------------------------------
+연결 생성
+nmcli con add
+
+유동 IP(DHCP) 설정
+con-name(커넥션 이름)
+ifname(해당 연결과 연결할 인터페이스명)
+type(통신방식)(가상은 유선으로 인식된다. ethernet or wifi)
+autoconnect ( 부팅시에 해당연결을 자동으로 연결할 것인지 여부)
+
+수동 IP(static) 설정
+con-name(커넥션 이름)
+ifname(해당 연결과 연결할 인터페이스명)
+type(통신방식)(가상은 유선으로 인식된다. ethernet or wifi)
+autoconnect ( 부팅시에 해당연결을 자동으로 연결할 것인지 여부)
++
+ip4 xxx.xxx.xxx.xxx/prefix
+gw4(gateway) 밖으로 내보낼 때 xxx.xxx.xxx.xxx
+NAT(사설과 공용을 왔다갔다 할 때 통로가 gateway이다.)
+------------------------------------------------------------------------------------------------
+nmcli device : device 종류를 볼 수 있음.(랜카드 중 연결되어 있는 것을 확인할 수 있다.)
+
+nmcli connection show : connection 종류를 볼 수 있음
+
+nmcli con show "con-name" : connection의 자세한 정보
+
+nmcli con add 
+
+: con-name   (== connection.id)          - 연결이름
+: ifname     (== connection.interface)   - 연결할 인터페이스
+: type       (== connection.type)        - 통신방식
+: autoconnect(== connection.autoconnect) - 부팅시 자동연결 설정
+
+
+ls /etc/sysconfig/network-scripts/ifcfg-*
+------------유동IP 설정 가능(dhcp)----------
+
+고정IP 설정인 경우에는 아래 내용 추가
+
+:ip4         (== ipv4.addresses)   - ip주소 지정
+:gw4         (== ipv4.gateway)     - 게이트웨이 주소 지정
+
+ex)
+
+nmcli con add con-name "connection 이름" ifname 물리 장치 type ethernet autoconnect yes => dhcp 설정
+ex)nmcli connection add con-name dhcp1 ifname enp0s9 type ethernet autoconnect yes =>이걸 통해서 dhcp와 enp0s9을 맺어준다.
+(autoconnect 의 default는 yes이다.)
+
+(connection.id 이걸 통해서 수정을 한다. ,ipv4.method: auto, ipv4.addresses: --, ipv4.gateway: -- : 이유 유동 IP이므로)
+
+nmcli con reload
+
+ nmcli con show dhcp1
+
+nmcli con up "connection 이름" =>이걸 통해서 dhcp와 enp0s9을 연결시켜준다.
+연결하는 방법
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+nmcli con add con-name "connection 이름" ifname 물리 장치 type ethernet autoconnect yes ip4 "xxx.xxx.xxx.xxx/xx" gw4 "xxx.xxx.xxx.xxx" => 고정 아이피 설정
+nmcli con add con-name static1 ifname enp0s9 type ethernet ip4 192.168.56.150/24 gw4 192.168.56.1
+
+192.168.56.1 기본 gateway 주소
+
+nmcli con reload
+
+nmcli con up "connection 이름" 
+
+ nmcli con show  static1
+nmcli con up static1 => 활성화
+ip addr show enp0s9 => 연결 확인
+ipv4.method:                            manual
+ipv4.addresses:                         192.168.56.150/24
+ipv4.gateway:                           192.168.56.1
+
+
+dhcp1 => 고정 아이피로 수정 한다고 했을 때
+
+nmcli con mod dhcp1(con-name) ipv4.addresses "할당 아이피주소/프리픽스" ipv4.gateway "게이트웨이주소" ipv4.method manual connection.id 바꿀 con-name connection.interface-name (new device)
+
+nmcli con mod dhcp1(con-name) nmcli ipv4.addresses "할당 아이피주소/프리픽스" ipv4.gateway "게이트웨이주소" ipv4.method manual connection.id 바꿀 con-name connection.interface-name (new device)
+
+nmcli mod static2 ipv4.method manual=>오류 (왜? address, gateway를 지정을 안해줘서 오류가 난다.)
+
+nmcli con mod static2 ip4.address 192.168.160/24
+nmcli con mod ipv4.gateway 192.168.56.1
+nmcli con reload reload static2
+nmcli mod static2 ipv4.method manual
+
+nmcli con up static2
+ip addr show enp0s9 
+
+
+
+nmcli con mod static2 +ipv4.addresses 192.168.56.170/24 +ipv4.addresses 192.168.56.180/24
++ipv4.dns 8.8.8.8
+dns : 해당 이름에 대한 해당 ip 주소를 관리하는 서버
+ipv4.dns 8.8.8.8(구글 dns 주소이다.)
+
+nmcli con reload => dns 반영이 안 되어 있음을 알 수 있다. 재시작을 해줘야 하기 때문
+
+nmcli con up static2
+ip addr show enp0s9
+------------------------------------------------------------------------------------------
+랜카드에 ip 주소 삭제하는 방법 
+nmcli con mod static2 -ip4.addresses 192.168.56.180/24
+nmcli con reload
+nmcli con up static2
+ip addr show enp0s9
+
+nmcli con mod static2 -ip4.addresses 192.168.56.170/24
+nmcli con reload
+nmcli con up static2
+ip addr show enp0s9
+-----------------------------------------------------------------------------------------------
+수동 ip -> 유동 ip로 변경
+nmcli con mod static1 connection.id dhcp2 ipv4.method auto ipv4.address "" ipv4.gateway ""
+nmcli con reload
+nmcli con
+nmcli con show dhcp2
+
+
+
+---------------------------------------------------------------------
+
+vi /etc/sysconfig/network-scripts/ifcfg-*를 통해서 확인 가능
+
+bootproto = none ( 수동 ip) (유동일 때는 dhcp로 되어 있다.)
+onboot = no(수동 ip : IPADDR,PREFIX,GATEWAY, (선택 DNS) 존재 함)
+onboot = yes(유동 ip : IPADDR,PREFIX,GATEWAY, (선택 DNS) 존재 안함)
+
+
+호스트명 확인 hostname
+
+=> cat /etc/hostname확인하면 된다.
+
+호스트명 변경
+
+hostnamectl set-hostname 호스트명
+ex)hostnamectl set-hostname example.com
+
+cat /etc/hostname확인하면 된다. => example.com
+bash => [root@example]으로 나온다.(즉, 내 호스트가 무엇인가 확인할 때 사용한다.)
+
+--------------------------------------------------------------------------
+
+네트워크 실습
+
+초기 설정으로 초기화
+
+현재 IP 주소를  2가지 방법으로 확인해보시오.
+
+ifconfig
+
+ip addr
+
+add로 연결 생성
+
+dhcp1 => 유동IP
+
+nmcli con add con-name dhcp1 ifname enp0s9 type ethernet autoconnect yes
+
+nmcli con reload
+
+nmcli con 
+
+static => ip : 192.168.56.200/24, gw : 192.168.56.1 
+
+nmcli con add con-name static1 ifname enp0s9 type ethernet autoconnect yes ip4 "192.168.56.200/24" gw4 "192.168.56.1"
+
+nmcli con reload
+
+
+nmcli con
+
+modify 로 연결 수정
+
+- dhcp 연결을 static 으로 이름 변경 후 
+- 192.168.56.120으로 고정 아이피 설정
+- 192.168.100.30 주소 추가
+- 8.8.8.8 dns 설정 
+- 자동 연결 안되도록 수정
+- method maual 로 설정 후 네트워크 연결 확인
+
+nmcli con mod dhcp connection.id static ipv4.method manual ipv4.addresses 192.168.56.120/24 +ipv4.addresses 192.168.56.30/24 ipv4.gateway 192.168.56.1 ipv4.dns 8.8.8.8 connection.autoconnect no 
+
+nmcli con reload
+
+nmcli con 
+
+nmcli con up static
+
+ip addr show enp0s9
+
+192.168.56.200 주소를 제거하시오.
+
+nmcli con mod static -ipv4.address 192.168.56.200/24 
+
+nmcli con reload
+
+nmcli con up static
+
+ip addr show enp0s9
+
+hostname을 encore으로 설정
+
+hostnamectl set-hostname encore
+
+hostname
