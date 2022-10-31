@@ -85,6 +85,16 @@ Java Object-oriented programming Constructor2</a></li>
   <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/WEB/JavaScript/Sep19_2_Servlet_IO">JS with Servlet,jsp(validation)</a></li>
 </ol>
 
+### JSP
+<ol>
+ <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/WEB/JSP/Sep20_1_JSP_Basic/src/main/webapp">JSP Basic</a></li>
+ <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/WEB/JSP/Sep21_1_JSP_PageTrans/src/main/webapp">JSP PageTransport</a></li>
+ <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/WEB/JSP/Sep21_2_JSPModel2">JSP MVC Simulation</a></li>
+ <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/WEB/JSP/Sep21_3_JSPModel2_BMI">JSP MVC Simulation practice</a></li>
+ <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/WEB/JSP/Sep21_4_EL">JSP EL</a></li>
+ <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/WEB/JSP/Sep22_1_RSP">JSP RockscissorPaper transport</a></li>
+</ol>
+
 ### Servlet
 <ol>
  <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/WEB/Servlet/Sep13_3_Servlet/src/main/webapp">Servlet intro</a></li>
