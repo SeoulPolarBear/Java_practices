@@ -77,6 +77,14 @@ Java Object-oriented programming Constructor2</a></li>
   <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/WEB/CSS/Sep13_2_WebSite/src/main/webapp/css">WebSite</a></li>
 </ol>
 
+### JavaScript
+<ol>
+ <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/WEB/JavaScript/Sep15_2_JavaScript/src/main/webapp">JavaScript Variable,DataType,DialogBox,Cast</a></li>
+  <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/WEB/JavaScript/Sep16_1_JavaScripts/src/main/webapp">Js Conditional,RepeatStmt,Function</a></li>
+  <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/WEB/JavaScript/Sep19_1_JavaScript_ValidCheck/src/main/webapp">JS with Validation</a></li>
+  <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/WEB/JavaScript/Sep19_2_Servlet_IO">JS with Servlet,jsp(validation)</a></li>
+</ol>
+
 ### Servlet
 <ol>
  <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/WEB/Servlet/Sep13_3_Servlet/src/main/webapp">Servlet intro</a></li>
