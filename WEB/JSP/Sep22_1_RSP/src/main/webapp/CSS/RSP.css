@@ -1,0 +1,29 @@
+@charset "EUC-KR";
+@font-face{
+	font-family: OK CHAN;
+	src:url("OK CHAN.ttf");
+}
+
+body{
+	margin: 0;
+	background-image: url("pikachu.PNG");
+}
+
+#total{
+	font-family: OK CHAN;
+	text-align: center;
+	margin : 200px auto;
+	background-color: #DDE7E7;
+	border-radius: 10px;
+}
+
+#title{
+	background-color: orange;
+	font-size:32px;
+}
+
+.weapon{
+	width:200px;
+	height:200px;
+	margin: 10px;
+}
