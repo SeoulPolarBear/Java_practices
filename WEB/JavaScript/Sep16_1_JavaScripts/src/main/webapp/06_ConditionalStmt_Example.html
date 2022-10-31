@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function Result(money){
+		if(money >= 3000){
+			alert("콜라, 사이다, 닥터페퍼, 맥주, 소주 선택 가능");
+		}
+		else if(money >=2000){
+			alert("콜라, 사이다, 닥터페퍼, 맥주 선택 가능");
+		}
+		else if(money >=1000){
+			alert("콜라, 사이다, 닥터페퍼 선택 가능");
+		}
+		else if(money >=700){
+			alert("콜라, 사이다 선택 가능");
+		}
+		else if(money >=500){
+			alert("콜라 선택 가능");
+		}
+		else{
+			alert("선택할 수 있는 음료수 없음!");
+		}	
+	}
+	
+	let money = 0;
+	//1. 버튼 3개를 추가 (100,500,1000)텍스트 넣기
+	function won100(){
+		money += 100;
+		console.log("현재 금액 : " + money + "원");
+		Result(money);
+	}
+	function won500(){
+		money += 500;
+		console.log("현재 금액 : " + money + "원");
+		Result(money);
+	}
+	function won1000(){
+		money += 1000;
+		console.log("현재 금액 : " + money + "원");
+		Result(money);
+	}
+	function wonReturn(){
+		console.log("금액 : " + money + "원이 환급됩니다.");
+		money = 0;
+		console.log("현재 금액 : " + money + "원");
+	}
+	//2. 각 버튼에 기능 넣기
+	//3. 500 미만이면 : 선택할 수 있는 음료수 없음!
+	// 		500 이상이면 : 콜라 선택 가능
+	// 		700 이상이면 : 콜라, 사이다 선택 가능
+	// 		1000 이상이면 : 콜라, 사이다, 닥터페퍼 선택 가능
+	// 		2000 이상이면 : 콜라, 사이다, 닥터페퍼, 맥주 선택 가능
+	// 		3000 이상이면 : 콜라, 사이다, 닥터페퍼, 맥주, 소주 선택 가능
+	// 		=> alert으로 출력
+	//4. 돈쌓이는거 log로 확인
+</script>
+
+<style type="text/css">
+
+button{
+background-color: blue;
+color : pink;
+}
+
+div{
+border: solid black 1px;
+width: 224px;
+background-color: orange;
+color : purple;
+}
+</style>
+
+</head>
+<body>
+	<button onclick = "won100();">100원</button>
+	<button onclick = "won500();">500원</button>
+	<button onclick = "won1000();">1000원</button>
+	<button onclick = "wonReturn();">환급</button>
+	<br>
+	<br>
+	<div>
+	<div>콜라 : 500원</div>
+	<div>사이다 : 700원</div>
+	<div>닥터페퍼 : 1000원</div>
+	<div>맥주 : 2000원</div>
+	<div>소주 : 3000원</div>
+	</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
