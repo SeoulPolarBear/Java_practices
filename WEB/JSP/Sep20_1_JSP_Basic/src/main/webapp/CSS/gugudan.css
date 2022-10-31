@@ -1,0 +1,23 @@
+@charset "EUC-KR";
+
+#main{
+	background-color:aqua;
+	margin: auto;
+	color : navy;
+	border : solid gray 2px;
+}
+
+.main2{
+	background-color:aqua;
+	color : navy;
+	border : solid gray 2px;
+}
+
+.dan{
+	border : solid gray 2px;
+	background-color: orange;	
+}
+.gugu{
+	border : solid gray 2px;
+	background-color: pink;	
+}
