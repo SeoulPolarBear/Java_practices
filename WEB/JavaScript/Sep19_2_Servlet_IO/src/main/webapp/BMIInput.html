@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>BMI 측정 방법</title>
+<!-- 유효성검사, css -->
+<script type="text/javascript" src="./JS/PolarbearValidChecker.js"></script>
+<script type="text/javascript" src="./JS/CheckBMIValidation.js"></script>
+<link href="./CSS/BMI.css" rel="stylesheet">
+</head>
+<body>
+	<!-- 
+		table + form
+		BMI 검사 진행
+		필요한 정보 + 사진
+		이름 + 키 + 몸무게 + 사진
+	 -->
+	<!-- 그 정보를 가지고 계산을 해서 결과를 출력... => Servlet에서 실행 -->
+	<!--  -->
+	<div id="total">
+		<form action="BMICheck.jsp" name="ff" method="post"
+			onsubmit="return validData();" enctype="multipart/form-data">
+<!-- 		<form action="BMICheck" name="ff" method="post"
+			onsubmit="return validData();" enctype="multipart/form-data"> -->
+
+
+			<table id = "main">
+				<tr>
+					<td><h1 class="content texts">이름 :</h1></td>
+					<td><input class="item"  type="text" name="myName"></td>
+				</tr>
+				<tr>
+					<td><h1 class="content texts">키 :</h1></td>
+					<td><input class="item" type="text" name="myHeight"
+						></td>
+				</tr>
+				<tr>
+					<td><h1 class="content texts" >몸무게 :</h1></td>
+					<td><input class="item" type="text" name="myWeight"
+						></td>
+				</tr>
+				<tr>
+					<td><h1 class="content texts">사진 :</h1></td>
+					<td><input class="item photo" type="file" name="myPhoto"><br></td>
+				</tr>
+				<tr>
+					<td  colspan="2"><input class = "btn" type="submit" value="제출"></td>
+				</tr>
+			</table>
+
+		</form>
+	</div>
+</body>
+</html>
