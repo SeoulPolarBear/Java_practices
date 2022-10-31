@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function checkVaild(){
+		let idInput = document.ff.idd; //document.form이름.input이름으로 가져올 수 있다.
+		let pwInput = document.ff.passwd;
+		let pwCkInput = document.ff.passwdCheck;
+		let footInput = document.ff.footsize;
+		
+		//필수 검사
+		if(!idInput.value){
+			alert("ID를 입력해 주세요");
+			idInput.focus();	// 커서 갖다놓기
+			return false;
+		}else if(idInput.value.length < 5){
+			alert("5자리 이상 10 이하로 입력해 주세요");
+			idInput.focus();	// 커서 갖다놓기
+			idInput.value = ""; //기존에 썼던 거 지우기
+			return false;
+		}
+		
+		if(!pwInput.value){
+			alert("password를 입력해야 합니다.");
+			pwInput.focus();
+			return false;
+		}else if(pwInput.value.length < 5) {
+			alert("password의 길이는 5~10글자 입니다.");
+			pwInput.value = "";
+			pwInput.focus();
+			return false;
+		}
+		
+		if(pwInput.value !== pwCkInput.value){
+			alert("PW확인이 일치하지 않습니다.");
+			pwCkInput.value = "";
+			pwCkInput.focus();
+			return false;
+		}
+
+		//pw에 3,6,9 중에 하나 이상 / h,k 중에 하나 이상 들어가 있어야 한다...
+		let numExist = false;//숫자가 있는지 체크용
+		let num = "369";//이 중에 하나만 있어라!
+		
+		for(var i = 0; i < num.length; i++){
+			if(pwInput.value.indexOf(num[i]) != -1){// 들어있다면
+				numExist = true;
+				break;
+			}
+		}
+		
+		let letterExist = false;
+		let letter = "hk";
+		for (var i = 0; i < letter.length; i++){
+			if(pwInput.value.indexOf(letter[i]) != -1){
+				letterExist = true;
+				break;
+			}
+		}
+		
+		
+		if(!numExist || !letterExist){
+			alert(numExist);
+			alert(letterExist);
+			alert("pw에 3,6,9 중에 하나 이상 / h,k 중에 하나 이상 들어가 있어야 한다");
+			return false;
+		}
+		//발사이즈입력시 숫자값만 입력하게 해야 한다.
+		//js에서는 String이여도 자동으로 숫자로 인식해 주므로 
+		//바로 이렇게 사용할 수 있다.
+		if(isNaN(footInput.value)){
+			alert("발 사이즈는 숫자만 입력하세요");
+			footInput.value = "";
+			footInput.focus();
+			return false;
+		}
+
+			return true;	
+	}
+	
+/* 	let s = "오늘은 월요일인데 너무 졸려요 ;"
+	//alert(s);
+	alert(s.length);		//글자수
+	alert(s[5]);			//6번째 글자
+	alert(s.indexOf("h"));	// "졸"은 몇 번째 위치에 있을까
+	alert(s.indexOf("k"));	// "졸"은 몇 번째 위치에 있을까
+	alert(s.indexOf("악"));	// 결과 -1
+	alert(s.indexOf("매우") != 1);	// 결과 false
+	//	indexOf : 있으면 그 위치를 리턴, 없으면 -1을 리턴 
+	*/
+	
+	
+</script>
+
+</head>
+<body>
+	<!-- 
+		ID / PW / PW확인 / 발사이즈 / 버튼
+		return checkVaild(); 같은 경우 return true가 되어야지만 주소/ㅋㅋㅋ?...으로 넘어갈 수 있다.
+		따라서 onsubmit 시 return은 보내주는 page로 갈 때 사용된다.
+	 -->
+	<form action="ㅋㅋㅋ" name = "ff" onsubmit="return checkVaild();">
+		<fieldset>
+			<legend>인적사항</legend>
+				<table>
+					<tr>
+						<td>ID :</td>
+						<td><input name='idd' type="text" placeholder="5~10글자" maxlength="10" autofocus="autofocus"></td>
+					</tr>
+					<tr>
+						<td>PW :</td>
+						<td><input name='passwd' type="password" placeholder="5~10글자" maxlength="10"></td>
+					</tr>
+					<tr>
+						<td>PW확인 :</td>
+						<td><input name='passwdCheck' type="password" placeholder="5~10글자" maxlength="10"></td>
+					</tr>
+					<tr>
+						<td>발 사이즈 :</td>
+						<td><input name='footsize' type="text" placeholder="숫자만 쓰시오 (단위 : mm)"></td>
+					</tr>
+					<tr>
+						<td colspan="2" style = "border-top: solid black 1px">
+						<button id="btn" name="btn">submit</button></td>
+					</tr>
+				</table>
+		</fieldset>
+	</form>
+</body>
+</html>

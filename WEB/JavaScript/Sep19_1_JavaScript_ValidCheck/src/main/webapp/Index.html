@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript">
+	alert("sdfasdf");
+	//button을 더블클릭하면 주소?check=XXX로 GET방식 요청
+	function check1(){
+		//document : 이 html문서
+		let iiInput = document.getElementById("ii");//id가 ii인 것
+		//document.getElementByClass("ii");//class가 ii인 것
+		//document.getElementByTagName("input");//특정 태그명 (이 때는 배열 사용)
+		let iiInputVal = iiInput.value;
+		
+		location.href = "ㅋㅋㅋ?ii=" + iiInputVal;
+	}
+	
+</script>
+</head>
+<body>
+<!-- 
+	button을 더블클릭하면 주소?check=XXX로 GET방식 요청
+	<form> : 입력받앗서 요청할 때 필수품 - X
+	<form> : 입력받아서 요청할 때 편함 -  O ***
+	
+	주소 입력			- GET		
+	<a> 태그			- GET
+	<form> + <button>	- GET / POST
+	JavaScript			- GET		
+ -->
+	<input type = "text" id = "ii">
+	<!-- ondblclick 더블 클릭 -->
+	<button ondblclick="check1();">확인</button>
+</body>
+</html>
