@@ -1,0 +1,41 @@
+@charset "EUC-KR";
+@font-face{
+	font-family: OK CHAN;
+	src:url("OK CHAN.ttf");
+}
+body{
+	background-image: url("https://pbs.twimg.com/media/FWW7E7HWYAM8eSy.jpg");
+	font-family: OK CHAN;
+}
+#table-total{
+	background-color: pink;
+	margin-top: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 15px;
+	box-shadow: 30px 30px 30px #800000;
+}
+
+#title{
+	font-size: 24px;
+	border-bottom: solid black 2px;
+}
+
+.category{
+	text-shadow: 5px 3px 3px #DC143C;
+	border-bottom: solid black 2px;
+	border-right: solid black 2px;
+	font-size: 32px;
+}
+
+.contents{
+	border-bottom: solid black 2px;
+}
+.photos{
+	width: 300px;
+	height: 300px;
+}
+
+#result{
+	font-size: 32px;
+}
