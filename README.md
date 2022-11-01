@@ -93,6 +93,12 @@ Java Object-oriented programming Constructor2</a></li>
  <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/WEB/JSP/Sep21_3_JSPModel2_BMI">JSP MVC Simulation practice</a></li>
  <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/WEB/JSP/Sep21_4_EL">JSP EL</a></li>
  <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/WEB/JSP/Sep22_1_RSP">JSP RockscissorPaper transport</a></li>
+ 
+ <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/WEB/JSP/Sep22_2_NB">JSP Number baseball practice</a></li>
+ <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/WEB/JSP/Sep23_1_CustomTag/src/main/webapp">JSP Custom Tag</a></li>
+ <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/WEB/JSP/Sep23_2_Website">JSP jsp:include</a></li>
+ <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/WEB/JSP/Sep23_3_CustomTag">JSP JSTL</a></li>
+ <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/WEB/JSP/Sep26_1_JSP_DB">JSP MVC with JDBC</a></li>
 </ol>
 
 ### Servlet
