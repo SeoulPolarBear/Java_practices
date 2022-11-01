@@ -1,0 +1,35 @@
+@charset "EUC-KR";
+@font-face{
+	font-family: OK CHAN;
+	src: url("OK CHAN.ttf");
+}
+
+body{
+	background-image: url("https://img1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/6GlL/image/RABTPwU4lfTwFZPRD4aeox7Jpz0.jpg");
+	background-size: 100%;
+}
+#Total {
+	font-family: OK CHAN;
+	width: 100%;
+}
+
+#siteTitle {
+	text-align: left;
+	font-size : 32px;
+	color: navy;
+	text-shadow: 5px 2px 2px skyblue;
+}
+
+#siteMenu{
+	border-bottom: solid black 2px; 
+	border-top: solid black 2px;
+}
+
+#siteMenu a{
+	/* float: left; */
+	text-align: center;
+	margin-left: 200px;
+	margin-right: 200px;
+	font-size : 32px;
+	 text-decoration: none;
+}

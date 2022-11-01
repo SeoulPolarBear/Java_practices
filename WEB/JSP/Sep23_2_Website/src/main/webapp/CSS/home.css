@@ -1,0 +1,13 @@
+@charset "EUC-KR";
+
+@font-face{
+	font-family: OK CHAN;
+	src: url("OK CHAN.ttf");
+}
+
+#homeTbl{
+	font-size: 32px;
+	margin: auto;
+	color : rgb(255,143,71);
+	text-shadow: 5px 5px 2px blue;
+}
