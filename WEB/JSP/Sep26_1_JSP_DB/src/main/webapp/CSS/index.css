@@ -1,0 +1,53 @@
+@charset "EUC-KR";
+@font-face{
+	font-family: OK CHAN;
+	src: url("OK CHAN.ttf");
+}
+
+body{
+	font-family: OK CHAN;
+	background-image: url("https://st.depositphotos.com/1291951/3297/i/450/depositphotos_32973113-stock-photo-blue-sky.jpg");
+	background-size: 100%;
+	text-decoration: none;
+	text-shadow: 5px 2px 2px #80ff80;
+}
+
+#title-bar{
+	background-color: pink;
+}
+
+#title{
+	text-decoration: none;
+	background-color: pink;
+}
+
+
+#main-content{
+	margin:auto;
+	text-align: center;
+	font-size: 32px;
+	
+}
+
+#menu-bar{
+	position: fixed;
+	left: 0px;
+	bottom: 0px;
+	width: 100%;
+	height: 30px;
+	text-align: center;
+	font-size: 32px;
+	border: solid 2px orange;
+	background-color: white;
+}
+
+.mini{
+	border-left: solid 2px orange; 
+}
+
+.mini-bar{
+	text-decoration: none;
+	color: black;
+
+}
+

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="EUC-KR"?>
+<Context>
+	<Resource
+		name ="polarbearPool"
+		type="javax.sql.DataSource"
+		driverClassName="oracle.jdbc.driver.OracleDriver"
+		factory="org.apache.tomcat.dbcp.dbcp2.BasicDataSourceFactory"
+		username="babypolarbear"
+		password="78910"
+		url="jdbc:oracle:thin:@203.252.32.74:1521:xe"
+		maxTotal="500"
+		maxIdle="100"
+/>
+</Context>
+
+<!-- databasePool이란 데이터베이스와 Connection한 객체들을 
+미리 생성해 Pool에 저장해두었다가, 
+클라이언트의 요청이 들어올 때마다 사용/반환하는 방식 -->
+<!-- maxTotal="500" 튜브 몇 개까지 만들지 
+	maxIdle="100" 튜브 몇개 까지 가용할지
+-->
