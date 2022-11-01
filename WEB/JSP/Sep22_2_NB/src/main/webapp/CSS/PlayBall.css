@@ -1,0 +1,47 @@
+@charset "EUC-KR";
+@font-face{
+	font-family: OK CHAN;
+	src:url("OK CHAN.ttf");
+}
+body{
+	background-image: url("Number.PNG");
+	background-size: 25%;
+}
+
+
+#play{
+	margin: auto;
+	font-size: 32px;
+	border-radius: 10px;
+	font-family: OK CHAN;
+	text-shadow: 5px 5px 2px pink;
+	box-shadow: 10px 10px 5px black;
+	text-align: center;
+	background-color: green;
+}
+
+#title{
+	background-color: red;	
+}
+.title2{
+	background-color: #7B3F00;
+}
+
+.category{
+	background-color: orange;
+}
+.btn{
+	font-family: OK CHAN;
+	
+	background-color: white;
+	font-size: 24px;
+	border: solid 2px red;
+	border-radius: 50%;
+	height: 75px;
+	width: 75px;
+}
+#input-num{
+	font-size: 32px;
+	
+	
+}
