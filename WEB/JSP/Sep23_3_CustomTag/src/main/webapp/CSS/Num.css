@@ -1,0 +1,10 @@
+@charset "EUC-KR";
+
+#total{
+	text-align: center;
+	background-color: yellow;
+	text-shadow: 5px 2px 2px skyblue;
+	color: orange;
+	margin: auto;
+	font-size: 32px;
+}
