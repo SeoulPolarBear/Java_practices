@@ -1,0 +1,5 @@
+﻿  main.c
+C:\Users\SungHwan\source\repos\Backjoon_Circulator_Queue\Backjoon_Circulator_Queue\main.c(108,3): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\SungHwan\source\repos\Backjoon_Circulator_Queue\Backjoon_Circulator_Queue\main.c(138,2): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\SungHwan\source\repos\Backjoon_Circulator_Queue\Backjoon_Circulator_Queue\main.c(139,2): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  Backjoon_Circulator_Queue.vcxproj -> C:\Users\SungHwan\source\repos\Backjoon_Circulator_Queue\Debug\Backjoon_Circulator_Queue.exe
