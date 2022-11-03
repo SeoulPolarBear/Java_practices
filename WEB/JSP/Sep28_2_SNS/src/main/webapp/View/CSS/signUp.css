@@ -1,0 +1,9 @@
+@charset "EUC-KR";
+
+#signup-table{
+	text-align: center;
+	color: white;
+	background-color: black;
+	border: solid 5px 5px 2px white;
+	font-size: 32px;
+}
