@@ -85,6 +85,16 @@ Java Object-oriented programming Constructor2</a></li>
   <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/WEB/JavaScript/Sep19_2_Servlet_IO">JS with Servlet,jsp(validation)</a></li>
 </ol>
 
+### Servlet
+<ol>
+ <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/WEB/Servlet/Sep13_3_Servlet/src/main/webapp">Servlet intro</a></li>
+ <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/WEB/Servlet/Sep14_1_Servlet">Servlet Writer</a></li>
+  <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/WEB/Servlet/Sep14_1_Servlet1">Servlet Writer2</a></li>
+<li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/WEB/Servlet/Sep14_2_Servlet1">Servlet Writer3</a></li>
+<li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/WEB/Servlet/Sep14_3_Servlet">Servlet Writer4 print</a></li>
+<li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/WEB/Servlet/Sep15_1_Servlet">Servlet Multipart</a></li>
+</ol>
+
 ### JSP
 <ol>
  <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/WEB/JSP/Sep20_1_JSP_Basic/src/main/webapp">JSP Basic</a></li>
@@ -97,17 +107,10 @@ Java Object-oriented programming Constructor2</a></li>
  <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/WEB/JSP/Sep23_1_CustomTag/src/main/webapp">JSP Custom Tag</a></li>
  <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/WEB/JSP/Sep23_2_Website">JSP jsp:include</a></li>
  <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/WEB/JSP/Sep23_3_CustomTag">JSP JSTL</a></li>
- <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/WEB/JSP/Sep26_1_JSP_DB">JSP MVC with JDBC</a></li>
-</ol>
-
-### Servlet
-<ol>
- <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/WEB/Servlet/Sep13_3_Servlet/src/main/webapp">Servlet intro</a></li>
- <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/WEB/Servlet/Sep14_1_Servlet">Servlet Writer</a></li>
-  <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/WEB/Servlet/Sep14_1_Servlet1">Servlet Writer2</a></li>
-<li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/WEB/Servlet/Sep14_2_Servlet1">Servlet Writer3</a></li>
-<li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/WEB/Servlet/Sep14_3_Servlet">Servlet Writer4 print</a></li>
-<li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/WEB/Servlet/Sep15_1_Servlet">Servlet Multipart</a></li>
+ <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/WEB/JSP/Sep26_1_JSP_DB">JSP MVC with JDBC</a></li> 
+ <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/WEB/JSP/Sep27_1_JSP">JSP Session,Cookie</a></li>
+ <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/WEB/JSP/Sep28_1_LoginSystem">JSP Login</a></li>
+ <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/WEB/JSP/Sep28_2_SNS">JSP practice make page like SNS</a></li>
 </ol>
 
 # Linux -2022-the first half
