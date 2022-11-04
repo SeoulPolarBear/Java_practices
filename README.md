@@ -113,7 +113,7 @@ Java Object-oriented programming Constructor2</a></li>
  <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/WEB/JSP/Sep28_2_SNS">JSP practice make page like SNS</a></li>
 </ol>
 
-### Spring
+# Spring
 <ol>
  <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/Spring/Oct04_1_Maven">Maven</a></li>
  <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/Spring/Sep29_1_SpringMVC">Spring MVC</a></li>
