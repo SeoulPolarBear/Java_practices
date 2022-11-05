@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.polarbear.oct042.test.TestMapper">
+<insert id="reqTest" parameterType="com.polarbear.oct042.test.Test">
+	insert into oct04_test values(oct04_test_seq.nextval,#{t_subject},#{t_date},#{t_s_no})
+</insert>
+
+<select id="getAllTest" resultType="com.polarbear.oct042.test.Test">
+	select * from oct04_test order by t_no
+</select>
+</mapper>

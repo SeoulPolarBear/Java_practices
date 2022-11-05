@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.polarbear.oct042.student.StudentMapper">
+	<insert id="reqStudent" parameterType="com.polarbear.oct042.student.Student">
+	insert into oct04_student values(oct04_student_seq.nextval, #{s_name},#{s_nickname})
+	</insert>
+	
+	<select id="getAllStudent" resultType="com.polarbear.oct042.student.Student">
+	select * from oct04_student order by s_no
+	</select>
+	
+</mapper>
