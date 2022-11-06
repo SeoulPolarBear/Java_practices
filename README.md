@@ -85,6 +85,21 @@ Java Object-oriented programming Constructor2</a></li>
   <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/WEB/JavaScript/Sep19_2_Servlet_IO">JS with Servlet,jsp(validation)</a></li>
 </ol>
 
+### jQuery
+<ol>
+ <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/WEB/jQuery/Oct05_1_jQuery/WebContent">jQuery1</a></li>
+  <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/WEB/jQuery/Oct06_1_jQuery/WebContent">jQuery2</a>
+</li>
+</ol>
+
+##### AJAX
+<ol>
+ <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/WEB/jQuery/Ajax/Oct06_2_AJAXServer">Ajax1</a></li>
+<li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/WEB/jQuery/Ajax/Oct07_1_AJAXServer">Ajax2</a></li>
+<li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/WEB/jQuery/Ajax/Oct07_2_AJAXServer/WebContent">Ajax3</a></li>
+<li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/WEB/jQuery/Ajax/Oct07_3_AJAXServer">Ajax4</a></li>
+</ol>
+
 ### Servlet
 <ol>
  <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/WEB/Servlet/Sep13_3_Servlet/src/main/webapp">Servlet intro</a></li>
