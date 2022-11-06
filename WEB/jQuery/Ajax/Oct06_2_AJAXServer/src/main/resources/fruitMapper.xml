@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.polarbear.oct06.fruit.FruitMapper">
+<select id="getAllFruit" resultType="com.polarbear.oct06.fruit.Fruit">
+	select * from oct06_fruit order by f_price
+</select>	
+<!-- &lt; 미만 -->
+<select id="getPriceFruit" parameterType="com.polarbear.oct06.fruit.Fruit" resultType="com.polarbear.oct06.fruit.Fruit">
+	select * from oct06_fruit where f_price &lt;= #{f_price} order by f_price 
+</select>	
+</mapper>
