@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.polarbear.oct071.error.ErrorMapper">
+	<select id="getAllError" resultType="com.polarbear.oct071.error.Error">
+		select * from oct07_error order by e_where
+	</select>
+	
+	<select id="getSearchError" 
+	parameterType="com.polarbear.oct071.error.Error"
+	resultType="com.polarbear.oct071.error.Error">
+		select * from oct07_error where e_what like '%'||#{e_what}||'%' order by e_where 
+	</select>
+</mapper>
