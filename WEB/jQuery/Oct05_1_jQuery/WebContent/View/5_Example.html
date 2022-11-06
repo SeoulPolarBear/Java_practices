@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="../js/jQuery.js"></script>
+<script type="text/javascript">
+	// zzzzzzzzz : 글자색 : green / 배경색 : red
+	// gggggggggg : 글자색 : yellow / 배경색 : blue
+	// bbbbbbbbbb : 글자색 : pink / 배경색 : teal
+	$(function(){
+		
+	
+	const colors =  [
+		{
+		font1 : "green",
+		background1 : "red"
+		},
+		{
+		font1 : "yellow",
+		background1 : "blue"
+		},
+		{
+		font1 : "pink",
+		background1 : "teal"
+		},
+	];
+	
+	/* pt와 px 
+	pt : 글자 크기(한글에서 쓰는 것과 같은 느낌)
+	px : pixel 크기
+	*/
+	$("td").each((i, t) =>{
+		$(t).css({"font-size" : "24pt", "color" : `${colors[i].font1}`, 
+			"background-color" : `${colors[i].background1}`});
+		/* $(t).css("font-size", "24pt"); 
+		$(t).css("color", colors[i].font1); 
+		$(t).css("background-color", colors[i].background1);  */
+	});
+	
+	//setInterval()을 이용해서
+	// 처음시작 사진 ~ 끝 사진까지 한장씩 넘어가면서 보여주기
+	// 마지막 사진을 출력하며 -> 다시 처음부터 시작하는...!
+	
+	let b = true;
+	$("button").click(()=>{
+		if(b){
+			let i = 1;
+			setInterval(()=>{
+					$("#voice").attr("src",`../css/voice/voice${i}.png`);
+					if(i === 7){
+						i = 0;
+					}
+					i++;
+			},50);
+			b = !b;
+		}else{
+			$("#voice").attr("src","../css/voice/voice1.png");
+			b = !b;
+		}
+	});
+	});
+</script>
+</head>
+<body>
+	<table>
+		<tr>
+			<td>zzzzzz</td>
+		</tr>
+		<tr>
+			<td>gggggg</td>
+		</tr>
+		<tr>
+			<td>bbbbbb</td>
+		</tr>
+	</table>
+	
+	<img id="voice" width="200px" height="200px">
+	<button>멈춰!</button>
+</body>
+</html>

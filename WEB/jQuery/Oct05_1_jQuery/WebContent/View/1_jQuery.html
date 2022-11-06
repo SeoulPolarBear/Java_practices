@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>jQuery</title>
+<script type="text/javascript" src="../js/jQuery.js"></script>
+<script type="text/javascript">
+
+	//$(선택자).이벤트(콜백 함수);
+/* 	$(document).ready(function init(){ // 이(문서).준비 다 되면(자동 호출될 함수);
+		alert("준비 완료!");
+	}); */
+	//요약시
+	$(function(){
+		alert("준비 완료!");
+	});
+	
+	//CSS 선택자 이용
+	// 다음과 같이 모든 함수들은 $(function(){}에 들어가 있어야 한다. 
+	//ready가 되어야 하기 때문에
+	$(function(){
+		// h1 클릭 후 h2 클릭하면 와우 뜸
+		$("h1").click(function(){
+			$("h2").click(() => {
+				alert("와우");
+			});
+		});
+	
+	
+	//스위치 기능
+	let b = false;
+	
+	$("h3").click(function(){
+		b = !b;
+		alert(b);
+		});
+	
+	let iInput = $("#i");
+	alert(iInput);
+	
+	//html에 있는 <button>에
+	//클릭 이벤트가 발생하면 콜백함수가 자동으로 호출되도록 연결
+	$("button").click(function(){
+		alert(iInput.val());
+		});
+	
+	// 이벤트 하나에 함수를 여러개 연결 가능 O
+	
+	});
+</script>
+</head>
+<body>
+	<h1>다들 너무 피곤해보이시네요 !</h1>
+	<h2>와아아아 근데 아직 수요일이에요</h2>
+	<h3>주말까지 한참 남았어요 ^_^</h3>
+	<hr>
+	<input id="i">
+	<button>출력</button>
+	<hr>
+	<button>Print</button>
+</body>
+</html>

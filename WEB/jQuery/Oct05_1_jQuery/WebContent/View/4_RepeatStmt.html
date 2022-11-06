@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="../js/jQuery.js"></script>
+<script type="text/javascript">
+//	JavaScript
+//		배열 : 대괄호 []
+//		객체 : 중괄호 {}
+$(function(){
+	let arr = [1,46,3,86,123];
+	let obj = {menu : "초밥", price : 15000};
+	
+	// 배열 속에 객체
+	// 이 형태로 DB에 있는 데이터를 포현한 것 : JSON
+	let arrobj = [
+		{
+			menu : "라면",
+			price : 4000
+		},
+		{
+			menu : "김밥",
+			price : 3000
+		},
+		{
+			menu : "돈까스",
+			price : 7000
+		},
+	];
+	
+	//JavaScript의 배열 대상 반복문
+	//	for(var i = 0; ...)		- 인덱스 활용도가 높은 편
+	//	for(Menu m : arrobj) 	- 객체에 순서대로 접근이 용이한 편
+	//	$.each(배열, 데이터 하나 만날 때마다 호출될 콜백함수)
+	//		- 인덱스도 가지고 있고, 객체에 접근하기에도 용이함
+	
+	//배열에서 i와 lunch는 각각 index와 배열 값을 넣어 줬다고 생각하면 된다.
+	$.each(arrobj, (i, lunch) =>{
+		alert(i + 1 + ")" + lunch.menu + ":" + lunch.price);
+	});
+	
+	//DOM객체 대상 반복문
+	//$(선택자).each(DOM객체 하나 만날때마다 호출될 콜백함수)
+	
+	//h1 -> 순서대로 글자의 크기가 10 / 20 / 30 pt가 되도록
+	//i : index, h : 각 index에 해당하는 선택자
+	$("h1").each((i,h)=>{
+		$(h).css("font-size", (i + 1) * 10 + "pt");
+	});
+});
+</script>
+</head>
+<body>
+	<h1>ㅋㅋㅋ</h1>
+	<h1>ㅎㅎㅎ</h1>
+	<h1>ㅠㅠㅠ</h1>
+</body>
+</html>

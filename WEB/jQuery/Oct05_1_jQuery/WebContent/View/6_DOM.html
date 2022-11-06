@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="../js/jQuery.js"></script>
+<script type="text/javascript">
+$(function(){
+	//내용 수정 클릭 후 네이버로를 바꿈
+	$("#b1").click(()=>{
+		
+		//a태그로 이루어진 DOM객체 속 text 바꾸기
+		//text()의 소괄호 안에 값을 넣지 않으면
+		//기존의 값을 가져오게 됨
+		//$("a").text("유튜브로")
+		//.attr("href","https://www.youtube.com");
+		
+		//.text()와 비교할 .html() 메소드
+		//$("a").html("유튜브로");
+		
+		// a의 값을 굵게 만들고 싶다.
+		//text 사용시 tag가 그대로 글자로 나타났다.
+		//html 을 사용하게 되면 새로운 html 요소로 변경할 수 있다.
+		//$("a").text("<b>유튜브로</b>");
+		$("a").html("<b>유튜브로</b>");
+		
+	});
+	
+	//attr 추가 혹은 변경으로 사용 된다.
+	$("#b2").click(()=>{
+		$("a").attr("href","https://www.youtube.com");
+		$("a").attr("target","_blank");
+		
+		//이 a 태그에 css를 주고 싶은데 부여할게 많다면 id도 부여할 수 있음
+		$("a").attr("id","t");
+		
+		//속성 지우기
+		$("a").removeAttr("class"); //"class"가 가지고 있는 속성 지우기	
+	});
+	
+	let n = 0;
+	$("#b3").click(()=>{
+		// $("css선택자") or $("변수명") : 있는 것을 선택
+		// $("DOM객체") : DOM객체를 생성
+		//marquee DOM객체 추가하기
+		
+		n++;
+		
+		let m = $("<marquee></marquee>").text("테스트입니다." + n + "번째");
+		// behavior : 스크롤방식 설정
+		// 		scroll : 한쪽 방향으로만 진행 (default)
+		//		alternate : 왕복
+		m.attr("behavior","alternate");
+		
+		//direction : 스크롤방향 설정
+		//		left(default), right, up, down
+		m.attr("direction", "right");
+		
+		// 요소 추가하기
+		// 기존 요소의 내부에 추가 - append, prepend
+		//append : stack, prepend : queue
+		//$("div").append(m);//선택된 요소의 마지막에 내용 추가
+		$("div").prepend(m);//선택된 요소의 첫번째에 내용 추가
+		
+		// 기존 요소의 외부에 추가 - before, after
+		//before : stack, after : queue
+		$("div").before(m);//선택된 요소의 마지막에 내용 추가
+		$("div").after(m);//선택된 요소의 첫번째에 내용 추가
+	
+	});
+	
+	$("#b4").click(function(){
+		//remove()	: DOM객체 + 그 하위 요소들을 전부 제거함
+		//$("div").remove();
+		//empty() 	: DOM객체 하위 요소들을 전부 제거함
+		$("div").empty();
+	});
+	
+	
+	// tr td 만들자 
+	$("#submitMenu").click(()=>{
+		let menu =  $("#menu").val();
+		let price =  $("#price").val();
+		
+		let m = $("<td></td>").html(menu);
+		let p = $("<td></td>").html(price);
+		
+		let r = $("<tr></tr>").append(m,p);
+		
+		$("#result").append(r);
+		
+		$("#menu").val("");
+		$("#price").val("");
+	});
+});
+</script>
+
+<style type="text/css">
+.t2 {
+	font-size: 30pt;
+}
+
+#t {
+	background-color: pink;
+	color: white;
+}
+
+div {
+	border: pink solid 3px;
+	width: 300px;
+	height: 300px;
+}
+</style>
+</head>
+<body>
+	
+	메뉴 :<input id = "menu"><p>
+	가격 :<input id = "price"><p>
+		<button id="submitMenu">등록</button>
+	<hr>
+	<table border = "1" id = "result">
+		<tr>
+			<th>메뉴명</th>
+			<th>가격</th>
+		</tr>
+	</table>
+
+	<a href="https://www.naver.com" class="t2">네이버로</a>
+	<hr>
+	<button id="b1">내용 수정</button>
+	<p>
+		<button id="b2">속성 수정</button>
+	<p>
+		<button id="b3">DOM객체 수정</button>
+	<p>
+		<button id="b4">DOM객체 삭제</button>
+	<p>
+	<div></div>
+</body>
+</html>

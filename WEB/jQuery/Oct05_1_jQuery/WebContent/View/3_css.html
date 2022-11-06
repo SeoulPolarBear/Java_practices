@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="../js/jQuery.js"></script>
+<style type="text/css">
+	img{
+		position: fixed;
+		width : 20px;
+		height : 20px;
+		transition: all 0.5s ease-out;
+	}
+	#t{
+	position: fixed;
+		top: -83px;
+		transition: all 0.5s ease-out;
+	}
+	/*투명도만 조절(사라지지는 않아서 메뉴가 눌러짐) */
+	/* display: none -> 아예 없애기(메뉴도 안 눌러짐 + 애니메이션 효과 발동 x) */
+	/* display: hidden -> 아예 없애기(메뉴도 안 눌러짐 + 애니메이션 효과 발동 x) */
+	#t2{
+	position: fixed;
+		top: 0px;
+		opacity: 0;
+		right: 7px;
+		transition: all 0.5s ease-out;
+	}
+	
+	button{
+	position: fixed;
+	top: 150px;
+	}
+	
+</style>
+<script type="text/javascript">
+	$(function(){
+	
+		//setInterval : JavaScript의 반복 함수
+		//		일정한 시간 간격으로 코드를 반복실행
+		//setTimeout : 정해진 시간 간격에 코드가 한번 실행하는 함수
+		setInterval(() => {
+			let x = Math.random() * 500;
+			let y = Math.random() * 500;
+			$("img").css("top", y + "px");
+			$("img").css("left", x + "px");
+		},1000);
+		
+		let tVisible = false;
+		$("#tHandle").click(() =>{
+			if(!tVisible){
+				$("#t").css("top", "5px");
+			}else{
+				$("#t").css("top", "-83px");
+			}
+			tVisible = !tVisible;
+		});
+		/* mouseenter() : 그 영역에 마우스 커서 들어갔을 때 이벤트가 발생 */
+		/* mouseleave() : 그 영역밖에 마우스 커서 들어갔을 때 이벤트가 발생 */
+		$("#t2").mouseenter(function(){
+			$("#t2").css("opacity",1)
+		});
+		$("#t2").mouseleave(function(){
+			$("#t2").css("opacity",0)
+		});
+		
+		let b = false;
+		/* attr() : 속성을 가져오거나 추가하는 기능 */
+		$("button").click(function(){
+			if(!b){
+				$("img").attr("src","../css/earth-grid-symbol.png");
+			}else{
+				$("img").attr("src","../css/fractal.png");
+			}
+			b = !b;
+		});
+		
+	});
+</script>
+
+</head>
+<body>
+<img alt="fractal" src="../css/fractal.png">
+	<table border="1" id="t">
+		<tr>
+			<td><a target ="_blank" href="https://www.naver.com">네이버로</a></td>
+		</tr>
+		<tr>
+			<td><a target ="_blank" href="https://www.youtube.com">유튜브로</a></td>
+		</tr>
+		<tr>
+			<td><a target ="_blank" href="https://www.google.com">구글로</a></td>
+		</tr>
+		<tr>
+			<td id="tHandle">|	|	|	|	|	|</td>
+		</tr>
+		
+	</table>
+	<table border="1" id="t2">
+		<tr>
+			<td><a target ="_blank" href="https://www.naver.com">네이버로</a></td>
+		</tr>
+		<tr>
+			<td><a target ="_blank" href="https://www.youtube.com">유튜브로</a></td>
+		</tr>
+		<tr>
+			<td><a target ="_blank" href="https://www.google.com">구글로</a></td>
+		</tr>
+	</table>
+	
+	<button>이미지 바꾸기</button>
+
+</body>
+</html>
