@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="../js/jQuery.js"></script>
+<script type="text/javascript">
+$(function(){
+	
+	$("button").click(function asdf(){
+		//$(this) : 클릭이벤트 콜백함수인 asdf()를 호출한 장본인
+		//		누른 버튼만 해당하는 명령을 실행하도록!
+		$(this).css("background-color","red");
+		
+		//누른 버튼이 있는 td에 배경색을 주기
+		//parent() : 내가 누른 this의 한단계 상위 객체
+		// cf) 그 반대로는 children()
+		$(this).parent().css("background-color","teal");
+	
+		//눌러진 버튼이 있는 table의 테두리를 파란색으로...
+		//closest("CSS선택자") : 상위에 있는 것 중에서 가장 가까운 CSS선택자
+		// cf) 특정한 선택자 찾기 : find("CSS선택자") : 하위객체 중에서 특정한(CSS선택자) 것
+		$(this).closest("table").css("border","blue solid 3px");
+	});
+	
+	$("td").click(function bb(){
+		$(this)
+		// td를 클릭했을 때 눌러진 td의 배경색을 노란색...
+		.css("background-color","yellow")
+		// td를 클릭했을 때 그 td속에 들어있는 모든 것들의 배경색을 핑크색으로...
+		.children().css("background-color","pink");
+		// td를 클릭했을 때 그 td속에 들어있는 버튼의 테두리색(색 자유)
+		$(this).find("button").css("border","red solid 10px");
+	});
+	
+	//input에 쓴 글자가(입력하고 버튼 눌렀을 때) 버튼 글자색이 되도록!
+	$("button").click(function cc(){
+		//let c = $(this).parent().find("input").val();
+		//siblings() : 동일선상에 있는 특정 선택자
+		let input_color = $(this).siblings("input").val();
+		$(this).css("color",input_color);
+	});
+});
+</script>
+
+<style type="text/css">
+	td{
+		height: 100px;
+	}
+	
+	input{
+		height: 50px;
+	}
+	
+	button{
+		width : 100px;
+		height : 50px;
+	}
+	
+</style>
+</head>
+<body>
+	<table border="1">
+	<tr>
+		<td>
+			<input> <button>1111111111111</button>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<input> <button>222222222222</button>
+		</td>
+	</tr>
+	</table>
+	<table border="1">
+	<tr>
+		<td>
+			<input> <button>333333333333</button>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<input> <button>444444444444</button>
+		</td>
+	</tr>
+	</table>
+</body>
+</html>

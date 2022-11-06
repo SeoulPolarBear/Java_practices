@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="../js/jQuery.js"></script>
+<script type="text/javascript">
+
+$(function(){
+	
+	//input에서 keyboard를 누르면 >> 누른 순간에
+	/* $("input").keydown(function() {
+		$("h1").text("키보드를 누르는 동안");
+		return false; // (이벤트)기능을 발동하기 전에 return false;가 있으면,
+						// 원래 기능을 못하도록 막을 수 있음
+	}); */
+	
+	//특정 키를 눌렀을 때 뭔가 하고 싶다면
+	//e : 발동된 event이다 변수 이름은 아무거나 해도 되긴 함
+	$("input").keydown(function(e){
+		$("h1").text(e.keyCode);// 키보드 아스키 값 : 모든 키에는 고유한 값이 있음
+	
+		if(e.keyCode == 13){ // enter키 : 13
+			alert("와우~");
+		} else if (e.keyCode == 65){
+			return false;
+		}else if (e.keyCode == 83){
+			let t = $("input").val();
+			$("input").val(t + "ㅋ");
+			return false;
+		}
+	});
+	
+	// keyboard에서 손 떼면...
+	$("input").keyup(function(){
+		$("h1").text("키보드에서 손 떼면");
+	});
+	
+	
+	// html자체에도 keydown이벤트를 심을 수 있음
+	let l = 0;
+	let r = 0;
+	$("html").keydown(function(e){
+/* 		if(e.keyCode == 116){//f5키
+			return false;// 현재 이 웹사이트의 f5키 봉인(새로고침 못하게)
+		} */
+		
+		if(e.keyCode == 39){
+			l += 5;
+			$("h2").css("left", l + "px");
+		}
+		if(e.keyCode == 37){
+			l -= 5;
+			$("h2").css("left", l + "px");
+		}
+		if(e.keyCode == 38){
+			r -= 5;
+			$("h2").css("top", r + "px");
+		}
+		if(e.keyCode == 40){
+			r += 5;
+			$("h2").css("top", r + "px");
+		}
+		
+	});
+});
+</script>
+<style type="text/css">
+	h2{
+	/* 기본은 고정이지만, 좌표조절이 가능 */
+		position : fixed;
+	}
+	
+</style>
+</head>
+<body>
+	<h2>텍스트</h2>
+	<input>
+	<h1></h1>
+</body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="../js/jQuery.js"></script>
+<script type="text/javascript">
+	$(function() {
+		//.offset()은 선택한 요소의 좌표를 가져오거나 특정 좌표로 이동시킵니다.
+		let swhere = $("#spa").offset().top;
+		let kwhere = $("#kkk").offset().top;
+		let gwhere = $("#ggg").offset().top;
+		
+		$("#spaMenu").click(function(){
+			$("html").animate({
+				scrollTop:swhere - 50
+			});
+		});
+		$("#kkkMenu").click(function(){
+			$(window).scrollTop(kwhere-50);
+		});
+		$("#hhhMenu").click(function(){
+			$("html").animate({
+				scrollTop:gwhere-50
+			},1000);// 해당 메뉴까지 스크롤에 애니메이션 효과(슈루루루룩~)
+		});
+		
+	});
+	</script>
+	
+	<style type="text/css">
+	table{
+		position:fixed;
+		top: 0px;
+		left: 0px;
+		width: 100%;
+		background-color: pink;
+	}
+	
+	</style>
+</head>
+<body>
+	<table border="1">
+		<tr>
+			<td id="spaMenu">SPA</td>
+			<td id="kkkMenu">zzz</td>
+			<td id="hhhMenu">ggg</td>
+		</tr>
+	</table>
+	<h1 id="spa">SPA</h1>
+	<h2>Single Page Application</h2>
+	<h3>사이트 전체가 한 페이지로 구성</h3>
+	<h1 id="kkk">zzz</h1>
+	zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<br>zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<br>
+	zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<br>zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<br>
+	zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<br>zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<br>
+	zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<br>zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<br>
+	zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<br>zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<br>
+	zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<br>zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<br>
+	zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<br>zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<br>
+	zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<br>zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<br>
+	zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<br>zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<br>
+	zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<br>zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<br>
+	zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<br>zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<br>
+	zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<br>zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<br>
+	zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<br>zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<br>
+	zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<br>zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<br>
+	zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<br>zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<br>
+	zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<br>zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<br>
+	zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<br>zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<br>
+	zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<br>zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<br>
+	zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<br>zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<br>
+	zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<br>zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<br>
+	zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<br>zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<br>
+	zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<br>zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<br>
+	zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<br>zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<br>
+	zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<br>zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<br>
+	zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<br>zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<br>
+	zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<br>zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<br>
+	zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<br>zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<br>
+	zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<br>zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<br>
+	zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<br>zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<br>
+	zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<br>zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<br>
+	zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<br>zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<br>
+	zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<br>zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<br>
+	zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<br>zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<br>
+	zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<br>zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<br>
+	zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<br>zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<br>
+	zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<br>zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<br>
+	zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<br>zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<br>
+	zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<br>zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<br>
+	zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<br>zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<br>
+	zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<br>zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<br>
+	zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<br>zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<br>
+	zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<br>zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<br>
+	zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<br>zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<br>
+	zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<br>zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<br>
+	zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<br>zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<br>
+	zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<br>zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<br>
+	zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<br>zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<br>
+	zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<br>zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<br>
+	zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<br>zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<br>
+	zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<br>zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<br>
+	zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<br>zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<br>
+	zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<br>zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<br>
+	zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<br>zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<br>
+	zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<br>zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<br>
+	zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<br>zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<br>
+	zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<br>zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<br>
+	zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<br>zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<br>
+	zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<br>zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<br>
+	zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<br>zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<br>
+	zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<br>zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<br>
+	zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<br>zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<br>
+	zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<br>zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<br>
+	zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<br>zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<br>
+	zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<br>zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<br>
+	zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<br>zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<br>
+	zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<br>zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<br>
+	zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<br>zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<br>
+	zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<br>zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<br>
+	zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<br>zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz<br>
+	<h1 id="ggg">ggg</h1>
+	gggggggggggggggggggggggggggggggggggggggg<br>gggggggggggggggggggggggggggggggggggggggg<br>
+	gggggggggggggggggggggggggggggggggggggggg<br>gggggggggggggggggggggggggggggggggggggggg<br>
+	gggggggggggggggggggggggggggggggggggggggg<br>gggggggggggggggggggggggggggggggggggggggg<br>
+	gggggggggggggggggggggggggggggggggggggggg<br>gggggggggggggggggggggggggggggggggggggggg<br>
+	gggggggggggggggggggggggggggggggggggggggg<br>gggggggggggggggggggggggggggggggggggggggg<br>
+	gggggggggggggggggggggggggggggggggggggggg<br>gggggggggggggggggggggggggggggggggggggggg<br>
+	gggggggggggggggggggggggggggggggggggggggg<br>gggggggggggggggggggggggggggggggggggggggg<br>
+	gggggggggggggggggggggggggggggggggggggggg<br>gggggggggggggggggggggggggggggggggggggggg<br>
+	gggggggggggggggggggggggggggggggggggggggg<br>gggggggggggggggggggggggggggggggggggggggg<br>
+	gggggggggggggggggggggggggggggggggggggggg<br>gggggggggggggggggggggggggggggggggggggggg<br>
+	gggggggggggggggggggggggggggggggggggggggg<br>gggggggggggggggggggggggggggggggggggggggg<br>
+	gggggggggggggggggggggggggggggggggggggggg<br>gggggggggggggggggggggggggggggggggggggggg<br>
+	gggggggggggggggggggggggggggggggggggggggg<br>gggggggggggggggggggggggggggggggggggggggg<br>
+	gggggggggggggggggggggggggggggggggggggggg<br>gggggggggggggggggggggggggggggggggggggggg<br>
+	gggggggggggggggggggggggggggggggggggggggg<br>gggggggggggggggggggggggggggggggggggggggg<br>
+	gggggggggggggggggggggggggggggggggggggggg<br>gggggggggggggggggggggggggggggggggggggggg<br>
+	gggggggggggggggggggggggggggggggggggggggg<br>gggggggggggggggggggggggggggggggggggggggg<br>
+	gggggggggggggggggggggggggggggggggggggggg<br>gggggggggggggggggggggggggggggggggggggggg<br>
+	gggggggggggggggggggggggggggggggggggggggg<br>gggggggggggggggggggggggggggggggggggggggg<br>
+	gggggggggggggggggggggggggggggggggggggggg<br>gggggggggggggggggggggggggggggggggggggggg<br>
+	gggggggggggggggggggggggggggggggggggggggg<br>gggggggggggggggggggggggggggggggggggggggg<br>
+	gggggggggggggggggggggggggggggggggggggggg<br>gggggggggggggggggggggggggggggggggggggggg<br>
+	gggggggggggggggggggggggggggggggggggggggg<br>gggggggggggggggggggggggggggggggggggggggg<br>
+	gggggggggggggggggggggggggggggggggggggggg<br>gggggggggggggggggggggggggggggggggggggggg<br>
+	gggggggggggggggggggggggggggggggggggggggg<br>gggggggggggggggggggggggggggggggggggggggg<br>
+	gggggggggggggggggggggggggggggggggggggggg<br>gggggggggggggggggggggggggggggggggggggggg<br>
+	gggggggggggggggggggggggggggggggggggggggg<br>gggggggggggggggggggggggggggggggggggggggg<br>
+	gggggggggggggggggggggggggggggggggggggggg<br>gggggggggggggggggggggggggggggggggggggggg<br>
+	gggggggggggggggggggggggggggggggggggggggg<br>gggggggggggggggggggggggggggggggggggggggg<br>
+	gggggggggggggggggggggggggggggggggggggggg<br>gggggggggggggggggggggggggggggggggggggggg<br>
+	gggggggggggggggggggggggggggggggggggggggg<br>gggggggggggggggggggggggggggggggggggggggg<br>
+	gggggggggggggggggggggggggggggggggggggggg<br>gggggggggggggggggggggggggggggggggggggggg<br>
+	gggggggggggggggggggggggggggggggggggggggg<br>gggggggggggggggggggggggggggggggggggggggg<br>
+	gggggggggggggggggggggggggggggggggggggggg<br>gggggggggggggggggggggggggggggggggggggggg<br>
+	gggggggggggggggggggggggggggggggggggggggg<br>gggggggggggggggggggggggggggggggggggggggg<br>
+	gggggggggggggggggggggggggggggggggggggggg<br>gggggggggggggggggggggggggggggggggggggggg<br>
+	gggggggggggggggggggggggggggggggggggggggg<br>gggggggggggggggggggggggggggggggggggggggg<br>
+	gggggggggggggggggggggggggggggggggggggggg<br>gggggggggggggggggggggggggggggggggggggggg<br>
+	gggggggggggggggggggggggggggggggggggggggg<br>gggggggggggggggggggggggggggggggggggggggg<br>
+	gggggggggggggggggggggggggggggggggggggggg<br>gggggggggggggggggggggggggggggggggggggggg<br>
+	gggggggggggggggggggggggggggggggggggggggg<br>gggggggggggggggggggggggggggggggggggggggg<br>
+	gggggggggggggggggggggggggggggggggggggggg<br>gggggggggggggggggggggggggggggggggggggggg<br>
+	gggggggggggggggggggggggggggggggggggggggg<br>gggggggggggggggggggggggggggggggggggggggg<br>
+	gggggggggggggggggggggggggggggggggggggggg<br>gggggggggggggggggggggggggggggggggggggggg<br>
+	gggggggggggggggggggggggggggggggggggggggg<br>gggggggggggggggggggggggggggggggggggggggg<br>
+	gggggggggggggggggggggggggggggggggggggggg<br>gggggggggggggggggggggggggggggggggggggggg<br>
+	gggggggggggggggggggggggggggggggggggggggg<br>gggggggggggggggggggggggggggggggggggggggg<br>
+</body>
+</html>

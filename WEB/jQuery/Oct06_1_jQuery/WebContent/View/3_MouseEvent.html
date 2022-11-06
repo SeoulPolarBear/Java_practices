@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="../js/jQuery.js"></script>
+<script type="text/javascript">
+	$(function() {
+		$("div").mousedown(function() {
+			$("h1").text("mousedown");
+		});
+
+		$("div").mouseup(function() {
+			$("h1").text("mouseup");
+		});
+
+		$("div").mouseenter(function() {
+			$("h1").text("mouseenter");
+		});
+		$("div").mouseleave(function() {
+			$("h1").text("mouseleave");
+		});
+
+		//DOM 객체의 정확한 좌표를 알고 싶을 때...(html에 약간의 여백이 존재해서...)
+		let divX = $("div").offset().left;//선택자의 정확한 x자표
+		let divY = $("div").offset().top;//선택자의 정확한 x자표
+		alert(divX + ',' + divY);
+
+		$("div").mousemove(function(e) {
+			// 마우스커서의 좌표 표시(html 기준)
+			//$("h2").text("mousemove : " + e.pageX + "," + e.pageY);
+
+			//div를 기준으로 한 정확한 좌표
+			let x = e.pageX - divX;
+			let y = e.pageY - divY;
+
+			$("h2").text("mousemove : " + x + "," + y);
+		});
+		
+		$("html").mousemove(function(e){
+			$("img").css("left", (e.pageX + 2 ) + "px");
+			$("img").css("top", (e.pageY + 2 ) +  "px");
+		});
+		
+		//마우스 우클릭을 하면 메뉴 안나오게!
+		//document : html을 가리키는 내장 객체
+		$(document).contextmenu(function(){// 우클릭 -> 브라우저 메뉴가 나오려는 그 시점!
+			alert("메뉴다!");
+			return false;
+		});
+		
+		//어떤 상황에서든지 mousedown이 발생했을 때
+		// 그 중에서도 마우스 우클릭을 했다면
+		// 클릭한 위치에 테이블이 나타났다가 3초뒤에 사라지면서
+		// 0.3초 뒤에 테이블이 원위치로 돌아가게
+		$("html").mousedown(function(e){
+			// 마우스 우클릭일 경우
+			if(e.button == 2){
+				$("table").css("opacity", "1");
+				$("table").css("left", e.pageX + "px");
+				$("table").css("top", e.pageY + "px");
+	
+			}
+			
+			setTimeout(() => {
+				$("table").css("opacity","0");
+				setTimeout(() => {
+					$("table").css("left","-100px");
+					$("table").css("top","-100px");
+				}, 300);
+			}, 3000);
+		});
+		
+		
+	});
+</script>
+
+<style type="text/css">
+div {
+	border: pink solid 3px;
+	width: 200px;
+	height: 200px;
+}
+
+img {
+	width: 20px;
+	height: 20px;
+	position: fixed;
+}
+
+body{
+cursor: none;
+}
+
+table{
+	position: fixed;
+	opacity: 0;
+	top: -100px;
+	left: -100px;
+	transition: opacity 0.3s ease-in;
+}
+</style>
+
+</head>
+<body>
+	<div></div>
+	<h1></h1>
+	<h2></h2>
+	<img src="../css/earth-grid-symbol.png">
+	<table border="1" id="t2">
+		<tr>
+			<td><a target ="_blank" href="https://www.naver.com">네이버로</a></td>
+		</tr>
+		<tr>
+			<td><a target ="_blank" href="https://www.youtube.com">유튜브로</a></td>
+		</tr>
+		<tr>
+			<td><a target ="_blank" href="https://www.google.com">구글로</a></td>
+		</tr>
+	</table>
+	
+</body>
+</html>
