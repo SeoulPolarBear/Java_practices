@@ -88,8 +88,10 @@ Java Object-oriented programming Constructor2</a></li>
 ### jQuery
 <ol>
  <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/WEB/jQuery/Oct05_1_jQuery/WebContent">jQuery1</a></li>
-  <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/WEB/jQuery/Oct06_1_jQuery/WebContent">jQuery2</a>
-</li>
+  <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/WEB/jQuery/Oct06_1_jQuery/WebContent">jQuery2</a></li>
+<li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/WEB/jQuery/Oct24_1_Last_jQuery/WebContent">jQuery API(도서)</a></li>
+<li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/WEB/jQuery/Oct24_1_Last_jQuery1/WebContent">jQuery API(도서) with bxslider</a></li>
+<li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/WEB/jQuery/Oct25_1_Last_jQuery/WebContent">jQuery API(카카오 주소 검색)</a></li>
 </ol>
 
 ##### AJAX
