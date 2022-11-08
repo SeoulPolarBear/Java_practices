@@ -1,0 +1,116 @@
+﻿================================================================================
+
+스냅샷 초기화
+
+기존 repo 파일을 새로 생성한 backup 디렉토리에 이동 시켜놓고
+
+cd /etc/yum.repos.d/
+
+mkdir backup
+
+mv C* b*
+
+dvd 와 인터넷을 통해서 다운을 받을 수 있도록 repo 파일 설정
+인터넷 주소 =>http://mirrors.kernel.org/centos/7/os/x86_64/
+로컬 주소 => file:///media/cdrom (dvd 마운트 위치)
+
+mkdir /media/cdrom
+
+mount /dev/cdrom /media/cdrom(dev/cdrom(rom이기 때문에 들어갈 수 없다.)에 접속할 수 있도록
+(mount /media/cdrom을 연결해준다.)
+
+vi test.repo
+
+[DVD]
+name=dvd
+baseurl=file:///media/cdrom
+enabled=1
+gpgcheck=0
+
+[NET]
+name=network
+baseurl=http://mirrors.kernel.org/centos/7/os/x86_64
+enabled=1
+gpgcheck=0
+
+:wq
+
+zsh 패키지를 rpm 명령어를 통해서 설치
+
+rpm -Uvh /media/cdrom/Packages/zsh-xxxxxxxxxx.rpm
+
+zsh 패키지를 rpm 명령어를 통해서 삭제
+
+rpm -e zsh
+
+ksh 패키지를 yum 명령어를 통해서 설치(한번에 설치까지)
+
+yum install ksh -y
+
+zsh 패키지를 yum 명령어를 통해서 설치(ISO 이미지의 .rpm 파일을 통해서)
+
+yum localinstall /media/cdrom/Packages/zsh-xxxxxxx.rpm -y
+
+ksh 패키지를 yum 명령어를 통해서 삭제(한번에 삭제)
+
+yum remove ksh  -y
+
+그룹 패키지 리스트 확인
+
+yum groups list
+
+Security Tools or 보안 툴 패키지 정보 확인
+
+yum groups info "Security Tools" or "보안 툴"
+
+Security Tools 그룹 패키지 설치
+
+yum groups install "Security Tools" or "보안 툴" 
+
+Security Tools 그룹 패키지 삭제
+
+yum groups remove "Security Tools" or "보안 툴"
+
+패키지 설치 로그를 확인
+
+less /var/log/yum.log
+=============================================
+/var/www 디렉토리가 어떤 패키지로 인해서 생성된 것인지 확인하시오.
+
+yum provides /var/www
+
+rpm -qf /var/www
+
+해당 패키지로 인해서 생성된 설정 파일 확인
+
+rpm -qc httpd
+
+해당 패키지로 인해서 생성된 문서 파일 확인
+
+rpm -qd httpd
+
+해당 패키지에 대한 정보를 확인하시오.
+
+rpm -qi httpd
+
+httpd 서비스 시작 (해당 서비스는 httpd.service)
+
+systemctl start httpd.service
+
+서비스 활성화
+
+systemctl enable httpd.service
+
+서비스 종료 및 비활성화
+
+systemctl stop httpd.service
+systemctl disable httpd.service
+
+해당 패키지 삭제
+
+yum remove httpd
+
+다시 설치
+
+yum install httpd
+
