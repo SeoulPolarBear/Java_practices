@@ -153,6 +153,8 @@ Java Object-oriented programming Constructor2</a></li>
 permission2, grep, find, vim, tar(archive)</a></li>
   <li><a href = "https://github.com/SeoulPolarBear/Practices/blob/main/Linux/2022-the%20first%20half/7.%20%EB%A6%AC%EB%88%85%EC%8A%A4%20%EA%B8%B0%EC%B4%88%200525.txt">vim,archive,hash algorithm,sudo,systemctl,nmcli</a></li>
   <li><a href = "https://github.com/SeoulPolarBear/Practices/blob/main/Linux/2022-the%20first%20half/8.%20%EB%A6%AC%EB%88%85%EC%8A%A4%20%ED%8E%80%EB%93%9C%EB%A9%98%ED%83%88%20%EB%AC%B8%EC%A0%9Ctxt.txt">Linux practice</a></li>
+  <li><a href = "https://github.com/SeoulPolarBear/Practices/blob/main/Linux/2022-the%20first%20half/9.%20%EB%A6%AC%EB%88%85%EC%8A%A4%20%EA%B8%B0%EC%B4%88%200529.txt"> Linux systemctl, rpm,...</a></li>
+  <li><a href = "https://github.com/SeoulPolarBear/Practices/blob/main/Linux/2022-the%20first%20half/10.%20%EB%A6%AC%EB%88%85%EC%8A%A4%20%EA%B8%B0%EC%B4%88%200530.txt">Linux systemctl, rpm,...2</a></li>
 </ol>
 
 # Network
