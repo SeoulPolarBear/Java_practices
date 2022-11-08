@@ -1,0 +1,386 @@
+﻿nmcli connection sub-comand
+
+
+add         : connection 생성
+modify(mod) : connection 수정
+delete(del) : connection 삭제
+up          : connection 활성화
+down        : connection 비활성화
+reload      : connection 수정사항 재설정
+show        : connection 설정 확인
+
+생성
+
+nmcli con add option argument
+
+option
+
+유동IP & 고정IP 공통설정
+
+con-name    (connection.id) : connection 이름
+ifname      (connection.interface) : connection과 연결할 device
+type        (connection.type)      : 통신방식 (ethernet, wifi, bluetooth,..)
+autoconnect (connection.autoconnect) : 부팅시 자동 연결
+
+고정IP 설정
+
+ip4          (ipv4.addresses)  :  고정IP 주소
+gw4          (ipv4.gateway)    :  게이트웨이 주소
+
+ex)
+
+장치명 : enp0s7
+통신방식 : 유선
+유동IP 방식(dhcp)
+부팅시 자동 연결
+
+nmcli con add con-name dhcp7 
+              ifname enp0s7 
+              type ethernet 
+              autoconnect yes
+
+nmcli con
+
+nmcli con show dhcp7
+
+ipv4.method      auto
+
+
+장치명 : enp0s7
+통신방식 : 유선
+고정IP 방식 : 10.100.5.100/24
+              10.100.5.2
+부팅시 자동 X
+
+nmcli con add con-name static7 
+              ifname enp0s7 
+              type ethernet 
+              autoconnect no 
+              ip4 10.100.5.100/24 
+              gw4 10.100.5.2
+
+nmcli con 
+
+nmcli con show static7
+
+connection.autoconnect no
+
+ipv4. method           manual
+
+ipv4.addresses         10.100.5.100/24
+
+ipv4.gateway           10.100.5.2
+
+
+수정
+
+nmcli con modify (mod) option argument
+
+option
+
+nmcli con show 연결명을 실행 했을 때 나오는 항목이 모두 옵션
+
+기존 연결 dhcp7 에 대해서 아래 와 같이 수정을 한다면
+
+연결 이름 dhcp7  static7-1
+유동IP => 고정IP
+ip 주소 : 10.100.5.200/24
+dns 주소: 10.100.5.100
+
+nmcli con mod dhcp7 connection.id static7-1 
+                    ipv4.method manual 
+                    ipv4.addresses 10.100.5.200/24 
+                    ipv4.gateway 10.100.5.2 
+                    ipv4.dns 10.100.5.100
+
+
+연결명 수정 static7 => dhcp7-1
+고정IP => 유동IP
+dns 주소 8.8.8.8 10.100.5.100
+자동연결 O
+
+nmcli con mod static7 connection.id  dhcp7-1
+                      ipv4.method    auto
+                      ipv4.addresses ""
+                      ipv4.gateway   ""
+                      connection.autoconnect  yes
+                      ipv4.dns 8.8.8.8
+                      +ipv4.dns 10.100.5.100
+
+네트워크 관리 실습
+
+초기설정으로 초기화
+
+현재 각 인터페이스 별 IP 주소 확인(2가지 방법 모두 실행)
+
+ifconfig 장치명
+
+ip addr show 장치명
+
+8.8.8.8에 대한 네트워크 경로 확인 (2가지 방법 모두 실행)
+
+traceroute 8.8.8.8
+
+tracepath 8.8.8.8
+
+유동 아이피 설정
+
+con-name  : dhcp1 
+유동 IP 설정
+
+nmcli con add con-name dhcp1 \
+              ifname enp0s9 \
+              type ethernet \
+              autoconnect yes \
+
+nmcli con 
+
+nmcli con show dhcp1
+
+nmcli con up dhcp1
+
+ip addr show enp0s9
+
+고정 아이피 설정
+
+con-name  : static1
+IP address: 192.168.56.200
+PREFIX    : 24
+
+nmcli con add con-name static1 \
+              ifname enp0s9 \
+              type ethernet \
+              ip4 192.168.56.200/24 \
+              gw4 192.168.56.1
+
+nmcli con 
+
+nmcli con show static1
+
+nmcli con up static1
+
+ip addr show enp0s9
+
+
+dhcp1 연결 설정 수정
+
+con-name  : static100
+IP address: 192.168.56.150
+PREFIX    : 24
+DNS       : 8.8.8.8
+autoconnect : no
+
+nmcli con up dhcp1
+
+nmcli con mod dhcp1  connection.id static100  \
+                     ipv4.addresses 192.168.56.150/24 \
+                     ipv4.gateway   192.168.56.1 \
+                     ipv4.method    manual \
+                     ipv4.dns       8.8.8.8 \
+                     connection.autoconnect no
+
+nmcli con relaod
+
+nmcli con 
+
+nmcli con show static100
+
+ip addr show enp0s9
+
+nmcli con up static100
+
+ip addr show enp0s9
+
+
+static1 연결 설정 수정
+
+con-name  : dhcp2
+유동 IP 설정
+
+nmcli con up staic1
+
+ip addr show enp0s9
+
+nmcli con mod static1  connection.id dhcp2 \
+                       ipv4.method auto \
+                       ipv4.addresses "" \
+                       ipv4.gateway ""
+
+nmcli con reload
+
+nmcli con
+
+nmcli con show dhcp2
+
+ip addr show enp0s9
+
+nmcli con up dhcp2
+
+ip addr show enp0s9
+
+hostname : encore.class4로 변경
+
+hostname
+
+cat /etc/hostname
+
+hostnamectl set-hostname encore.class4
+
+hostname
+
+cat /etc/hostname
+
+
+=========================================================================
+
+
+RPM 관련 패키지 정보 확인 명령어
+rpm -q (쿼리)
+      a : 시스템에 설치되어 있는 모든 패키지
+      i : 패키지에 대한 정보
+      c : 패키지의 설정파일들 보여줌
+      d : 패키지의 문서(document)를 보여줌
+      l : 패키지의 모든 파일 보여줌
+      f : 파일이나 디렉토리가 어떠한 패키지로 인해서 파생되었는지 알려줌.
+
+RPM 관련 패키지 설치 및 업데이트
+rpm -Uvh 패키지 파일명
+
+RPM 관련 패키지 삭제 
+rpm -e 패키지명
+
+YUM 명령어
+
+yum sub명령어
+
+install 패키지명 : 패키지 설치
+remove  패키지명 : 패키지 삭제
+update  패키지명 : 패키지 업데이트
+info    패키지명 : 패키지 정보확인
+list    : repository 의 패키지 리스트 출력
+provies file/dir : 해당 파일이나 디렉토리가 어떠한 패키지로 인해서 파생되었는지 알려줌( = rpm -qf 와 동일한 작용)
+repolist all : repository 점검
+
+groups list : 그룹 패키지 리스트 출력
+groups install 그룹 패키지명 : 그룹 패키지 설치
+groups remove  그룹 패키지명 : 그룹 패키지 삭제
+groups update  그룹 패키지명 : 그룹 패키지 업데이트
+groups info  그룹 패키지명 : 그룹 패키지 정보
+
+localinstall 패키지파일명 : 패키지파일을 yum으로 설치
+
+
+repository 파일 설정(/etc/yum.repos.d/)
+- 확장자가 반드시 .repo 이여만 함.
+
+- 내용 구성
+
+[ID명]
+name=repo명
+baseurl=http://주소
+        file://경로(ex)/media/cdrom)
+enabled=1/0 (1이면 활성화, 0이면 비활성화)
+gpgcheck=1/0 (1이면 라이센스 키가 있을 경우, 0이면 라이센크 키가 없는 경우)
+gpgkey=file//경로(gpgcheck=1 일 경우에만 작성)
+
+yum-config-manager를 이용해서 repo 만들기
+
+yum -y install yum-utils
+
+yum-config-manager --add-repo=http://주소
+해당 파일에 gpgcheck 항목 추가
+
+
+처음 설정으로 스냅샷
+
+DVD를 /media/cdrom으로 마운트
+
+umount /dev/cdrom
+
+mkdir /media/cdrom
+
+mount /dev/cdrom /media/cdrom
+
+Repository 설정 - 인터넷 (http://mirror.centos.org/centos/7/os/x86_64)
+
+vi /etc/yum.repos.d
+
+mkdir backup
+
+mv C* b*
+
+vi test.repo
+
+[net]
+name=network
+baseurl=http://mirror.centos.org/centos/7/os/x86_64
+enabled=1
+gpgcheck=0   (gpgcheck=1이면 gpgkey="파일의 절대PATH"를 넣어줘야 한다.)
+
+:wq
+
+repo 활성화 상태 확인
+
+yum repolist all
+
+repo 중에서 repo를 비활성화 시키시오.
+
+저장 후 종료
+
+repo 활성화 상태 확인
+
+yum repolist all
+
+repository 다시 활성화
+
+enabled=0 => enabled=1
+
+저장소에 telnet에 대한 패키지가 어떠한 것이 있는지 확인해보시오.
+
+yum list | grep telnet
+
+telnet 관련 패키지 설치 및 telnet.socket (service 아님) 시작 및 활성화
+
+yum install telnet*
+
+systemctl start telnet.socket
+systemctl enable telnet.socket
+
+or
+
+systemctl enable telnet.socket --now
+
+telnet 패키지의 설정 파일 및 문서(document) 확인
+
+rpm -qc telnet
+rpc -qd telnet
+
+rsyslog.conf 파일이 어떠한 패키지로 인해서 생성된 것인지 확인(2가지 방법)
+
+rpm -qf /etc/rsyslog.conf
+
+yum provides /etc/rsyslog.conf
+
+위에 패키지의 정보를 확인 (2가지 방법)
+
+rpm -qi rsyslog
+
+yum info rsyslog
+
+그룹 패키지 중에서 패키지명으로 security(영문판)/보안(한글판) 가 들어간 패키지는?
+
+yum group list | egrep -i '(security|보안)'
+
+해당 그룹 패키지는 어떤 패키지들로 구성이 되어 있는가?
+
+yum group info "Security Tools"  (""으로 묶어주지 않으면 Security, Tools 따로 인식)
+
+or  
+
+yum group info "보안 툴"
+
+zsh-xxxxxxxxxxxxxx.rpm 파일을 yum 명령어를 사용해서 설치하시오.
+
+yum localinstall /media/cdrom/Packages/zsh-xxxxxxxxxxxx.rpm
+
+===========================================================================================
