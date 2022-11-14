@@ -69,6 +69,7 @@ Java Object-oriented programming Constructor2</a></li>
 ### HTML
 <ol>
  <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/WEB/HTML/Sep08_1_HTML/src/main/webapp">HTML tag1</a></li>
+ <li><a href = "https://github.com/SeoulPolarBear/Practices/blob/main/WEB/HTML/pratice.html">HTML basic</a></li>
 </ol>
 
 ### CSS
