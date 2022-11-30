@@ -1,0 +1,183 @@
+﻿메타 문자 실습
+
+root로 접속
+
+1. /tmp/로 이동 후에 /root/ 디렉토리로 다시 이동 /tmp/mtest 디렉토리 생성
+
+cd /tmp
+
+cd ~
+
+pwd
+
+/root/
+
+mkdir ~-/mtest (~-==/tmp)
+
+2. /tmp/mtest 디렉토리 안에 za1~za10 파일과 zb01~zb10 파일과 zc001~zc100 파일을 만드시오.
+
+touch ~-/mtest/z{a{1..10},b{01..10},c{001..100}}
+
+ls ~-/mtest/
+
+3. 모든 파일을 삭제 하는데 za 파일은 [ ], zb 파일은 ?, zc 파일은 *을 사용하시오.
+
+rm -f ~-/mtest/z{a[1-9],a10,b??,c*}
+
+4. /media 디렉토리 안에 Music, Movie, Picture 디렉토리를 각각 만들고 music(00-20).mp3, movie(00-10).avi, picture(0-9).jpg 파일을 생성 후에 이름에 맞추어서 각각 넣으시오.
+
+mkdir /media/{Music,Movie,Picture}
+touch /media/{music{00..20}.mp3,movie{00..10}.avi,picture{0..9}.jpg}
+mv /media/mu* /media/Mu*
+mv /media/mo* /media/Mo*
+mv /media/p* /media/P*
+
+5. ps -ef의 결과 값을 pfile01 에 저장하시오.
+
+ps -ef => 현시스템의 작동중인 모든 프로세스를 보여주는 명령어
+
+ps -ef > pfile01
+
+6. ls -R / 의 결과 값에서 error 값은 출력되지 않도록 하시오.
+
+ls -R / 2> /dev/null
+
+7. rpm -qa 결과값에서 sh 라는 패턴만 출력하시오.
+
+rpm -qa => 현 시스템의 설치되어 있는 모든 프로그램 리스트 확인하는 명령어
+
+grep => 파일의 내용에서 특정 패턴을 검색할 때 사용하는 명령어
+
+rpm -qa | grep sh
+
+8. 7번 결과가 저장까지 되도록 해보시오.
+
+rpm -qa | grep sh | tee pfile02
+
+===========================================================================
+리눅스 기본권한(umask)
+
+=> 리눅스 시스템에서 파일이나 디렉토리를 생성할 때 제한할 권한을 설정하는 것
+기본적으로 리눅스 시스템은
+
+디렉토리 777
+파일 666
+
+실제적으로 root 사용자 파일/ 디렉토리를 생성하게 되면
+
+디렉토리 755
+파일 644
+
+일반 사용자가 파일/디렉토리를 생성하게 되면
+
+디렉토리 775
+파일 664
+
+umask(휘발성이다. 따라서 umask가 있는  파일에서 영구적으로 수정을 해줘야 한다.)
+
+default 값 : 0022
+
+su -centos
+umask 033 => 만약 root에서 실행 시켰으면 root의 디렉토리 생성시 : 755 - 033(rwxr-xr-x - ----wx-wx) = (rwxr--r--) = 744
+					    파일 생성시 : 644 - 033(rw-r--r-- - ----wx-wx) = (rw-r--r--) = 644
+
+
+
+
+------------권한은 오직 소유주만이 부여해 줄 수 있다.------------------------
+(/root는 소유자 상관없이 권한 부여가 가능 하다.)
+퍼미션
+
+심볼릭 모드
+               who        what      which
+                u(소유자)    +           r
+                g(소유그룹)  -           w
+                o(기타)       =           x
+                a(전부)                         
+
+chmod u-r       file명
+chmod g+w       file명
+chmod o=rx      file명(=는 덮어씌기 했다고 생각하면 된다.)
+chmod a-r       file명
+chmod u+x,go-r  file명  
+
+chmod -R a=rwX file명 
+=> -R 의미는 현재 디렉토리에 주는 권한을 하위에는 모든 파일에 적용한다.
+=> rwX 중 X의 의미는 디렉토리에만 실행권한을 주고 일반 파일에는 실행권한을 주지 않는다.
+(즉 -R을 해도 X를 사용하면 하위 디렉토리,파일에 실행권한이 들어가지 않는다. 
+하지만 하위에 x권한이 있으면 a 이므로 하위에도 전부 x를 권한을 부여해 준다.)
+
+8진수 모드
+
+  r     w     x
+  2^2   2^1   2^0   | r | w | x |
+  4     2     1           1   1   0  => 6
+
+  7 : rwx
+  6 : rw-
+  5 : r-x
+  4 : r--
+  3 : -wx
+  2 : -w-
+  1 : --x
+  0 : ---
+
+
+chmod -400     file명 =>u - r
+chmod +020     file명 => g + w
+chmod 755      file명 => u=rwx,go=rx
+chmod -444     file명 => a - r 
+
+권한이 rw-r--r-- 였다고 했을 때
+
+chmod u+x,go-r file명 => chmod 700 file명
+
+소유권 변경 (반드시 존재하는 소유자, 소유그룹 이여야 한다.)
+
+소유주 변경                        - chown 사용자 file명 => file의 소유주를 사용자로 변경한다.
+소유그룹 변경                      - chown :그룹 file명
+소유주,소유그룹 변경               - chown 사용자:그룹 file명
+디렉토리 내의 모든 파일 소유주 변경 - chown -R 사용자 file명
+
+mkdir -m 000 dira/dirb : dirb를 만들면서 권한을 000으로 부여한다. (-p와 비슷한 용도)
+
+
+
+퍼미션 실습
+
+준비사항 : p1 p2 p3 p4 p5 p6 p7
+
+touch p1 p2 p3 p4 p5 p6 p7 => touch p{1..7}
+
+1. p1 심볼릭 방식으로 그룹과 기타사용자에게 실행권한
+chmod go+x p1
+2. p2 심볼릭 방식으로  소유주의 권한을 ---로 만들 것
+chmod u= p2
+3. p3 심볼릭 방식으로 모든 대상 읽기와 실행 권한을 주고 쓰기 권한을 뺄 것 , 단 방식은 셋팅 방식으로
+chmod a=rx p3
+4. p4 8진수 방식으로 소유주 읽기 실행, 소유 그룹 실행 권한만, 기타 사용자에게는 쓰기 권한만
+chmod 612 p4
+5. p5 8진수 방식으로 모든 사용자 모든 권한 삭제
+chmod 000 p5
+6. p6 8진수 방식으로 소유그룹만 읽기, 쓰기 권한 줄 것
+chmod 060 p6
+7. p7 8진수 방식으로 모든 사용자에 대해서 실행 권한만 줄 것
+chmod 111 p7
+8. /root/filea 디렉토리에 기타 사용자가 들어올 수 없도록 권한을 변경하시오. =>즉, 실행 권한을 주지 않겠다.
+mkdir filea
+chmod o-x filea
+소유권 변경 실습
+
+/etc/passwd 파일을 /root/로 복사
+cp /etc/passwd /root/
+/root/passwd 파일의 소유자 를 centos 로 변경
+chown centos /root/passwd
+/root/passwd 파일의 소유그룹을 nobody로 변경
+chown :nobody /root/passwd
+/root/passwd 파일의 소유자와 소유그룹을 adm 으로 변경
+chown adm:adm /root/passwd
+/etc/ 디렉토리를 /root로 복사하고 /root/etc 디렉토리 안의 파일까지 pcp로 소유자를 변경하시오.
+cp -r /etc/ /root/
+chown -R pcp /root/etc/
+=====================================================
+
