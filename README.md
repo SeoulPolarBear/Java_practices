@@ -156,6 +156,7 @@ permission2, grep, find, vim, tar(archive)</a></li>
   <li><a href = "https://github.com/SeoulPolarBear/Practices/blob/main/Linux/2022-the%20first%20half/8.%20%EB%A6%AC%EB%88%85%EC%8A%A4%20%ED%8E%80%EB%93%9C%EB%A9%98%ED%83%88%20%EB%AC%B8%EC%A0%9Ctxt.txt">Linux practice</a></li>
   <li><a href = "https://github.com/SeoulPolarBear/Practices/blob/main/Linux/2022-the%20first%20half/9.%20%EB%A6%AC%EB%88%85%EC%8A%A4%20%EA%B8%B0%EC%B4%88%200529.txt"> Linux systemctl, rpm,...</a></li>
   <li><a href = "https://github.com/SeoulPolarBear/Practices/blob/main/Linux/2022-the%20first%20half/10.%20%EB%A6%AC%EB%88%85%EC%8A%A4%20%EA%B8%B0%EC%B4%88%200530.txt">Linux systemctl, rpm,...2</a></li>
+ <li><a href = "https://github.com/SeoulPolarBear/Practices/blob/main/Linux/2022-the%20first%20half/%EB%A6%AC%EB%88%85%EC%8A%A4%20%EA%B8%B0%EC%B4%88%20%EC%97%B0%EC%8A%B5(%EB%A9%94%ED%83%80%2C%20%EA%B2%80%EC%83%89%2C%EA%B6%8C%ED%95%9C...)%200522%20.txt">Linux practice permission,meta,...</a></li>
 </ol>
 
 # Network
