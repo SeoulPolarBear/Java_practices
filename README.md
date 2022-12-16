@@ -68,6 +68,7 @@ Java Object-oriented programming Constructor2</a></li>
 ### MongoDB
 <ol>
   <li><a href = "https://github.com/SeoulPolarBear/Practices/blob/main/DB/MongoDB/Nov28_2_MongoDB.R">MongoDB connect R</a></li>
+   <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/DB/MongoDB/Nov28_1_MongoDB">MongoDB connect Python</a></li>
 </ol>
 
 # WEB
