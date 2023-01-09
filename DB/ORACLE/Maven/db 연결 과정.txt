@@ -1,0 +1,14 @@
+1. table 생성
+
+2. setting 파일 대로 작성
+
+3. interface 생성
+
+4. mybatis 파일 생성(SQL문 작성), 
+
+namespace에도 com.polarbear.oct042.test.testMapper 처럼 인터페이스 지정
+
+5. servlet-content.xml에 mybatis 값을 등록 
+<beans:value>classpath:testMapper.xml</beans:value>
+
+6. DAO를 통한 DB 연결

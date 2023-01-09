@@ -1,0 +1,19 @@
+1. 	Maven을 활용하면
+//		Maven 중앙 저장소에 저장되어 있는 .jar파일
+//		컴퓨터의 Maven로컬 저장소 : C:\Users\\user\.m2\repository
+
+project 우클릭 -> Configure -> convert to Maven Project -> maven1.png참고 -> finish -> pom.xml을 보면
+추가 되어 있음을 알 수 있다. 
+
+
+
+
+
+
+2. 	Maven 중앙저장소에 없는 것들 : 로컬 저장소를 활용하면 됨!
+//		우리가 만든 보물들... dbm, hc,...
+import -> Install or deploy an artifact to a Maven repository -> maven2.png 참고
+-> finish
+
+->WebContent -> pom.xml -> Dependencies -> Add -> Enter groupId, artifactId or sha1 prefix or pattern (*):
+여기서 내가 저장한 groupid 혹은 artifact id로 검색 후 OK하면 Dependencies에 올라간다.
