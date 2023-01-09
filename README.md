@@ -63,6 +63,7 @@ Java Object-oriented programming Constructor2</a></li>
    <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/DB/ORACLE/Sep06_1_DB_Java">DB Java Connection CRUD</a></li>
    <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/DB/ORACLE/Sep06_2_DB_Last">DB JAVA MVC</a></li>
    <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/DB/ORACLE/Sep07_DB_DesignPattern">DB JAVA MVC2</a></li>
+    <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/DB/ORACLE/Maven">Use Maven in Spring MVC and Mybatis setting</a></li>
 </ol>
 
 ### MongoDB
