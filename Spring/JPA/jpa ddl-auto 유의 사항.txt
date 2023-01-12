@@ -1,0 +1,13 @@
+ddl-auto 옵션 종류
+create: 기존 테이블 drop 후 다시 create
+create-drop : create와 같으나 종료시점에서 테이블 drop
+update : 변경분만 반영 (운영DB에서는 사용 X)
+validate : 엔티티와 테이블이 정상 매핑되었는지만 확인
+none : 사용하지 않겠다.
+
+운영 db server는 create, create-drop, update 사용하면 안된다.
+개발 및 test용으로 사용해야 한다.
+
+운영 db 서버에는 validate or none 사용
+
+즉, update -> validate를 사용하는게 좋다.
