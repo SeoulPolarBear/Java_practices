@@ -1,0 +1,227 @@
+https://www.mongodb.com/ -> Products -> Community Server
+-> 클릭... -> completed
+install MongoDB as a Service (체크 X) (windows에서 GUI 프로그램을 제어하겠다)
+-> 우리는 명령어로 제어할 거라서
+
+install MongoDB Compass - 체크 X
+: MongoDB 접속 GUI 프로그램
+-> 우리는 명령어로 제어할거라서...
+-----------------------------------------------------------------------------------------------
+MongoDB 서버 ON
+1) DB파일에 저장될 폴더 확보
+	C:\Users\user\Desktop\MongoDB_file
+2) MongoDB 실행파일이 있는 위치
+	C:\Program Files\MongoDB\Server\6.0\bin
+	-> cmd
+mongod --dbpath DB파일이저장될경로 --bind_ip_all
+mongod --dbpath C:\Users\user\Desktop\MongoDB_file --bind_ip_all
+(서버를 켠 상태)
+------------------------------------------------------------------------------------------------
+MongoDB 서버 OFF
+cmd - Ctrl + C or cmd 창 닫기
+------------------------------------------------------------------------------------------------
+접속하기
+MongoDB실행이 있는 위치에서
+	cmd-mongosh (4.4버전은 mongo)
+
+================================================================
+정형 데이터 - 미세먼지
+번호	위치	미세먼지		초미세먼지
+1	강남구	25.0		10.0
+
+비정형 데이터 - 블로그 글, 뉴스 기사
+
+RDB-SQL (Structured Query Language) (ex: OracleDB, MySQL, MariaDB,...)
+	테이블을 만들고...(자료형, 용량 다 세팅)
+	그 규칙에 안 맞으면... -> 에러
+	=> 정형데이터
+	
+NoSQL(Not Only SQL, No SQL, Non-Relational Optional Database SQL) (ex: MongoDB, EleasticSearch,...)
+	=> 자유!!!!
+-----------------------------------------------------------------------------------------------------------
+MongoDB
+	NoSQL계열
+	Node.js (JavaScript back-end) 팀에서 만든 -> JavaScript로 제어
+	테이블 -> JS배열
+	데이터 -> JS객체
+	
+	크로스 플랫폼의 document 지향 DataBase
+	높은 성능(high performance)
+	높은 사용성(high availability)
+	쉬운 확장성(easy scalaility) 등을 제공
+
+			[RDBMS와 비교] (용어)
+	Oracle					MongoDB
+	DataBase					DataBase
+	Table					Collection
+	Tuple / Row				Document
+	Column					Field
+	Primary key				Primary key(Default: _id)
+	
+	1. Database
+	하나의 데이터베이스에는 여러개의 컬렉션을 가질 수 있음
+	
+	2. Collection
+	Document의 그룹이며, RDBMS의 'Table' 개념
+	단일 데이터베이스에 존재
+	
+	3. Document
+	하나의 키(Key)와 값(Value)의 집합으로 이루어져 있음
+	동일한 필드안에 다른 타입의 데이터를 가질 수 있음
+
+------------------------------------------------------------------------------------------------------------------
+만들어진 database확인
+	show dbs
+내가 현재 사용하고 있는 database확인
+	db
+DB 사용하기
+	뭔가를 정의하는 게 없음
+	사용하기만 존재
+	사용할 때 collection이름이 없으면
+		-> 알아서 만들어 줌
+	
+	use DB명
+	use mongodb_tutorial
+
+DB제거하기
+	db.dropDatabase()
+--------------------------------------------------------------------------------------------------------------
+CRUD
+	use nov28_student
+	현재 데이터베이스의 사용 현황
+	db.stats()
+	bytes 단위로 사용현황을 조회
+
+<insert>
+db.collection명.insert( {속성명 : 값,속성명 : 값, ... } );
+
+--학생의 이름, 나이 -> 5개 정도 insert
+# 4.4버전
+db.nov28_student.insert({name : "Lim", age : 27 });
+db.nov28_student.insert({name : "Kim", age : 35 });
+db.nov28_student.insert({name : "Lee", age : 25 });
+vdb.nov28_student.insert({name : "Hwang", age : 22 });
+db.nov28_student.insert({name : "Ahn", age : 50 });
+
+
+# 6.0버전
+db.nov28_student.insert([
+{name : "Kim", age : 35 },
+{name : "Lee", age : 25 },
+{name : "Hwang", age : 22 },
+{name : "Ahn", age : 50 }
+])
+
+	primary key - '_id' 필드
+	따로 지정을 안해주면 자동으로 생성
+	not null - 의미 없음
+	(필드가 존재해야 하기 때문에 존재하지 않으면 그냥 안 넣으면 된다.)
+db.nov28_student.find()
+----------------------------------------------------------------------------------------------------------------
+coffee -> PK지정(커피 이름), 커피 가격 -> 5개
+insert, insertMany, insertOne
+db.nov28_coffee.insertMany([
+{_id:"americano", price: 3000},
+{_id:"cafe latte", price: 4000},
+{_id:"vanila latte", price: 4000},
+{_id:"espresso", price: 5000},
+{_id:"cold brew", price: 5000}
+]);
+
+db.nov28_coffee.find();
+--------------------------------------------------------------------------------------------------------------------
+OracleDB : server > DB > tablespace > table > data
+MongoDB : server > DB > 		> JS배열(Collection) > JS 객체(Document)
+
+< SELECT>
+- 결과가 JS 배열속에 JS객체의 형태로 나올 수 밖에...
+	=> JSON, python의 list + dict
+
+find(), findOne()
+
+전체 조회
+	db.collection명.find();
+조건 검색
+	db.collection명.find({필드명 : 값});
+
+-- 가격이 3000원인 커피 정보 조회
+	(where c_price=3000)
+	db.nov28_coffee.find({price:3000});
+
+	이상, 이하, 초과, 미만
+	db.collection명.find( { 필드명 : {"연산자" : 값} } );
+	연산자 : $lt, $lte, $gt, $gte (미만, 이하, 초과, 이상)
+	
+	db.nov28_coffee.find({price:{"$gt" : 3000}});
+
+--where _id like '%latte%' << 문자열 포함 검색
+	글자 포함검색 연산자 : $regext
+	db.nov28_coffee.find( { _id : { "$regex": "latte" } } );
+--------------------------------------------------------------------------------------------------------------------
+< update >
+	db.collection명.update( 찾을거, 바꿀거 );
+# 4.4
+	db.nov28_coffee.update( {_id:"americano"} , {price:5000} );
+# 6.0	지금은 이것도 사용하지 않는다.
+	db.nov28_coffee.updateOne( {_id:"americano"} , {"$set" : { price: 3000} } );
+
+	ManUse updateOne, updateMany, or bulkWrite.	
+
+
+	위에 방식으로는 한계가 있어서...
+	db.collection명.update( 찾을거, {"$set" : 바꿀거} );
+	db.nov28_coffee.update( {_id : "espresso"}, {"$set" : { price: 3000} } );
+
+
+	- 가격이 4000원 이상인 커피를 모두 무료로
+	
+	db.nov28_coffee.updateMany( { price: { "$gte":4000 } }, {"$set":{price: 0} } );
+	db.nov28_coffee.updateMany( { price: { "$gte":4000 } }, {"$set":{price: "free"} } );
+
+	영향을 받을 데이터가 여러개 ? -> {multi : true}
+	db.nov28_coffee.update( { price: { "$gte":4000 } }, {"$set":{price: "free"} }, {multi : true} );
+
+------------------------------------------------------------------------------------------------------------------
+< delete >	
+	db.collection명.remove(찾을거);
+	- 가격이 100원 이상인거 삭제
+# 4.4
+	db.nov28_coffee.remove({price:{"$gte":100}});
+# 6.0
+ 	deleteOne, deleteMany, findOneAndDelete, or bulkWrite.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
