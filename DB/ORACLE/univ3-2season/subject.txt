@@ -1,0 +1,16 @@
+CREATE TABLE Student(
+stu_id NUMBER(8,2)NOT NULL,
+stu_name VARCHAR2(10),
+stu_grade NUMBER(4)
+);
+
+CREATE TABLE Subject(
+sub_id NUMBER(8,2) NOT NULL,
+sub_name VARCHAR2(20)
+);
+
+CREATE TABLE TAKE(
+stu_id NUMBER(8,2)NOT NULL,
+sub_id NUMBER(8,2) NOT NULL,
+take_year NUMBER(4)
+);
