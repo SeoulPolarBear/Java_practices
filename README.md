@@ -1,7 +1,5 @@
 # Practices
 These are projects i have practiced
-
-
 # JAVA
 <ol>
   <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/JAVA/univ3-2season">Java Practice</a></li>
