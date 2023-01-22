@@ -1,0 +1,3 @@
+﻿  소스.c
+C:\Users\user\source\repos\Homework6-5\Homework6-5\소스.c(15,29): warning C4047: '!=': 'int'의 간접 참조 수준이 'void *'과(와) 다릅니다.
+  Homework6-5.vcxproj -> C:\Users\user\source\repos\Homework6-5\Debug\Homework6-5.exe
