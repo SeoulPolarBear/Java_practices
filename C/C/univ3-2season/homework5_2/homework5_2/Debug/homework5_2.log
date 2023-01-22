@@ -1,0 +1,4 @@
+﻿  main.cpp
+C:\Users\user\source\repos\homework5_2\homework5_2\main.cpp(7,9): warning C4477: 'printf' : 서식 문자열 '%u'에 'unsigned int' 형식의 인수가 필요하지만 variadic 인수 1의 형식이 'int *'입니다.
+C:\Users\user\source\repos\homework5_2\homework5_2\main.cpp(8,9): warning C4477: 'printf' : 서식 문자열 '%u'에 'unsigned int' 형식의 인수가 필요하지만 variadic 인수 1의 형식이 'int *'입니다.
+  homework5_2.vcxproj -> C:\Users\user\source\repos\homework5_2\Debug\homework5_2.exe
