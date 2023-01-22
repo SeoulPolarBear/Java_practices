@@ -183,6 +183,13 @@ permission2, grep, find, vim, tar(archive)</a></li>
   <li><a href = "https://github.com/SeoulPolarBear/Practices/blob/main/Network/Ip/%EC%84%9C%EB%B8%8C%EB%84%B7%ED%8C%85%20%EB%AC%B8%EC%A0%9C%200530.txt">Subnet practice2</a></li>
   </ol>
 
+# C Language
+### C++ Language
+
+### C Language
+<ol>
+  <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/C/C/univ3-2season">C pratice</a></li> 
+  </ol>
 
 # Data Structure
 ### C Language
