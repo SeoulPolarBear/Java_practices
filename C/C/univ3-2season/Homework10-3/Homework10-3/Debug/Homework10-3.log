@@ -1,0 +1,5 @@
+﻿  main.c
+C:\Users\user\source\repos\Homework10-3\Homework10-3\main.c(16,3): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\user\source\repos\Homework10-3\Homework10-3\main.c(18,3): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\user\source\repos\Homework10-3\Homework10-3\main.c(20,3): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  Homework10-3.vcxproj -> C:\Users\user\source\repos\Homework10-3\Debug\Homework10-3.exe
