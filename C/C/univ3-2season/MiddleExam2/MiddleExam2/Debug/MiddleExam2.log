@@ -1,0 +1,8 @@
+﻿  main.c
+C:\Users\user\source\repos\MiddleExam2\MiddleExam2\main.c(17,10): warning C4013: 'pointer'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
+C:\Users\user\source\repos\MiddleExam2\MiddleExam2\main.c(6,1): warning C4047: '초기화 중': 'char'의 간접 참조 수준이 'void *'과(와) 다릅니다.
+C:\Users\user\source\repos\MiddleExam2\MiddleExam2\main.c(24,6): error C2371: 'pointer': 재정의. 기본 형식이 다릅니다.
+C:\Users\user\source\repos\MiddleExam2\MiddleExam2\main.c(28,21): warning C4047: '함수': 'const char *'의 간접 참조 수준이 'char'과(와) 다릅니다.
+C:\Users\user\source\repos\MiddleExam2\MiddleExam2\main.c(28,18): warning C4024: 'strlen': 형식 및 실제 매개 변수 1의 형식이 서로 다릅니다.
+C:\Users\user\source\repos\MiddleExam2\MiddleExam2\main.c(29,9): warning C4047: '=': 'char *'의 간접 참조 수준이 'char'과(와) 다릅니다.
+C:\Users\user\source\repos\MiddleExam2\MiddleExam2\main.c(31,10): warning C4477: 'printf' : 서식 문자열 '%s'에 'char *' 형식의 인수가 필요하지만 variadic 인수 2의 형식이 'int'입니다.
