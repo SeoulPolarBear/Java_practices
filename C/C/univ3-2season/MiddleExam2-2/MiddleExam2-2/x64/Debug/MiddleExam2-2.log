@@ -1,0 +1,5 @@
+﻿  소스.c
+C:\Users\user\source\repos\MiddleExam2-2\MiddleExam2-2\소스.c(26,33): warning C4267: '=': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\user\source\repos\MiddleExam2-2\MiddleExam2-2\소스.c(39,33): warning C4267: '=': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\user\source\repos\MiddleExam2-2\MiddleExam2-2\소스.c(6,9): warning C4047: '초기화 중': 'char'의 간접 참조 수준이 'void *'과(와) 다릅니다.
+  MiddleExam2-2.vcxproj -> C:\Users\user\source\repos\MiddleExam2-2\x64\Debug\MiddleExam2-2.exe
