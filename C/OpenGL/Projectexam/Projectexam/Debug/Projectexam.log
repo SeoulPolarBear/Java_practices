@@ -1,0 +1,2 @@
+﻿  main.cpp
+C:\Users\user\source\repos\Projectexam\Projectexam\main.cpp(2,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'gl/glut.h': No such file or directory
