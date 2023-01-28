@@ -1,0 +1,40 @@
+잉글랜드 내의 팀을 중복없이 내름차순으로 검색하시오.
+
+Select distinct clubteam.team_name from Clubteam inner join ClubLeague
+on clubteam.league = ClubLeague.league
+where clubLeague.country = '잉글랜드'
+order by Clubteam.team_name desc;
+
+2015년이상 2020년 이하에 입단한 선수의 경력 중에 2017년도 이후에 수상한 경력을 중복 없이 검색하여라. 
+
+Select distinct spec_name from SpecName
+where player_name in ( Select player_name from player 
+where enter_year between 2015 and 2020 And player_name in ( Select player_name from Spec
+where spec_year >=2017));
+
+
+유럽 대항전에서 어시스트를 5 이상을 한 선수 중에 FW를 제외하고 올해의 선수상을 받은 선수를 검색하여라.
+
+Select Career.player_name from Career, SpecName 
+ where Career.player_name = SpecName.player_name 
+ And Career.player_num = SpecName.player_num
+ AND career.tour_assist >=5 AND SpecName.spec_name = '올해의 선수'
+ Minus 
+ Select player_name from Player
+ where pos = 'FW';
+
+
+도시가 마드리드, 런던, 리버풀인  선수의 포지션, 포지션별 리그골 합을 검색하였다.
+각 포지션별로 묶고 난 다음에 각 포지션의 리그골 합이 10 이상인 포지션과 리그골 합을  
+포지션별 오름 차순으로 하여 을 검색하여라 
+
+Select player.pos, sum(career.league_goal) from player INNER JOIN  Career
+ ON player.player_name = career.player_name
+where career.player_name in
+(select Player.player_name from player, Clubteam 
+where Player.team_name = clubteam.team_name 
+AND clubteam.city in ('마드리드','런던', '리버풀'))
+Group by player.pos
+having Sum(career.league_goal)>=10
+order by player.pos;
+
