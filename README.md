@@ -81,6 +81,12 @@ Java Object-oriented programming Constructor2</a></li>
  <li><a href = "https://github.com/SeoulPolarBear/Practices/blob/main/WEB/HTML/pratice.html">HTML basic</a></li>
 </ol>
 
+##### univ4-1seanson
+<ol>
+ <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/WEB/HTML/univ4-1seanson/2week">2week</a></li>
+ <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/WEB/HTML/univ4-1seanson/3week">3week</a></li>
+</ol>
+
 ### CSS
 <ol>
  <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/WEB/CSS/Sep13_1_CSS/src/main/webapp">CSS practice1</a></li>
