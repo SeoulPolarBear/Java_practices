@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1><b>글 작성하기</b></h1>
+    <br>
+    <table>
+        <tr>
+            <th><label for="writer">작성자</label></th>
+            <td><input id="writer" type="text" value="작성자"></td>
+        </tr>
+        <tr>
+            <th><label for="ID">아이디</label></th>
+            <td><input id="ID" type="password" value="password"></td>
+        </tr>
+        <tr>
+            <th><label for="email">이메일</label></th>
+            <td><input id="email" type="text">
+            <label >@</label>
+            <input id="email" type="text"></td>
+        </tr>
+        <tr>
+            <th><label for="phone">휴대폰</label></th>
+           <td><select id="phone">
+                <option>010</option>
+                <option>070</option>
+                <option>02</option>
+            </select> 
+            <label >-</label>
+            <input id="phone" type="text">
+            <label >-</label>
+            <input id="phone" type="text">
+        </td>
+        </tr>
+        <tr>
+            <th><label for="title">글제목</label></th>
+            <td><input id="title" type="text"></td>
+        </tr>
+        <tr>
+            <th ><label for="sentence">내용</th>
+           <td><textarea name="sentence" id="sentence" cols="30" rows="10"></textarea></td>
+        </tr>
+        <tr>
+            <th></th>
+            <td><input id="submit" type="submit"></td>
+        </tr>
+    </table>
+</body>
+</html>
