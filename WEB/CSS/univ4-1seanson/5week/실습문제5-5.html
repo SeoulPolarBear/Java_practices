@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>셀렉터</title>
+    <style>
+        #center{text-align:center;}
+        *{background-color: powderblue;}
+        h3 {color: green;}
+        div strong {color: red;}/* 우선순위는 항상 위쪽 부터*/
+        div>strong {color: deepskyblue; background-color: yellow; }
+        div>p { text-indent: 50px;}
+        
+        p em{color:  rgb(47, 112, 47);}
+    </style>
+</head>
+<body class="main">
+    <h3>얼굴</h3>
+    <hr>
+    <div id="center"><strong>박인희</strong></div>
+    <div class="indent">
+        <p><em>길</em>을 걷고 산들 무엇하리 
+        <strong>꽃</strong>이 내가 아니듯 
+        내가 <strong>꽃</strong>이 될 수 없는 지금...</p>
+    </div>
+</body>
+</html>
+<!--<strong> 태그는 그 단어를 강조할 때 사용한다.</strong>*/-->
+<!--em은 그 단어를 시처럼 만든다??-->
