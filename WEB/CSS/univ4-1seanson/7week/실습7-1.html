@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+  body{
+        background-image: url(BackgroundFront.png), url(BackgroundBack.png);
+        background-repeat: repeat-y;
+        background-position: 0px 50%;
+        background-size: 50% 50%;
+        /*background-attachment: scroll;*/
+        background-attachment: fixed;
+        background-color: aqua;
+    }
+</style>
+<body>
+    <h1>CSS</h1>
+    <p>위의 그림은 피라미드(각뿔)를 그리는 과정의 일부를 그려본 것이다.</p>
+    <p> 피라미드를 그리기 위해서는 4개의 삼각형면이 필요한데 OpenGL 에서는 glBegin() 과 glEnd() 사이에 삼각형 4개를 그려주면 자연스러운 3D 피라미드가 그려진다. </p>
+    <p> 프레임웤의 내용이 조금 변경이 되었다. 몇몇 클래스의 이름이 바뀌었고 egl 이라느 네임스페이스를 사용한다. 때문에 전체 소스 코드를 적어보았다.</p>
+</body>
+</html>
