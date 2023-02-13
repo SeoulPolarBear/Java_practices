@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var num = prompt("네 자리 정수를 입력하세요.", '');
+        var tnum = parseInt(num/1000);//천의 자리
+        var hnum = parseInt(num%1000/100);//백의 자리
+        var tnum2 = parseInt(num%100/10);//십의 자리
+        var onum = parseInt(num%10);//일의 자리
+        alert("천의 자리 숫자는 " + tnum + 
+        "이고 백의 자리 숫자는 " + hnum + 
+        "이고 십의 자리 숫자는 " + tnum2 + 
+        "이고 일의 자리 숫자는 " + onum + " 입니다." )
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,8 @@
+var funcA = function(name){
+     alert(name + "님 환영합니다");
+}//익명함수
+function hello(){
+
+ alert("시작2");
+
+}//이름을 붙인 함수
