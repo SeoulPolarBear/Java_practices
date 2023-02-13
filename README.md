@@ -108,6 +108,11 @@ Java Object-oriented programming Constructor2</a></li>
   <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/WEB/JavaScript/Sep19_2_Servlet_IO">JS with Servlet,jsp(validation)</a></li>
 </ol>
 
+##### univ4-1seanson
+<ol>
+ <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/WEB/JavaScript/univ4-1seanson/12week">12week</a></li>
+</ol>
+
 ### jQuery
 <ol>
  <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/WEB/jQuery/Oct05_1_jQuery/WebContent">jQuery1</a></li>
