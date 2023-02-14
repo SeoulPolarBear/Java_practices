@@ -117,6 +117,7 @@ Java Object-oriented programming Constructor2</a></li>
 <ol>
  <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/WEB/JavaScript/univ4-1seanson/12week">12week</a></li>
  <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/WEB/JavaScript/univ4-1seanson/13week">13week</a></li>
+ <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/WEB/JavaScript/univ4-1seanson/14week">14week</a></li>
 </ol>
 
 ### jQuery
