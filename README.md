@@ -168,6 +168,8 @@ Java Object-oriented programming Constructor2</a></li>
 ##### univ4-2seanson
 <ol>
  <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/WEB/JSP/univ4-2seanson/JSPBook/src/main/webapp/Ch02">Ch02</a></li>
+  <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/WEB/JSP/univ4-2seanson/JSPBook/src/main/webapp/Ch03">Ch03</a></li>
+  <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/WEB/JSP/univ4-2seanson/JSPBook/src/main/webapp/Ch04">Ch04</a></li>
  </ol>
 
 # Spring
