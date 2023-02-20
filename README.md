@@ -167,13 +167,13 @@ Java Object-oriented programming Constructor2</a></li>
 
 ##### univ4-2seanson
 <ol>
- <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/WEB/JSP/univ4-2seanson/JSPBook/src/main/webapp/Ch02">Ch02</a></li>
-  <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/WEB/JSP/univ4-2seanson/JSPBook/src/main/webapp/Ch03">Ch03</a></li>
-  <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/WEB/JSP/univ4-2seanson/JSPBook/src/main/webapp/Ch04">Ch04</a></li>
-  <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/WEB/JSP/univ4-2seanson/JSPBook/src/main/webapp/Ch05">Ch05</a></li>
-   <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/WEB/JSP/univ4-2seanson/JSPBook/src/main/webapp/Ch06">Ch06</a></li>
-    <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/WEB/JSP/univ4-2seanson/JSPBook/src/main/webapp/Ch07">Ch07</a></li>
-     <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/WEB/JSP/univ4-2seanson/JSPBook/src/main/webapp/Ch08">Ch08</a></li> 
+ <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/WEB/JSP/univ4-2seanson/JSPBook/src/main/webapp/Ch02">Ch02 JSP Practice</a></li>
+  <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/WEB/JSP/univ4-2seanson/JSPBook/src/main/webapp/Ch03">Ch03 JSP Practice</a></li>
+  <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/WEB/JSP/univ4-2seanson/JSPBook/src/main/webapp/Ch04">Ch04 forward, include, param, Property Bean</a></li>
+  <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/WEB/JSP/univ4-2seanson/JSPBook/src/main/webapp/Ch05">Ch05 out, request, response</a></li>
+   <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/WEB/JSP/univ4-2seanson/JSPBook/src/main/webapp/Ch06">Ch06 form tag</a></li>
+    <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/WEB/JSP/univ4-2seanson/JSPBook/src/main/webapp/Ch07">Ch07 fileupload</a></li>
+     <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/WEB/JSP/univ4-2seanson/JSPBook/src/main/webapp/Ch08">Ch08 validation</a></li> 
      <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/WEB/JSP/univ4-2seanson/JSPBook/src/main/webapp/Ch09">Ch09 JSTL</a></li>
      <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/WEB/JSP/univ4-2seanson/JSPBook/src/main/webapp/Ch10">Ch10 
 Login, Logout</a></li>
