@@ -182,6 +182,8 @@ Login, Logout</a></li>
      <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/WEB/JSP/univ4-2seanson/JSPBook/src/main/webapp/Ch14">Ch14 Cookie</a></li>
      <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/WEB/JSP/univ4-2seanson/JSPBook/src/main/webapp/Ch15">Ch15 DB</a></li>
      <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/WEB/JSP/univ4-2seanson/JSPBook/src/main/webapp/Ch16">Ch16 DB Connection</a></li>
+     <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/WEB/JSP/univ4-2seanson/Market01">Web Practice</a></li>
+     <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/WEB/JSP/univ4-2seanson/WebMarket">Web Market</a></li>
  </ol>
 
 # Spring
