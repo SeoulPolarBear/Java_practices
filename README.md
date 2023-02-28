@@ -245,7 +245,9 @@ permission2, grep, find, vim, tar(archive)</a></li>
 # Data Structure
 ### C Language
 ##### Deque
-
+<ol>
+  <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/data%20structure/C%20language/Deque/Backjoon_Deque">Backjoon_Deque</a></li>
+  </ol>
 
 ##### LinkedList
 
