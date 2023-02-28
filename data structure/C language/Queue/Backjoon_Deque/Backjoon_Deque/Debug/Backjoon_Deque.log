@@ -1,0 +1,7 @@
+﻿  main.c
+C:\Users\SungHwan\source\repos\Backjoon_Deque\Backjoon_Deque\main.c(120,20): warning C4013: 'strcmp'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
+C:\Users\SungHwan\source\repos\Backjoon_Deque\Backjoon_Deque\main.c(116,5): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\SungHwan\source\repos\Backjoon_Deque\Backjoon_Deque\main.c(119,9): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\SungHwan\source\repos\Backjoon_Deque\Backjoon_Deque\main.c(121,13): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\SungHwan\source\repos\Backjoon_Deque\Backjoon_Deque\main.c(126,13): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  Backjoon_Deque.vcxproj -> C:\Users\SungHwan\source\repos\Backjoon_Deque\Debug\Backjoon_Deque.exe
