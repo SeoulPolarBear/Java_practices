@@ -1,0 +1,3 @@
+﻿  main.c
+C:\Users\SungHwan\source\repos\backjoon\backjoon\main.c(17,3): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  backjoon.vcxproj -> C:\Users\SungHwan\source\repos\backjoon\Debug\backjoon.exe
