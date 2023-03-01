@@ -260,11 +260,16 @@ permission2, grep, find, vim, tar(archive)</a></li>
 
 
 ##### Sort
+<ol>
+  <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/data%20structure/C%20language/Sort/Backjoon_SortNumber1">Backjoon_Bubble Sort</a></li>
+  <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/data%20structure/C%20language/Sort/Backjoon_Find_Number">Backjoon_Quick Sort</a></li>
+</ol>
 
 ##### Stack
 <ol>
   <li><a href = "https://github.com/SeoulPolarBear/Practices/blob/main/data%20structure/C%20language/Stack/1.Backjoon_Stack">Backjoon_Stack</a></li>
   <li><a href = "https://github.com/SeoulPolarBear/Practices/blob/main/data%20structure/C%20language/Stack/2.Backjoon_Stack2">Backjoon_Stack2</a></li>
+   <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/data%20structure/C%20language/Stack/Backjoon_Stack">Backjoon_Stack3</a></li>
 </ol>
 
 ##### malloc
