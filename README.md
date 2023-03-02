@@ -241,7 +241,7 @@ permission2, grep, find, vim, tar(archive)</a></li>
 ### C Language
 <ol>
   <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/C/C/univ3-2season">C pratice</a></li> 
-  <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/C/Practice/cal_steel">C pratice</a></li> 
+  <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/C/Practice/cal_steel">C pratice2</a></li> 
   </ol>
   
 ### C OpenGL
