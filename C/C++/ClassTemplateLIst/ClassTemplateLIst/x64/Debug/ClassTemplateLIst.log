@@ -1,0 +1,176 @@
+﻿  CBST.cpp
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(44,50): error C2059: 구문 오류: ')'
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(50,2): error C2143: 구문 오류: ';'이(가) 'bool' 앞에 없습니다.
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(45,3): error C2059: 구문 오류: 'return'
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(50): message : 컴파일되는 클래스 템플릿 인스턴스화 'tBSTNode<T1,T2>'에 대한 참조를 확인하세요.
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(45,1): error C2238: ';' 앞에 예기치 않은 토큰이 있습니다.
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(47,3): error C2059: 구문 오류: 'return'
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(47,1): error C2238: ';' 앞에 예기치 않은 토큰이 있습니다.
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(53,7): error C2355: 'this': 비정적 멤버 함수 또는 비정적 데이터 멤버 이니셜라이저 안에서만 참조할 수 있습니다.
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(53,81): error C2355: 'this': 비정적 멤버 함수 또는 비정적 데이터 멤버 이니셜라이저 안에서만 참조할 수 있습니다.
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(62,7): error C2355: 'this': 비정적 멤버 함수 또는 비정적 데이터 멤버 이니셜라이저 안에서만 참조할 수 있습니다.
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(62,81): error C2355: 'this': 비정적 멤버 함수 또는 비정적 데이터 멤버 이니셜라이저 안에서만 참조할 수 있습니다.
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(70,18): error C2065: 'arrNode': 선언되지 않은 식별자입니다.
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(70,64): error C2065: 'arrNode': 선언되지 않은 식별자입니다.
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(78,7): error C2065: 'arrNode': 선언되지 않은 식별자입니다.
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(78,41): error C2065: 'arrNode': 선언되지 않은 식별자입니다.
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(84,11): error C2059: 구문 오류: ')'
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(86,3): error C4430: 형식 지정자가 없습니다. int로 가정합니다. 참고: C++에서는 기본 int를 지원하지 않습니다.
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(87,2): error C4430: 형식 지정자가 없습니다. int로 가정합니다. 참고: C++에서는 기본 int를 지원하지 않습니다.
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(87,2): error C2059: 구문 오류: '{'
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(87,2): error C2143: 구문 오류: ';'이(가) '{' 앞에 없습니다.
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(87,2): error C2447: '{': 함수 헤더가 없습니다. 이전 스타일의 형식 목록입니까?
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(89,11): error C2059: 구문 오류: 'const'
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(89,23): error C2065: 'T1': 선언되지 않은 식별자입니다.
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(89,27): error C2065: 'T2': 선언되지 않은 식별자입니다.
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(89,17): error C2923: 'tPair': 'T1'은(는) 'T1' 매개 변수에 대한 올바른 템플릿 형식 인수가 아닙니다.
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(89): message : 'T1' 선언을 참조하십시오.
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(89,17): error C2923: 'tPair': 'T2'은(는) 'T2' 매개 변수에 대한 올바른 템플릿 형식 인수가 아닙니다.
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(89): message : 'T2' 선언을 참조하십시오.
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(90,14): error C4430: 형식 지정자가 없습니다. int로 가정합니다. 참고: C++에서는 기본 int를 지원하지 않습니다.
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(90,4): error C2365: 'pair': 재정의: 이전 정의는 '함수'입니다.
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(85): message : 'pair' 선언을 참조하십시오.
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(90,9): error C2065: '_pair': 선언되지 않은 식별자입니다.
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(91,12): error C4430: 형식 지정자가 없습니다. int로 가정합니다. 참고: C++에서는 기본 int를 지원하지 않습니다.
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(91,5): error C2365: 'arrNode': 재정의: 이전 정의는 '함수'입니다.
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(86): message : 'arrNode' 선언을 참조하십시오.
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(91,14): error C2065: '_pParent': 선언되지 않은 식별자입니다.
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(91,24): error C2065: '_pLChild': 선언되지 않은 식별자입니다.
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(91,34): error C2065: '_pRChild': 선언되지 않은 식별자입니다.
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(93,1): error C2059: 구문 오류: '}'
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(93,1): error C2143: 구문 오류: ';'이(가) '}' 앞에 없습니다.
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(172,4): error C2760: 구문 오류: ':'을(는) 예기치 않은 토큰입니다. 필요한 토큰은 '문'입니다.
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(179): message : 컴파일되는 클래스 템플릿 인스턴스화 'CBST<T1,T2>'에 대한 참조를 확인하세요.
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(267,1): error C2244: 'CBST<T1,T2>::GetInOrderPredecessor': 함수 정의를 기존 선언과 일치시킬 수 없습니다.
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(266): message : 'CBST<T1,T2>::GetInOrderPredecessor' 선언을 참조하십시오.
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(267,1): message : 정의
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(267,1): message : 'tBSTNode<T1,T2> *CBST<T1,T2>::GetInOrderPredecessor(tBSTNode<T1,T2>)'
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(267,1): message : 기존 선언
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(267,1): message : 'tBSTNode<T1,T2> *CBST<T1,T2>::GetInOrderPredecessor(tBSTNode<T1,T2> *)'
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(278,2): error C2760: 구문 오류: '}'을(는) 예기치 않은 토큰입니다. 필요한 토큰은 ';'입니다.
+  main.cpp
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CArr.h(163,21): error C2760: 구문 오류: ';'을(는) 예기치 않은 토큰입니다. 필요한 토큰은 '{'입니다.
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CArr.h(175): message : 컴파일되는 클래스 템플릿 인스턴스화 'CArr<T>::iterator'에 대한 참조를 확인하세요.
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CArr.h(306): message : 컴파일되는 클래스 템플릿 인스턴스화 'CArr<T>'에 대한 참조를 확인하세요.
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CArr.h(164,3): error C2059: 구문 오류: '{'
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CArr.h(164,1): error C2334: '{' 앞에 예기치 않은 토큰이 있습니다. 명백한 함수 본문을 건너뜁니다.
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CArr.h(186,11): error C2838: '{ctor}': 멤버 선언의 정규화된 이름이 잘못되었습니다.
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CArr.h(189,3): error C2059: 구문 오류: ':'
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CArr.h(189,1): error C2334: ':' 앞에 예기치 않은 토큰이 있습니다. 명백한 함수 본문을 건너뜁니다.
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CArr.h(306,1): fatal error C1903: 이전 오류를 복구할 수 없습니다. 컴파일이 중지됩니다.
+  main_0610.cpp
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(44,50): error C2059: 구문 오류: ')'
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(50,2): error C2143: 구문 오류: ';'이(가) 'bool' 앞에 없습니다.
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(45,3): error C2059: 구문 오류: 'return'
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(50): message : 컴파일되는 클래스 템플릿 인스턴스화 'tBSTNode<T1,T2>'에 대한 참조를 확인하세요.
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(45,1): error C2238: ';' 앞에 예기치 않은 토큰이 있습니다.
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(47,3): error C2059: 구문 오류: 'return'
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(47,1): error C2238: ';' 앞에 예기치 않은 토큰이 있습니다.
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(53,7): error C2355: 'this': 비정적 멤버 함수 또는 비정적 데이터 멤버 이니셜라이저 안에서만 참조할 수 있습니다.
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(53,81): error C2355: 'this': 비정적 멤버 함수 또는 비정적 데이터 멤버 이니셜라이저 안에서만 참조할 수 있습니다.
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(62,7): error C2355: 'this': 비정적 멤버 함수 또는 비정적 데이터 멤버 이니셜라이저 안에서만 참조할 수 있습니다.
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(62,81): error C2355: 'this': 비정적 멤버 함수 또는 비정적 데이터 멤버 이니셜라이저 안에서만 참조할 수 있습니다.
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(70,18): error C2065: 'arrNode': 선언되지 않은 식별자입니다.
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(70,64): error C2065: 'arrNode': 선언되지 않은 식별자입니다.
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(78,7): error C2065: 'arrNode': 선언되지 않은 식별자입니다.
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(78,41): error C2065: 'arrNode': 선언되지 않은 식별자입니다.
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(84,11): error C2059: 구문 오류: ')'
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(86,3): error C4430: 형식 지정자가 없습니다. int로 가정합니다. 참고: C++에서는 기본 int를 지원하지 않습니다.
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(87,2): error C4430: 형식 지정자가 없습니다. int로 가정합니다. 참고: C++에서는 기본 int를 지원하지 않습니다.
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(87,2): error C2059: 구문 오류: '{'
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(87,2): error C2143: 구문 오류: ';'이(가) '{' 앞에 없습니다.
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(87,2): error C2447: '{': 함수 헤더가 없습니다. 이전 스타일의 형식 목록입니까?
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(89,11): error C2059: 구문 오류: 'const'
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(89,23): error C2065: 'T1': 선언되지 않은 식별자입니다.
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(89,27): error C2065: 'T2': 선언되지 않은 식별자입니다.
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(89,17): error C2923: 'tPair': 'T1'은(는) 'T1' 매개 변수에 대한 올바른 템플릿 형식 인수가 아닙니다.
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(89): message : 'T1' 선언을 참조하십시오.
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(89,17): error C2923: 'tPair': 'T2'은(는) 'T2' 매개 변수에 대한 올바른 템플릿 형식 인수가 아닙니다.
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(89): message : 'T2' 선언을 참조하십시오.
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(90,14): error C4430: 형식 지정자가 없습니다. int로 가정합니다. 참고: C++에서는 기본 int를 지원하지 않습니다.
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(90,4): error C2365: 'pair': 재정의: 이전 정의는 '함수'입니다.
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(85): message : 'pair' 선언을 참조하십시오.
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(90,9): error C2065: '_pair': 선언되지 않은 식별자입니다.
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(91,12): error C4430: 형식 지정자가 없습니다. int로 가정합니다. 참고: C++에서는 기본 int를 지원하지 않습니다.
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(91,5): error C2365: 'arrNode': 재정의: 이전 정의는 '함수'입니다.
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(86): message : 'arrNode' 선언을 참조하십시오.
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(91,14): error C2065: '_pParent': 선언되지 않은 식별자입니다.
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(91,24): error C2065: '_pLChild': 선언되지 않은 식별자입니다.
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(91,34): error C2065: '_pRChild': 선언되지 않은 식별자입니다.
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(93,1): error C2059: 구문 오류: '}'
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(93,1): error C2143: 구문 오류: ';'이(가) '}' 앞에 없습니다.
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(172,4): error C2760: 구문 오류: ':'을(는) 예기치 않은 토큰입니다. 필요한 토큰은 '문'입니다.
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(179): message : 컴파일되는 클래스 템플릿 인스턴스화 'CBST<T1,T2>'에 대한 참조를 확인하세요.
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(267,1): error C2244: 'CBST<T1,T2>::GetInOrderPredecessor': 함수 정의를 기존 선언과 일치시킬 수 없습니다.
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(266): message : 'CBST<T1,T2>::GetInOrderPredecessor' 선언을 참조하십시오.
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(267,1): message : 정의
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(267,1): message : 'tBSTNode<T1,T2> *CBST<T1,T2>::GetInOrderPredecessor(tBSTNode<T1,T2>)'
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(267,1): message : 기존 선언
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(267,1): message : 'tBSTNode<T1,T2> *CBST<T1,T2>::GetInOrderPredecessor(tBSTNode<T1,T2> *)'
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(278,2): error C2760: 구문 오류: '}'을(는) 예기치 않은 토큰입니다. 필요한 토큰은 ';'입니다.
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\main_0610.cpp(37,3): error C4996: 'wcscpy': This function or variable may be unsafe. Consider using wcscpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\main_0610.cpp(61,2): error C2365: 'TYPE_1': 재정의: 이전 정의는 '열거자'입니다.
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\main_0610.cpp(51): message : 'TYPE_1' 선언을 참조하십시오.
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\main_0610.cpp(71,1): error C2011: 'MY_TYPE': 'enum' 형식 재정의
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\main_0610.cpp(49): message : 'MY_TYPE' 선언을 참조하십시오.
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\main_0610.cpp(81,1): error C2011: 'OTHER_TYPE': 'enum' 형식 재정의
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\main_0610.cpp(59): message : 'OTHER_TYPE' 선언을 참조하십시오.
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\main_0610.cpp(85,5): error C2084: 'int main(void)' 함수에 이미 본문이 있습니다.
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\main_0610.cpp(64): message : 'main'의 이전 정의를 참조하십시오.
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\main_0610.cpp(87,24): error C2027: 정의되지 않은 형식 'MY_TYPE'을(를) 사용했습니다.
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\main_0610.cpp(49): message : 'MY_TYPE' 선언을 참조하십시오.
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\main_0610.cpp(89,14): error C2027: 정의되지 않은 형식 'OTHER_TYPE'을(를) 사용했습니다.
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\main_0610.cpp(59): message : 'OTHER_TYPE' 선언을 참조하십시오.
+  main_0616.cpp
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(44,50): error C2059: 구문 오류: ')'
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(50,2): error C2143: 구문 오류: ';'이(가) 'bool' 앞에 없습니다.
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(45,3): error C2059: 구문 오류: 'return'
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(50): message : 컴파일되는 클래스 템플릿 인스턴스화 'tBSTNode<T1,T2>'에 대한 참조를 확인하세요.
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(45,1): error C2238: ';' 앞에 예기치 않은 토큰이 있습니다.
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(47,3): error C2059: 구문 오류: 'return'
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(47,1): error C2238: ';' 앞에 예기치 않은 토큰이 있습니다.
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(53,7): error C2355: 'this': 비정적 멤버 함수 또는 비정적 데이터 멤버 이니셜라이저 안에서만 참조할 수 있습니다.
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(53,81): error C2355: 'this': 비정적 멤버 함수 또는 비정적 데이터 멤버 이니셜라이저 안에서만 참조할 수 있습니다.
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(62,7): error C2355: 'this': 비정적 멤버 함수 또는 비정적 데이터 멤버 이니셜라이저 안에서만 참조할 수 있습니다.
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(62,81): error C2355: 'this': 비정적 멤버 함수 또는 비정적 데이터 멤버 이니셜라이저 안에서만 참조할 수 있습니다.
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(70,18): error C2065: 'arrNode': 선언되지 않은 식별자입니다.
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(70,64): error C2065: 'arrNode': 선언되지 않은 식별자입니다.
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(78,7): error C2065: 'arrNode': 선언되지 않은 식별자입니다.
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(78,41): error C2065: 'arrNode': 선언되지 않은 식별자입니다.
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(84,11): error C2059: 구문 오류: ')'
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(86,3): error C4430: 형식 지정자가 없습니다. int로 가정합니다. 참고: C++에서는 기본 int를 지원하지 않습니다.
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(87,2): error C4430: 형식 지정자가 없습니다. int로 가정합니다. 참고: C++에서는 기본 int를 지원하지 않습니다.
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(87,2): error C2059: 구문 오류: '{'
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(87,2): error C2143: 구문 오류: ';'이(가) '{' 앞에 없습니다.
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(87,2): error C2447: '{': 함수 헤더가 없습니다. 이전 스타일의 형식 목록입니까?
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(89,11): error C2059: 구문 오류: 'const'
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(89,23): error C2065: 'T1': 선언되지 않은 식별자입니다.
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(89,27): error C2065: 'T2': 선언되지 않은 식별자입니다.
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(89,17): error C2923: 'tPair': 'T1'은(는) 'T1' 매개 변수에 대한 올바른 템플릿 형식 인수가 아닙니다.
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(89): message : 'T1' 선언을 참조하십시오.
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(89,17): error C2923: 'tPair': 'T2'은(는) 'T2' 매개 변수에 대한 올바른 템플릿 형식 인수가 아닙니다.
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(89): message : 'T2' 선언을 참조하십시오.
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(90,14): error C4430: 형식 지정자가 없습니다. int로 가정합니다. 참고: C++에서는 기본 int를 지원하지 않습니다.
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(90,4): error C2365: 'pair': 재정의: 이전 정의는 '함수'입니다.
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(85): message : 'pair' 선언을 참조하십시오.
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(90,9): error C2065: '_pair': 선언되지 않은 식별자입니다.
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(91,12): error C4430: 형식 지정자가 없습니다. int로 가정합니다. 참고: C++에서는 기본 int를 지원하지 않습니다.
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(91,5): error C2365: 'arrNode': 재정의: 이전 정의는 '함수'입니다.
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(86): message : 'arrNode' 선언을 참조하십시오.
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(91,14): error C2065: '_pParent': 선언되지 않은 식별자입니다.
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(91,24): error C2065: '_pLChild': 선언되지 않은 식별자입니다.
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(91,34): error C2065: '_pRChild': 선언되지 않은 식별자입니다.
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(93,1): error C2059: 구문 오류: '}'
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(93,1): error C2143: 구문 오류: ';'이(가) '}' 앞에 없습니다.
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(172,4): error C2760: 구문 오류: ':'을(는) 예기치 않은 토큰입니다. 필요한 토큰은 '문'입니다.
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(179): message : 컴파일되는 클래스 템플릿 인스턴스화 'CBST<T1,T2>'에 대한 참조를 확인하세요.
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(267,1): error C2244: 'CBST<T1,T2>::GetInOrderPredecessor': 함수 정의를 기존 선언과 일치시킬 수 없습니다.
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(266): message : 'CBST<T1,T2>::GetInOrderPredecessor' 선언을 참조하십시오.
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(267,1): message : 정의
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(267,1): message : 'tBSTNode<T1,T2> *CBST<T1,T2>::GetInOrderPredecessor(tBSTNode<T1,T2>)'
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(267,1): message : 기존 선언
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(267,1): message : 'tBSTNode<T1,T2> *CBST<T1,T2>::GetInOrderPredecessor(tBSTNode<T1,T2> *)'
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\CBST.h(278,2): error C2760: 구문 오류: '}'을(는) 예기치 않은 토큰입니다. 필요한 토큰은 ';'입니다.
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\main_0616.cpp(48,1): error C2612: 기본/멤버 이니셜라이저 목록에 후행 ':'을(를) 사용할 수 없습니다.
+C:\Users\SungHwan\source\repos\ClassTemplateLIst\ClassTemplateLIst\main_0616.cpp(91,1): fatal error C1004: 예기치 않은 파일의 끝이 나타났습니다.
+  코드를 생성하고 있습니다...
