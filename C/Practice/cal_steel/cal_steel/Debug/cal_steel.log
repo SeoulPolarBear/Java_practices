@@ -1,0 +1,14 @@
+﻿  main.c
+C:\Users\SungHwan\source\repos\cal_steel\cal_steel\main.c(6,10): warning C4477: 'scanf_s' : 서식 문자열 '%f'에 'float *' 형식의 인수가 필요하지만 variadic 인수 1의 형식이 'double *'입니다.
+C:\Users\SungHwan\source\repos\cal_steel\cal_steel\main.c(6,10): message : 서식 문자열에서 '%lf'을(를) 사용하는 것이 좋습니다.
+C:\Users\SungHwan\source\repos\cal_steel\cal_steel\main.c(7,10): warning C4477: 'scanf_s' : 서식 문자열 '%f'에 'float *' 형식의 인수가 필요하지만 variadic 인수 1의 형식이 'double *'입니다.
+C:\Users\SungHwan\source\repos\cal_steel\cal_steel\main.c(7,10): message : 서식 문자열에서 '%lf'을(를) 사용하는 것이 좋습니다.
+C:\Users\SungHwan\source\repos\cal_steel\cal_steel\main.c(8,10): warning C4477: 'scanf_s' : 서식 문자열 '%f'에 'float *' 형식의 인수가 필요하지만 variadic 인수 1의 형식이 'double *'입니다.
+C:\Users\SungHwan\source\repos\cal_steel\cal_steel\main.c(8,10): message : 서식 문자열에서 '%lf'을(를) 사용하는 것이 좋습니다.
+C:\Users\SungHwan\source\repos\cal_steel\cal_steel\main.c(9,10): warning C4477: 'scanf_s' : 서식 문자열 '%f'에 'float *' 형식의 인수가 필요하지만 variadic 인수 1의 형식이 'double *'입니다.
+C:\Users\SungHwan\source\repos\cal_steel\cal_steel\main.c(9,10): message : 서식 문자열에서 '%lf'을(를) 사용하는 것이 좋습니다.
+C:\Users\SungHwan\source\repos\cal_steel\cal_steel\main.c(10,10): warning C4477: 'scanf_s' : 서식 문자열 '%f'에 'float *' 형식의 인수가 필요하지만 variadic 인수 1의 형식이 'double *'입니다.
+C:\Users\SungHwan\source\repos\cal_steel\cal_steel\main.c(10,10): message : 서식 문자열에서 '%lf'을(를) 사용하는 것이 좋습니다.
+C:\Users\SungHwan\source\repos\cal_steel\cal_steel\main.c(11,10): warning C4477: 'scanf_s' : 서식 문자열 '%f'에 'float *' 형식의 인수가 필요하지만 variadic 인수 1의 형식이 'double *'입니다.
+C:\Users\SungHwan\source\repos\cal_steel\cal_steel\main.c(11,10): message : 서식 문자열에서 '%lf'을(를) 사용하는 것이 좋습니다.
+  cal_steel.vcxproj -> C:\Users\SungHwan\source\repos\cal_steel\Debug\cal_steel.exe
