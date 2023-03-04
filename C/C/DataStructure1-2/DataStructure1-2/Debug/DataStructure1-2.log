@@ -1,3 +1,0 @@
-﻿  main.cpp
-C:\Users\SungHwan\source\repos\DataStructure1-2\DataStructure1-2\main.cpp(5,2): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  DataStructure1-2.vcxproj -> C:\Users\SungHwan\source\repos\DataStructure1-2\Debug\DataStructure1-2.exe
