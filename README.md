@@ -284,10 +284,11 @@ permission2, grep, find, vim, tar(archive)</a></li>
 
 # Algorithm
 ### C Language
-##### Fibonacci
 <ol>
   <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/Algorithm/C%20Language/backjoon">Backjoon_fibonacci</a></li>
+<li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/Algorithm/C%20Language/backjoon/DataStructure">Power Series</a></li>
 </ol>
+
 
 ### Java Language
 ##### Fibonacci
