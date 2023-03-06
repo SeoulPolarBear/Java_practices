@@ -242,7 +242,10 @@ permission2, grep, find, vim, tar(archive)</a></li>
 <ol>
   <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/C/C/univ3-2season">C pratice</a></li> 
   <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/C/Practice/cal_steel">C pratice2</a></li> 
-  <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/C/C/DataStructure2-1">pointer and struct</a></li> 
+  <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/C/C/DataStructure2-1">pointer and struct1</a></li>
+  <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/C/C/DataStructure2-3">pointer and struct2</a></li> 
+  <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/C/C/DataStructure2-4">pointer and struct3</a></li> 
+  <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/C/C/DataStructure2-5">pointer and struct4</a></li> 
   </ol>
   
 ### C OpenGL
