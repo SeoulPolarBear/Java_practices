@@ -1,0 +1,15 @@
+﻿  main.cpp
+C:\Users\SungHwan\source\repos\DataStructure2-4\DataStructure2-4\main.cpp(39,8): warning C4477: 'scanf' : 서식 문자열 '%s'에 'char *' 형식의 인수가 필요하지만 variadic 인수 1의 형식이 'char **'입니다.
+C:\Users\SungHwan\source\repos\DataStructure2-4\DataStructure2-4\main.cpp(41,8): warning C4477: 'scanf' : 서식 문자열 '%s'에 'char *' 형식의 인수가 필요하지만 variadic 인수 1의 형식이 'char **'입니다.
+C:\Users\SungHwan\source\repos\DataStructure2-4\DataStructure2-4\main.cpp(42,8): warning C4477: 'scanf' : 서식 문자열 '%s'에 'char *' 형식의 인수가 필요하지만 variadic 인수 1의 형식이 'char **'입니다.
+C:\Users\SungHwan\source\repos\DataStructure2-4\DataStructure2-4\main.cpp(43,8): warning C4477: 'scanf' : 서식 문자열 '%s'에 'char *' 형식의 인수가 필요하지만 variadic 인수 1의 형식이 'char **'입니다.
+C:\Users\SungHwan\source\repos\DataStructure2-4\DataStructure2-4\main.cpp(39,2): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\SungHwan\source\repos\DataStructure2-4\DataStructure2-4\main.cpp(40,2): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\SungHwan\source\repos\DataStructure2-4\DataStructure2-4\main.cpp(41,2): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\SungHwan\source\repos\DataStructure2-4\DataStructure2-4\main.cpp(42,2): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\SungHwan\source\repos\DataStructure2-4\DataStructure2-4\main.cpp(43,2): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\SungHwan\source\repos\DataStructure2-4\DataStructure2-4\main.cpp(48,9): warning C4477: 'printf' : 서식 문자열 '%s'에 'char *' 형식의 인수가 필요하지만 variadic 인수 1의 형식이 'char **'입니다.
+C:\Users\SungHwan\source\repos\DataStructure2-4\DataStructure2-4\main.cpp(50,9): warning C4477: 'printf' : 서식 문자열 '%s'에 'char *' 형식의 인수가 필요하지만 variadic 인수 1의 형식이 'char **'입니다.
+C:\Users\SungHwan\source\repos\DataStructure2-4\DataStructure2-4\main.cpp(51,9): warning C4477: 'printf' : 서식 문자열 '%s'에 'char *' 형식의 인수가 필요하지만 variadic 인수 1의 형식이 'char **'입니다.
+C:\Users\SungHwan\source\repos\DataStructure2-4\DataStructure2-4\main.cpp(52,9): warning C4477: 'printf' : 서식 문자열 '%s'에 'char *' 형식의 인수가 필요하지만 variadic 인수 1의 형식이 'char **'입니다.
+  DataStructure2-4.vcxproj -> C:\Users\SungHwan\source\repos\DataStructure2-4\Debug\DataStructure2-4.exe
