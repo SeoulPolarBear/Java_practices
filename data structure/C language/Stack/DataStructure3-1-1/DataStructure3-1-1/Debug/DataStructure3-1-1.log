@@ -1,0 +1,7 @@
+﻿  main.cpp
+C:\Users\SungHwan\source\repos\DataStructure3-1-1\DataStructure3-1-1\stack.h(11,2): error C2371: 'element': 재정의. 기본 형식이 다릅니다.
+C:\Users\SungHwan\source\repos\DataStructure3-1-1\DataStructure3-1-1\stack.h(11): message : 'element' 선언을 참조하십시오.
+C:\Users\SungHwan\source\repos\DataStructure3-1-1\DataStructure3-1-1\stack.h(17,2): error C2371: 'StackType': 재정의. 기본 형식이 다릅니다.
+C:\Users\SungHwan\source\repos\DataStructure3-1-1\DataStructure3-1-1\stack.h(17): message : 'StackType' 선언을 참조하십시오.
+C:\Users\SungHwan\source\repos\DataStructure3-1-1\DataStructure3-1-1\main.cpp(58,4): error C2561: 'main': 함수는 값을 반환해야 합니다.
+C:\Users\SungHwan\source\repos\DataStructure3-1-1\DataStructure3-1-1\main.cpp(39): message : 'main' 선언을 참조하십시오.
