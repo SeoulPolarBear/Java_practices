@@ -1,0 +1,5 @@
+﻿  main.c
+C:\Users\SungHwan\source\repos\DataStructure3-1\DataStructure3-1\stack.h(11,2): error C2371: 'element': 재정의. 기본 형식이 다릅니다.
+C:\Users\SungHwan\source\repos\DataStructure3-1\DataStructure3-1\stack.h(11): message : 'element' 선언을 참조하십시오.
+C:\Users\SungHwan\source\repos\DataStructure3-1\DataStructure3-1\stack.h(17,2): error C2371: 'StackType': 재정의. 기본 형식이 다릅니다.
+C:\Users\SungHwan\source\repos\DataStructure3-1\DataStructure3-1\stack.h(17): message : 'StackType' 선언을 참조하십시오.
