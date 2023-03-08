@@ -276,7 +276,7 @@ ASCII Code with wchar</a></li>
 ##### Sort
 <ol>
   <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/data%20structure/C%20language/Sort/Backjoon_SortNumber1">Backjoon_Bubble Sort</a></li>
-  <li><a href = https://github.com/SeoulPolarBear/Practices/tree/main/data%20structure/C%20language/Sort/ep46Homework">Bubble Sort</a></li>
+  <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/data%20structure/C%20language/Sort/ep46Homework">Bubble Sort</a></li>
   <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/data%20structure/C%20language/Sort/Backjoon_Find_Number">Backjoon_Quick Sort</a></li>
 </ol>
 </ol>
