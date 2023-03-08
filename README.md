@@ -246,6 +246,8 @@ permission2, grep, find, vim, tar(archive)</a></li>
   <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/C/C/DataStructure2-3">pointer and struct2</a></li> 
   <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/C/C/DataStructure2-4">pointer and struct3</a></li> 
   <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/C/C/DataStructure2-5">pointer and struct4</a></li> 
+  <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/C/C/ep38Homework">
+ASCII Code with wchar</a></li> 
   </ol>
   
 ### C OpenGL
@@ -258,6 +260,7 @@ permission2, grep, find, vim, tar(archive)</a></li>
 ##### Deque
 <ol>
   <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/data%20structure/C%20language/Deque/Backjoon_Deque">Backjoon_Deque</a></li>
+  <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/data%20structure/C%20language/Deque/deque">Deque</a></li>
   </ol>
 
 ##### LinkedList
@@ -273,7 +276,9 @@ permission2, grep, find, vim, tar(archive)</a></li>
 ##### Sort
 <ol>
   <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/data%20structure/C%20language/Sort/Backjoon_SortNumber1">Backjoon_Bubble Sort</a></li>
+  <li><a href = https://github.com/SeoulPolarBear/Practices/tree/main/data%20structure/C%20language/Sort/ep46Homework">Bubble Sort</a></li>
   <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/data%20structure/C%20language/Sort/Backjoon_Find_Number">Backjoon_Quick Sort</a></li>
+</ol>
 </ol>
 
 ##### Stack
