@@ -261,8 +261,7 @@ ASCII Code with wchar</a></li>
 <ol>
   <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/data%20structure/C%20language/Deque/Backjoon_Deque">Backjoon_Deque</a></li>
   <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/data%20structure/C%20language/Deque/deque">Deque</a></li>
-  </ol>
-
+    
 ##### LinkedList
 
 ##### Queue
@@ -293,12 +292,19 @@ ASCII Code with wchar</a></li>
 
 ##### malloc
 
+##### Heap
+<ol>
+<li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/data%20structure/C%20language/Heap">Heap1</a></li>
+  </ol>
+
 
 # Algorithm
 ### C Language
 <ol>
   <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/Algorithm/C%20Language/backjoon">Backjoon_fibonacci</a></li>
 <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/Algorithm/C%20Language/backjoon/DataStructure">Power Series</a></li>
+<li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/Algorithm/C%20Language/backjoon/fibonacci5">Fibonacci3</a></li>
+<li><a href = "hhttps://github.com/SeoulPolarBear/Practices/tree/main/Algorithm/C%20Language/backjoon/hanoiTop">HanoiTop</a></li>
 </ol>
 
 
