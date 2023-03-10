@@ -1,0 +1,8 @@
+﻿  Linkedlist.c
+  main.c
+C:\Users\SungHwan\source\repos\LinkedList1\LinkedList1\main.c(51,15): warning C4090: '함수': 'const' 한정자가 서로 다릅니다.
+C:\Users\SungHwan\source\repos\LinkedList1\LinkedList1\main.c(67,15): warning C4090: '함수': 'const' 한정자가 서로 다릅니다.
+C:\Users\SungHwan\source\repos\LinkedList1\LinkedList1\main.c(16,44): warning C4101: 'pre' :참조되지 않은 지역 변수입니다.
+C:\Users\SungHwan\source\repos\LinkedList1\LinkedList1\main.c(19,40): warning C4101: 'at' :참조되지 않은 지역 변수입니다.
+  코드를 생성하고 있습니다...
+  LinkedList1.vcxproj -> C:\Users\SungHwan\source\repos\LinkedList1\Debug\LinkedList1.exe
