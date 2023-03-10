@@ -261,16 +261,22 @@ ASCII Code with wchar</a></li>
 <ol>
   <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/data%20structure/C%20language/Deque/Backjoon_Deque">Backjoon_Deque</a></li>
   <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/data%20structure/C%20language/Deque/deque">Deque</a></li>
+  </ol>
     
 ##### LinkedList
-
+<ol>
+  <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/data%20structure/C%20language/LinkedList/LinkedList1">LinkedList1</a></li>
+  </ol>
+  
 ##### Queue
 <ol>
   <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/data%20structure/C%20language/Queue/Backjoon_queue">Backjoon_Queue</a></li>
   <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/data%20structure/C%20language/Queue/Backjoon_Circulator_Queue">Backjoon_Circle_Queue</a></li>
   <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/data%20structure/C%20language/Queue/queue">Backjoon_Circle_Queue2</a></li>
+  <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/data%20structure/C%20language/Queue/PizzaSaler">PizzaSale</a></li>
+  <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/data%20structure/C%20language/Queue/simulator5">
+Simulator with Queue</a></li>
 </ol>
-
 
 ##### Sort
 <ol>
