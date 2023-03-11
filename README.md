@@ -299,12 +299,12 @@ Simulator with Queue</a></li>
 
 ##### malloc
 
-##### Heap
+##### Tree
 <ol>
 <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/data%20structure/C%20language/Tree/treecirculator">Heap1</a></li>
   </ol>
-  
-##### Tree
+
+##### Heap
 <ol>
 <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/data%20structure/C%20language/Heap">
 Tree Postfix, Prefix ,Infix</a></li>
