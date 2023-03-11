@@ -1,0 +1,3 @@
+﻿  main.c
+C:\Users\SungHwan\source\repos\Star_Point\Star_Point\main.c(29,3): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  Star_Point.vcxproj -> C:\Users\SungHwan\source\repos\Star_Point\Debug\Star_Point.exe
