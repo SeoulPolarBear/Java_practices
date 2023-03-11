@@ -301,13 +301,13 @@ Simulator with Queue</a></li>
 
 ##### Tree
 <ol>
-<li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/data%20structure/C%20language/Tree/treecirculator">Heap1</a></li>
+<li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/data%20structure/C%20language/Tree/treecirculator"></a>Tree Postfix, Prefix ,Infix</li>
   </ol>
 
 ##### Heap
 <ol>
 <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/data%20structure/C%20language/Heap">
-Tree Postfix, Prefix ,Infix</a></li>
+Heap1</a></li>
   </ol>
 
 # Algorithm
