@@ -289,6 +289,7 @@ Simulator with Queue</a></li>
 ##### Stack
 <ol>
   <li><a href = "https://github.com/SeoulPolarBear/Practices/blob/main/data%20structure/C%20language/Stack/1.Backjoon_Stack">Backjoon_Stack</a></li>
+  <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/data%20structure/C%20language/Stack/Stack_BackJoon1">Backjoon Stack2</a></li>
   <li><a href = "https://github.com/SeoulPolarBear/Practices/blob/main/data%20structure/C%20language/Stack/2.Backjoon_Stack2">Backjoon_Stack2</a></li>
    <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/data%20structure/C%20language/Stack/Backjoon_Stack">Backjoon_Stack3</a></li>
       <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/data%20structure/C%20language/Stack/DataStructure3-1">find path of Maze</a></li>
@@ -300,9 +301,14 @@ Simulator with Queue</a></li>
 
 ##### Heap
 <ol>
-<li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/data%20structure/C%20language/Heap">Heap1</a></li>
+<li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/data%20structure/C%20language/Tree/treecirculator">Heap1</a></li>
   </ol>
-
+  
+##### Tree
+<ol>
+<li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/data%20structure/C%20language/Heap">
+Tree Postfix, Prefix ,Infix</a></li>
+  </ol>
 
 # Algorithm
 ### C Language
