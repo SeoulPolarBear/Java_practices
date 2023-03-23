@@ -1,0 +1,20 @@
+1. 탄력적(Elastic) IP를 만들고 내가 사용하고 있는 EC2에 연결을 시키면 고정 IP로 사용할 수 있게 된다.
+이를 이제 public IP로 사용하면 됩니다.
+
+해당 PC에서 EC2에 접속하는 방법
+
+
+1. putty.exe 다운로드
+2. puttygen.exe 다운로드
+3. puttygen.exe -> RSA로 설정 
+-> Load 클릭 
+-> aws에서 다운 받은 gen key 파일 선택
+-> Save private key로 저장 이름은 gen키와 똑같이, 확장자는 ppk
+-> putty.exe 실행
+-> Host Name에 ubuntu@[EC2 public IP] Port : 22(ssh)
+-> SSH -> Auth -> private key file 넣기
+-> Saved Sessions 하면 더욱 편하다.
+
+
+이렇게 하는 이유 : window에서는 pen이라는 확장자를 처리하지 못하므로 ppk라는 확장자로
+변환해서 사용해야 하기 떄문이다.
