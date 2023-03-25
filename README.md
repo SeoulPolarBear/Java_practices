@@ -74,6 +74,11 @@ Java Object-oriented programming Constructor2</a></li>
    <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/DB/MongoDB/Nov28_1_MongoDB">MongoDB connect Python</a></li>
 </ol>
 
+### PostgreSQL
+<ol>
+<li><a href = "https://github.com/SeoulPolarBear/Practices/blob/main/DB/PostgreSQL/1-1.%20PostgreSQL%20%EC%84%A4%EC%B9%98.txt">PostgreSQL install</a></li>
+</ol>
+
 # WEB
 ### HTML
 <ol>
