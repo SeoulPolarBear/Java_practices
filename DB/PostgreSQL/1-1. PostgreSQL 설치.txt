@@ -1,0 +1,56 @@
+1. PostgreSQl 설치
+
+유의 사항  1. dvdrental.tar라는 파일이 있는데 바로 열면 안된다. pdf처럼 생겨서 열어 버릴 수 있기 때문에 유의 하자
+	   2. PostgreSQL의 password를 잊어버리지 말자 반드시 기억하고 있자. 
+
+
+
+1.PostgreSQL 설치
+https://www.postgresql.org/download/ -> windows -> 64X인 버전 선택해서 다운로드
+(나는 12.14를 다운로드 하였다.)
+-> Next -> Next -> PostgreSQL Server, pgAdmin4, Stack Builder, Command Line Tools
+전부 선택 후 Next -> dir 설정 (C:\Program Files\PostgreSQL\12\data)
+-> superuser 비밀 번호 생성 반드시 기억해야 한다.
+-> 포트번호 5432로 설정
+-> 새 데이터베이스 클러스터에 사용할 위치를 선택하는 작업 Locale : Default locale로 설정
+-> 그다음 설치 -> Launch Stack 설정 해제 후 Finish
+
+
+2. PgAdmin 설치 
+PgAdmin : GUI로써 PostgreSQL에 접근할 수 있게 해준다.
+https://www.pgadmin.org/download/ -> download -> Windows -> 
+pgAdmin 4 v6.21 (released March 9, 2023) 
+-> 용량 제일 큰 것을 다운 받으면 된다.
+pgadmin4-6.21-x64.exe pgadmin4-6.21-x64.exe	2023-03-09 11:17:28	165.8 MB
+-> exe 파일을 관리자 권한으로 실행 -> 계속 Next 하면 된다.
+
+
+3. dvdrental.tar file
+강의에서 사용할 강의 리소스 파일리소스로 바로 열먼 안된다.
+파일이 손상 될 수 없다. 즉, 이 파일은 pgAdmin 이외의 것으로 열 수 없으므로 다운로드 한 후 
+파일 더블 클릭 금지
+
+
+4. 그럼 이제 다운로드 한것들이 반영 되기 위해서 컴퓨터를 다시 시작한다.
+
+5. pgAdmin 실행
+pgAdmin 4 v4 PC에서 검색
+
+-> 브라우저로 들어가게 되고 Master Password 설정 -> 간단하게 설정하자 
+
+-> PostgreSQL 12 connect 
+-> 우클릭 -> Create -> Database -> dvdrental이라는 이름으로 생성
+-> 우클릭 restore 클릭
+
+/*※참고 만약 실행이 안되고 not found가 나오면 
+C:\Program Files\PostgreSQL\12\bin에 있는 모든 파일을
+C:\Program Files\PostgreSQL\12\pgAdmin 4에 runtime 파일을 만들고 copy※*/
+
+
+-> 파일 위치 : C:\Users\user\OneDrive\바탕 화면\Udemy\PostgreSQL\1lecture
+에서 dvdrental.tar 파일 가져오기 Filename에
+-> Data/Objects 가서 -> Section에서 Pre-data, Data, Post-data활성화 
+-> General로 돌아와서 restore 클릭 -> dvdrental 우클릭 refresh ->우클릭 Query tool 이동
+이제 SELECT * FROM FILM; 으로 잘 들어갔는지 확인
+
+
