@@ -1,0 +1,78 @@
+Linux 용
+
+ubuntu 20.04에서, docker 설치하기
+
+1. 최신 패키지 리스트 업데이트
+sudo apt update
+
+2. docker 다운로드를 위해 필요한 https관련 패키지 설치
+sudo apt install apt-transport-https ca-certificates curl software-properties-common
+//하는 이유 : https 통신 및 인증서를 받아야 하므로
+
+3. docker repository 접근을 위한 GPG key 설정
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+//하는 이유 : 암호화된 키가 있어야 되기 때문에 다운로드 받는다.
+
+4. docker repository 등록
+sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable"
+//기존에 등록되어 있는 패키지들과 달리 docker를 위한 repository를 따로 등록을 하는 단계를 말한다.
+
+5. 등록한 docker repository까지 포함하여 최신 패키지 리스트 업데이트
+sudo apt update
+
+6. 이제 docker 설치
+sudo apt install docker-ce
+
+7. docker 실행 중임을 확인
+sudo systemctl status docker
+// systemctl : 24시간 돌아가야 되는 시스템들을 관리를 제어할 수 있는 명령어
+
+
+8. 도커 버전 확인
+docker -v
+
+---------------------------------------------------------------------------------------
+
+sudo 명령 없이 docker 명령어 사용하기 설정
+1. 현 사용자(우리는 user를 ubuntu라고 지었다.) ID를 docker group에 포함
+sudo usermod -aG docker ${USER}
+
+//usermod : 사용자(ubuntu) 계정에 관련된 다양한 정보들을 변경하는 명령어
+//-a(--append) : -G옵션과 같이 사용하는 욥션으로 기존의 2차 그룹 이외에 추가로 2차 그룹을 지정할 때 사용된다.
+//-G : 추가로 다른 그룹에 속하게 할 때 쓰인다.
+// ${USER} : 현재 로그인 되어 있는 계정
+//하는 이유 : docker를 사용하는 권한을 docker 그룹에서 많이 가지고 있기 때문에 docker group에 포함되는 것이 좋다.
+
+
+
+2. 터미널 끊고(logout), 다시 ssh로 터미널로 접속(로그인을 다시 한다.)
+
+3.  현 ID가 docker group에 포함되어 있는지 확인하는 명령어(docker가 리스트에 나오면 됨)
+id -nG
+
+// id : 현재 사용자의 실제 id와 유효 사용자 id, 그룹 id를 출려하며 내부 bash 변수인 $UID, $EUID, $GROUPS와 짝을 이룬다. "id -un"을 치면 whoami명령어와 같은 효과를 낸다. 경로 : /user/bin/id
+// -n : --name으로 -u,-g,-G옵션과 함께 사용하며 해당하는 id의 이름만 출력
+// -G : --groups 추가 그룹의 id만 출력
+
+4. sudo없이 docker 명령어 사용가능해 짐
+docker
+
+---------------------------------------------------------------------------------------
+
+ubuntu 20.04에서 docker-compose 설치
+// 설치 이유 : docker 하나만을 다루는 명령어가 있지만 
+// 상용 서비스에서는 도커를 여러개를 만들어서 실행하는게 일반적이여서 docker-compose를 사용해야한다.
+
+1. release page에서 최신 버전 확인 후, 다음 링크에서 버전(1.28.2) 변경
+sudo curl -L "https://github.com/docker/compose/releases/download/1.28.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+// curl -L 다운로드만할 때 사용한다.
+
+//1.28.2를 사용이유 : 강의에서 사용
+// 만약 버전을 올리고 싶으면 release note에서 확인 https://github.com/docker/compose
+
+2. 실행 권한 주기
+sudo chmod +x /usr/local/bin/docker-compose
+//다운로드된 파일(docker-compose)에 대해서 실행 권한 부여
+
+3. 다음 명령 실행시 버전 확인이 가능하면, 성공
+docker-compose --version
