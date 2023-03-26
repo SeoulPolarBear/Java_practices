@@ -233,7 +233,7 @@ permission2, grep, find, vim, tar(archive)</a></li>
 <li><a href = "https://github.com/SeoulPolarBear/Practices/blob/main/Docker/4-1%EB%A6%AC%EB%88%85%EC%8A%A4%20%ED%8C%8C%EC%9D%BC.txt">Linux</a></li>
 
 <li><a href = "https://github.com/SeoulPolarBear/Practices/blob/main/Docker/5-1.Docker%20%EC%84%A4%EC%B9%98.txt">Docker install</a></li>
-<li><a href = "https://github.com/SeoulPolarBear/Practices/blob/main/Docker/6-1.%20%EB%8F%84%EC%BB%A4%EC%9D%98%20%EC%9D%B4%ED%95%B4.txt">Docker </a></li>
+<li><a href = "https://github.com/SeoulPolarBear/Practices/blob/main/Docker/6-1.%20%EB%8F%84%EC%BB%A4%EC%9D%98%20%EC%9D%B4%ED%95%B4.txt">Docker란</a></li>
 <li><a href = "https://github.com/SeoulPolarBear/Practices/blob/main/Docker/6-2.%20%EB%8F%84%EC%BB%A4%EC%9D%98%20%EB%AA%85%EB%A0%B9%EC%96%B4-start%2C%20create.txt">Docker Start, Create</a></li>
 </ol>
 
