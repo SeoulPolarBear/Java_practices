@@ -79,6 +79,12 @@ Java Object-oriented programming Constructor2</a></li>
 <li><a href = "https://github.com/SeoulPolarBear/Practices/blob/main/DB/PostgreSQL/1-1.%20PostgreSQL%20%EC%84%A4%EC%B9%98.txt">PostgreSQL install</a></li>
 </ol>
 
+### PLSQL
+<ol>
+<li><a href = "https://github.com/SeoulPolarBear/Practices/blob/main/DB/PLSQL/1-1.%20PLSQL%EC%9D%B4%EB%9E%80.txt">PL/SQL이란</a></li>
+<li><a href = "https://github.com/SeoulPolarBear/Practices/blob/main/DB/PLSQL/1-2.%20%ED%94%8C%EB%A0%89%EC%84%9C%EB%B8%94%20%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4.txt">Oracle 12 플렉서블 데이터베이스</a></li>
+</ol>
+
 # WEB
 ### HTML
 <ol>
