@@ -209,6 +209,12 @@ Login, Logout</a></li>
  <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/Spring/Oct04_2_SpringMVC_MyBatis">SpringMVC with MyBatis</a></li>
 </ol>
 
+# JPA
+<ol> 
+ <li><a href = "https://github.com/SeoulPolarBear/Practices/blob/main/JPA/0.%20JPA%EB%A5%BC%20%EB%93%A4%EC%96%B4%EA%B0%80%EA%B8%B0%20%EC%A0%84%EC%97%90.txt">ORM</a></li>
+ <li><a href = "https://github.com/SeoulPolarBear/Practices/blob/main/JPA/1-1.JPA%EB%9E%80.txt">JPA란</a></li>
+</ol>
+
 # Linux
 
 ### virtualBox
