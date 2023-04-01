@@ -1,0 +1,190 @@
+JPA
+-Java Persistence API
+-자바 진영의 ORM 기술 표준
+
+ORM
+-Object-Relational mapping(객체 관계 매핑)
+-객체는 객체대로 설계
+-관계형 데이터베이스는 관계형 데이터베이스대로 설계
+-ORM 프레임워크가 중간에서 매핑
+- 대중적인 언어에는 대부분 ORM 기술이 존재
+
+JPA는 애플리케이션과 JDBC 사이에서 동작
+즉, JDBC의 쿼리를 JPA가 짜준다.
+
+Entity Object를 Persist로 MemberDAO에서 던지면
+Insert 
+-----
+-Entity 분석
+-insert SQL 생성
+-JDBC API 사용
+-패러다임 불일치 해결
+
+select
+-----
+-select SQL 생성
+-JDBC API 사용
+-ResultSet 매핑
+-패러다임 불일치 해결
+
+을 거쳐 JDBC API를 JPA에서 사용하여 최종적으로 DB에 반영을 해준다.
+
+
+EJB - 엔티티 빈(자바 표준) -> 화이버네이트(오픈 소스) -> JPA(자바 표준)
+
+JPA는 표준 명세 
+-JPA는 인터페이스의 모음 (이걸 표준 명세라고 한다.)
+-JPA 2.1 표준 명세를 구현한 3가지 구현체
+-하이버네이트, EclipseLink, DataNucleus
+
+애플리케이션 ------- 사용 -----------> JPA 표준 인터페이스
+							^
+							|
+				-------------------------------------
+				|			|			|
+				V			V			V
+			   Hibernate 	  EclipseLink	 DataNucleus
+
+여기서는 JPA 표준 명세에서 Hibernate를 주로 사용한다.
+-----------------------------------------------------------------------------------------------------
+
+JPA를 왜 사용하는가?
+===================================
+-SQL 중심석인 개발에서 객체 중심으로 개발
+===================================
+-생산성
+	JPA와 CRUD
+	저장 : jpa.persist(memeber) # persist : 영구저장한다.
+	조회 : Member member = jpa.find(memberId)
+	수정 : member.setName("변경할 이름")
+	삭제 : jpa.remove(membr)
+===================================	
+-유지보수
+	JPA에서는 Model이 되는 해당 클래스에 필드만 추가해주면 된다.
+===================================
+-패러다임의 불일치 해결
+	JPA와 상속
+	JPA와 연관관계
+	JPA와 객체 그래프 탐색
+	JPA와 비교하기
+	----------------------------
+	Table 슈퍼타입 서브타입 관계에서 JPA를 사용하면 서브타입에 data를 넣으면 
+	JPA에서 자동으로 수퍼 타입에도 data를 알아서 넣어준다
+	----------------------------
+	JPA가 JOIN도 알아서 다 해준다.
+	----------------------------
+	연관관계 저장
+	member.setTeam(team);
+	jpa.persist(member);
+	
+	객체 그래프 탐색
+	Member member = jap.find(Member.class, memberId);
+	Team team = member.getTeam();
+
+	즉, 클래스 안에 있는 클래스도 연관관계를 최적화 하여서 알아서 정리해 준다.
+
+	신뢰할 수 있는 엔티티, 계층
+	----------------------------
+	JPA와 비교하기
+	String memberId = "100";
+	Member member1 = jpa.find(Member.class, memberId);
+	Member member2 = jpa.find(Member.class, memberId);
+	
+	member1 == member2; // 같다.
+	
+	즉, 동일한 트랜잭션에서 조회환 엔티티는 같음을 보장해 줍니다.
+
+	트랜젝션이란?
+	트랜잭션(Transaction 이하 트랜잭션)이란, 데이터베이스의 상태를 변화시키기 해서 수행하는 작업의 단위를 뜻한다.
+	여기서 주의할 점은 하나의 질의어가 트랜젝션이 아니라, 만약 내가 insert후 insert한 정보를 client에서 받는 경우라면
+	insert문과 select문 둘을 합쳐서 하나의 트랜젝션이 되는 것이다.
+===================================
+-성능
+	1. 1차 캐시와 동일성(identity) 보장
+		1) 같은 트랜잭션 안에서는 같은 엔티티를 반환 - 약갼의 조회 성능 향상
+		2) DB Isolation Level이 Read Commit이어도 애플리케이션에서 Repeatable Read 보장
+		
+		// 여기서 같은 트랜잭션이라는 것을 알 수 있는 이유는 DB에 정복 Update 되지 않았기 때문에 동일한 트랜잭션에서 
+		// 동작하고 있다.
+		String memberId = "100";
+		Member member1 = jpa.find(Member.class, memberId);//SQL
+		Member member2 = jpa.find(Member.class, memberId);//캐시
+	
+		println(member1 == member2); // true
+		SQL 1번만 실행하고 있는 상태이다.
+
+
+	2. 트랜잭션을 지원하는 쓰기 지연(transactional write-behind)
+		1) 트랜잭션을 커밋 할 때까지 INSERT SQL을 모음
+		2) JDBC BATCH SQL 기능을 사용해서 한번에 SQL 전송
+			transaction.begin();	// 트랜잭션 시작
+	
+			em.persist(memberA);
+			em.persist(memberB);
+			em.persist(memberC);
+			//여기까지 INSERT SQL을 데이터베이스에 보내지 않는다.
+		
+			//커밋하는 순간 데이터베이스에 INSERT SQL을 모아서 보낸다.
+			transaction.commit(); // 트랜잭션 커밋
+			
+			즉 이렇게 하므로써 3번의 통신 비용을 1번의 통신비용으로 줄이는 해택이 존재한다.
+
+		3) UPDATE, DELETE로 인한 로우(ROW)락 시간 최소화
+		4) 트랜잭션 커밋 시 UPDATE, DELETE SQL 실행하고, 바로 커밋
+
+		transaction.begin();	//트랜잭션 시작
+		changeMember(memberA);
+		deleteMember(memberB);
+		비즈니스_로직_수행(); // 비즈니스 로직 수행 동안 DB 로우 락이 걸리지 않는다.
+
+		//커밋하는 순간 데이터베이스에 UPDATE, DELETE SQL을 보낸다.
+		transaction.commit(); // 트랜잭션 커밋
+
+	3. 지연 로딩(Lazy Loading)과 즉시 로딩
+		지연로딩 : 객체가 실제 사용될 때 로딩
+
+		즉, member가 team을 가지고  있는데 DB에서 값을 꺼내 올 때 team과 member data를 DB에서 따로 뽑아올 수 있다.
+		Member member = memberDAO.find(memberId);		//select * from member
+		Team team = member.getTeam();
+		String teamName = team.getName();			//select * from team
+
+		즉시로딩 : JOIN SQL로 한번에 연관된 객체까지 미리 조회
+		즉, member와 team이 거의 같이 쓰일 때는 join의 역할을 하여서 한번에 뽑아온다.
+
+		Member member = memberDAO.find(memberId);
+		Team team = member.getTeam();
+		String teamName = team.getName();
+		
+		/*
+		Select M.*, T.*
+		From Member
+		Join team ...
+		*/
+		
+===================================
+-데이터 접근 추상화와 벤더 독립성
+===================================
+-표준
+===================================
+
+
+ORM(Object Relational Mapping)은 객체와 RDB 두 기둥위에 있는 기술
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
