@@ -1,0 +1,7 @@
+H2 데이터베이스 설치와 실행
+http://www.h2database.com/
+최고의 실습용 DB
+가볍다
+웹용 쿼리툴 제공
+MySQL, Oracle데이터베이스 시뮬레이션 기능
+시퀀스, AUTO INCREMEMT 기능 지원
