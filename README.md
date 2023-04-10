@@ -67,6 +67,11 @@ Java Object-oriented programming Constructor2</a></li>
     <li><a href = "https://github.com/SeoulPolarBear/Practices/tree/main/DB/ORACLE/Maven">Use Maven in Spring MVC and Mybatis setting</a></li>
 </ol>
 
+### H2Database
+<ol>
+<li><a href = "https://github.com/SeoulPolarBear/Practices/blob/main/DB/H2database/2-1.%20h2%20database.txt">H2Database 장점</a></li>
+</ol>
+
 ### MongoDB
 <ol>
 <li><a href = "https://github.com/SeoulPolarBear/Practices/blob/main/DB/MongoDB/mongodb%20%EA%B0%9C%EC%9A%94.txt">Mongodb 개요</a></li>
@@ -213,6 +218,7 @@ Login, Logout</a></li>
 <ol> 
  <li><a href = "https://github.com/SeoulPolarBear/Practices/blob/main/JPA/0.%20JPA%EB%A5%BC%20%EB%93%A4%EC%96%B4%EA%B0%80%EA%B8%B0%20%EC%A0%84%EC%97%90.txt">ORM</a></li>
  <li><a href = "https://github.com/SeoulPolarBear/Practices/blob/main/JPA/1-1.JPA%EB%9E%80.txt">JPA란</a></li>
+ <li><a href = "https://github.com/SeoulPolarBear/Practices/blob/main/JPA/1-3.%20%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4%20%EB%B0%A9%EC%96%B8.txt">Database 방언</a></li>
 </ol>
 
 # Linux
