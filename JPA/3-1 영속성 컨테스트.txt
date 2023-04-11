@@ -1,0 +1,135 @@
+JPA에서 가장 중요한 2가지
+
+- 객체와 관계형 데이터베이스 매핑하기 
+(Object Relational Mapping)
+- 영속성 컨텍스트 == entitiyManager라고 생각해도 된다.
+이것이 DB와 conn 하기 때문
+
+
+
+영속성 컨텍스트(영구저장에 대한 문맥)
+- JPA를 이해하는데 가장 중요한 용어
+- “엔티티를 영구 저장하는 환경”이라는 뜻
+- EntityManager.persist(entity)
+ : persist를 하면 엔티티를 저장하는 것만이 아닌 영속성 컨테스트에 저장하겠다는 뜻이다.
+
+영속성 컨테스트는 논리적인 개념으로 
+엔티티 매니저를 통해서 영속성 컨텍스트에 접근하는 것입니다.
+
+
+엔티티의 생명주기
+- 비영속 (new / transient)
+	영속성 컨텍스트와 전현 관계가 없는 새로운 상태
+	즉, new를 이용해서 새로운 객체를 만들고 setting을 한 상태
+
+- 영속성(managed)
+	영속성 컨텍스트에 관리되는 상태
+	즉, em.persist를 통해서 컨텍스트에 저장된 상태
+	단 Query를 commit을 했을 시 발동 된다.
+
+- 준영속(detached)
+	영속성 컨텍스트에 저장되었다가 분리된 상태
+	즉, em.detach(member)를 하여 영속성 컨테스트에서 삭제시켜서  분리시킨다.
+	내 생각 : 주로 batch 처리 할 때 사용될 것 같다는 생각이 든다. 
+
+- 삭제(removed)
+	삭제된 상태
+	즉, delete문과 같이 아예 영속성에 있는 data를 삭제하는 것을 말한다.
+	em.remove(member);
+
+
+
+영속성 컨텍스트의 이점
+
+- 1차 캐시
+
+Member member = new Member();
+member.setId(2L);
+member.setName("HelloB");
+
+//1 차 캐시에 저장됨
+em.persist(member);
+
+//1차 캐시에서 조회
+Member findMember = em.find(Member.class, "member1");
+
+//1차 캐시에 값이 없을 경우
+Member findMember2 = em.find(Member.class, "member2");
+
+1. 캐시에 없음을 감지 -> 2. DB 조회 -> 3. 1차 캐시에 저장 -> 4. 반환
+
+즉, persist를 통해서 저장한 것들은 캐시에 저장되어 있어 DB를 조회 전에
+캐시를 조회 하여 빠르게 Select를 사용할 수 있다.
+-------------------------------------------------------------------------
+
+- 동일성(identity) 보장
+Member a = em.find(Member.class, "member1"); 
+Member b = em.find(Member.class, "member1");
+System.out.println(a == b); //동일성 비교 true
+
+1차 캐시로 반복 가능한 읽기(REPEATABLE READ) 등급의 트랜잭션 격리 수준을 
+데이터베이스가 아닌 애플리케이션(자바 컬렉션) 차원에서 제공
+즉, 같은 레퍼런스라고 인식을 한다 이유 : 1차 캐시에서 관리를 하고 있기 때문에
+-------------------------------------------------------------------------
+
+- 트랜잭션을 지원하는 쓰기 지연(transactional write-behind)
+
+EntityManager em = emf.createEntityManager(); 
+EntityTransaction transaction = em.getTransaction(); 
+//엔티티 매니저는 데이터 변경시 트랜잭션을 시작해야 한다. 
+transaction.begin();  // [트랜잭션] 시작
+em.persist(memberA); 
+em.persist(memberB);
+//여기까지 INSERT SQL을 데이터베이스에 보내지 않는다. 
+//커밋하는 순간 데이터베이스에 INSERT SQL을 보낸다.
+transaction.commit(); // [트랜잭션] 커밋
+
+
+생명주기 : 쓰기 지연 SQL 저장소와 1차 캐시에 data들이 쌓임 -> transaction.commit()을 실행 -> flush를 하여
+SQL문(주로 INSERT)이 쿼리로 날라간다. -> 그 다음 트랜잭션이 Commit이 된다.
+-------------------------------------------------------------------------
+
+
+- 변경 감지(Dirty Checking)
+
+EntityManager em = emf.createEntityManager(); 
+EntityTransaction transaction = em.getTransaction(); 
+transaction.begin();  // [트랜잭션] 시작
+
+// 영속 엔티티 조회
+Member memberA = em.find(Member.class, "memberA"); 
+
+// 영속 엔티티 데이터 수정
+memberA.setUsername("hi"); 
+memberA.setAge(10);
+
+//em.update(member) 
+이런  코드가  있어야  하지  않을까?라고 생각하고 실제로 내부에서 알아서 실행을 시켜준다.
+transaction.commit(); // [트랜잭션] 커밋
+-------------------------------------------------------------------------
+
+- 지연 로딩(Lazy Loading)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
