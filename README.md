@@ -219,6 +219,8 @@ Login, Logout</a></li>
  <li><a href = "https://github.com/SeoulPolarBear/Practices/blob/main/JPA/0.%20JPA%EB%A5%BC%20%EB%93%A4%EC%96%B4%EA%B0%80%EA%B8%B0%20%EC%A0%84%EC%97%90.txt">ORM</a></li>
  <li><a href = "https://github.com/SeoulPolarBear/Practices/blob/main/JPA/1-1.JPA%EB%9E%80.txt">JPA란</a></li>
  <li><a href = "https://github.com/SeoulPolarBear/Practices/blob/main/JPA/1-3.%20%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4%20%EB%B0%A9%EC%96%B8.txt">Database 방언</a></li>
+ <li><a href = "https://github.com/SeoulPolarBear/Practices/blob/main/JPA/2-1.%20JPA%20%EC%82%AC%EC%9A%A9%EC%8B%9C%20%EC%A3%BC%EC%9D%98%20%EC%82%AC%ED%95%AD.txt"> JPA 사용시 주의 사항</a></li>
+ <li><a href = "https://github.com/SeoulPolarBear/Practices/blob/main/JPA/3-1%20%EC%98%81%EC%86%8D%EC%84%B1%20%EC%BB%A8%ED%85%8C%EC%8A%A4%ED%8A%B8.txt">영속성 컨텍스트</a></li>
 </ol>
 
 # Linux
