@@ -223,6 +223,7 @@ Login, Logout</a></li>
  <li><a href = "https://github.com/SeoulPolarBear/Practices/blob/main/JPA/3-1%20%EC%98%81%EC%86%8D%EC%84%B1%20%EC%BB%A8%ED%85%8C%EC%8A%A4%ED%8A%B8.txt">영속성 컨텍스트</a></li>
  <li><a href = "https://github.com/SeoulPolarBear/Practices/blob/main/JPA/3-2%20%ED%92%80%EB%9F%AC%EC%8B%9C.txt">플러시</a></li>
  <li><a href = "https://github.com/SeoulPolarBear/Practices/blob/main/JPA/3-3.%20%EC%A4%80%EC%98%81%EC%86%8D.txt">준영속 detach</a></li>
+ <li><a href = "https://github.com/SeoulPolarBear/Practices/blob/main/JPA/4-1.%EA%B0%9D%EC%B2%B4%EC%99%80%20%ED%85%8C%EC%9D%B4%EB%B8%94%20%EB%A7%A4%ED%95%91.txt">객체와 테이블 매핑</a></li>
 </ol>
 
 # Linux
