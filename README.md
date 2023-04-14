@@ -82,6 +82,7 @@ Java Object-oriented programming Constructor2</a></li>
 ### PostgreSQL
 <ol>
 <li><a href = "https://github.com/SeoulPolarBear/Practices/blob/main/DB/PostgreSQL/1-1.%20PostgreSQL%20%EC%84%A4%EC%B9%98.txt">PostgreSQL install</a></li>
+<li><a href = "https://github.com/SeoulPolarBear/Practices/blob/main/DB/PostgreSQL/1-2.select%20%EB%8F%99%EC%9E%91%20%EB%B0%A9%EB%B2%95.txt">PostgreSQL Select 1</a></li>
 </ol>
 
 ### PLSQL
