@@ -80,7 +80,7 @@ docker rmi &(docker images -q)
 - 한번에 컨테이너 중지, 삭제, 이미지 삭제하기(각자 별도로 적어 놓고, 한번에 실행하기)
 docker stop $(docker ps -a -q)
 docker rm &(docker ps -a -q)
-dcker rmi -f &(docker images -q)
+docker rmi -f &(docker images -q)
 
 - 별도로 다음 명령도 사용가능
 	- 하지만, 다음 명령은 실행중인 container, 또는 실행 중인 컨테이너의 images 등은 삭제하지 않음
